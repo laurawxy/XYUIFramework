@@ -11,7 +11,7 @@
 
 #import <UIKit/UIKit.h>
 #import "XYMacroConfig.h"
-#import "CommonDefine.h"
+#import "XYCommonDefine.h"
 
 #import <AFNetworking/AFNetworking.h>
 #import <SVProgressHUD/SVProgressHUD.h>
@@ -43,7 +43,7 @@
 #import "NSObject+XYUtils.h"
 #import "UIDevice+XYPlatForm.h"
 
-#import "XYNetWorkApi.h>
+#import "XYNetWorkApi.h"
 #import "XYServerIpManageViewController.h"
 #import "XYUIApperanceConfig.h"
 #import "XYNetworkConfig.h"
