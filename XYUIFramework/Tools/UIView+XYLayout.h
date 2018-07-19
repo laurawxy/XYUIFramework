@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Masonry.h>
-
+#import <Masonry/Masonry.h>
+ 
 @interface UIView (XYLayout)
 
 @property (nonatomic, strong, readonly) MASViewAttribute *xy_mas_bottom;

@@ -10,7 +10,7 @@
 #import "UIView+frame.h"
 #import "XYAutoLayout.h"
 #import "XYThemeImage.h"
-#import <UIImageView+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface XYServiceUploading()
 @property (nonatomic, strong) UIImageView *imageView;

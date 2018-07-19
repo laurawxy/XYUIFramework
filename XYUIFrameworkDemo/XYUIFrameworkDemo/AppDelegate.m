@@ -10,7 +10,7 @@
 #import "XYTabBarViewController.h"
 #import "UncaughtExceptionHandler.h"
 #import "BaseViewController.h"
-#import "AppDelegate+XYConfig.h"
+#import "XYUtils.h"
 #import "XYUIApperanceConfig.h"
 #import "HomeViewController.h"
 #import "MyViewController.h"
@@ -26,7 +26,7 @@
     [self setUpXYUIConfig];
     [self setUpXYNetworkConfig];
     
-    [self setUpAppearance];
+    [XYUtils setUpAppearance];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];

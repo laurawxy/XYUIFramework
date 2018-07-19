@@ -7,11 +7,11 @@
 //
 
 #import "XYTableViewController.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import "XYThemeColor.h"
 #import "XYMacroConfig.h"
 #import "UIView+XYLayout.h"
-#import <MJRefresh.h>
+#import <MJRefresh/MJRefresh.h>
 #import "UIView+frame.h"
 #import "XYAutoLayout.h"
 #import "NSObject+XYUtils.h"

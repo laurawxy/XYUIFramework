@@ -429,7 +429,7 @@ static NSString *subviewClassName;
                 return;
             }
             
-            self.allPageLabel.text = [NSString stringWithFormat:@"%ld",self.orginPageCount];
+            self.allPageLabel.text = [NSString stringWithFormat:@"%d",(int)self.orginPageCount];
             [self.allPageLabel sizeToFit];
             self.allPageLabel.frame = CGRectMake(self.width-CommonLeftMargin-self.allPageLabel.width, self.height-12-self.allPageLabel.height, self.allPageLabel.width, self.allPageLabel.height);
             
@@ -664,7 +664,7 @@ static NSString *subviewClassName;
     [self setPagesAtContentOffset:scrollView.contentOffset];
     [self refreshVisibleCellAppearance];
     
-    self.currentPageLabel.text = [NSString stringWithFormat:@"%ld/",pageIndex+1];
+    self.currentPageLabel.text = [NSString stringWithFormat:@"%d/",(int)pageIndex+1];
     [self.currentPageLabel sizeToFit];
     self.currentPageLabel.frame = CGRectMake(self.allPageLabel.left-self.currentPageLabel.width, self.height-12-self.currentPageLabel.height, self.currentPageLabel.width, self.currentPageLabel.height);
     

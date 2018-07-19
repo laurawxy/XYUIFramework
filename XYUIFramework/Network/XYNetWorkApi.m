@@ -16,7 +16,7 @@
 #import "SVProgressHUD+XYCustomization.h"
 #import "NSObject+XYUtils.h"
 #import "XYUtils.h"
-#import <MJExtension.h>
+#import <MJExtension/MJExtension.h>
 #import "XYMacroConfig.h"
 #import "XYNetworkConfig.h"
 
@@ -432,8 +432,7 @@
 }
 
 - (void)logSuccessMessage:(id)responseObject url:(NSURL*)URL{
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
-    NSLog(@"%@-%@--%@数据成功\n\n--------------------\n\n%@\n\n--------------------\n\n",self.actionName,URL,NSStringFromRequestMethod(self.requestMethod),[[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding]);
+    NSLog(@"%@-%@--%@数据成功\n\n--------------------\n\n%@\n\n--------------------\n\n",self.actionName,URL,NSStringFromRequestMethod(self.requestMethod),[[NSString alloc]initWithData:[NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
 }
 
 - (void)logFailureMessage:(NSError *)error url:(NSURL*)URL{

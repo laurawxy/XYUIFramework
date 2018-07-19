@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 #import "XYTableViewController.h"
-#import <SVProgressHUD.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 #import "UIView+XYLine.h"
 #import "XYMacroConfig.h"
 #import "XYThemeImage.h"

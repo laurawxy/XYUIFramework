@@ -8,7 +8,7 @@
 
 #import "XYAlertViewController.h"
 #import "UIView+XYLine.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import "XYThemeFont.h"
 #import "XYAutoLayout.h"
 #import "XYUtils.h"

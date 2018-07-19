@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+XYUtils.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import "UIView+frame.h"
 #import "XYUtils.h"
 #import "XYAutoLayout.h"

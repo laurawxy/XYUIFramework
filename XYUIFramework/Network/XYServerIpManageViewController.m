@@ -113,9 +113,6 @@
     [ipModelArray addObject:ipModel];
     
     [NSKeyedArchiver archiveRootObject:ipModelArray toFile:filePath];
-    
-    NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
-    NSLog(@"array:%@",array);
 }
 
 
@@ -136,9 +133,6 @@
     [ipModelArray addObjectsFromArray:ipModels];
     
     [NSKeyedArchiver archiveRootObject:ipModelArray toFile:filePath];
-    
-    NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
-    NSLog(@"array:%@",array);
 }
 
 
@@ -212,13 +206,13 @@
 {
     [aCoder encodeObject:self.name forKey:ipModel_name];
     
-    [aCoder encodeBool:self.host forKey:ipModel_host];
+    [aCoder encodeObject:self.host forKey:ipModel_host];
     [aCoder encodeObject:self.hostApi forKey:ipModel_hostApi];
     
-    [aCoder encodeBool:self.wapHost forKey:ipModel_wapHost];
+    [aCoder encodeObject:self.wapHost forKey:ipModel_wapHost];
     [aCoder encodeObject:self.wapHostApi forKey:ipModel_wapHostApi];
     
-    [aCoder encodeBool:self.h5Host forKey:ipModel_h5Host];
+    [aCoder encodeObject:self.h5Host forKey:ipModel_h5Host];
     
     [aCoder encodeObject:self.noInternetAddress forKey:ipModel_noInternetAddress];
 }

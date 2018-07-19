@@ -7,7 +7,7 @@
 //
 #import "LCContractView.h"
 #import "UIView+frame.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 
 @interface LCContractView()
 {

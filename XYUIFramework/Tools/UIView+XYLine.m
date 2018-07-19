@@ -9,7 +9,7 @@
 #import "UIView+XYLine.h"
 #import <objc/runtime.h>
 #import "XYThemeColor.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import "XYAutoLayout.h"
 
 @implementation UIView (XYLine)

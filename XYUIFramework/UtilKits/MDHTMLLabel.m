@@ -1080,7 +1080,7 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
     CFTypeRef actualFontRef = CFAttributedStringGetAttribute(text, range.location, kCTFontAttributeName, NULL);
     CTFontRef italicFontRef = CTFontCreateCopyWithSymbolicTraits(actualFontRef, 0.0, NULL, kCTFontItalicTrait, kCTFontItalicTrait);
 
-    BOOL forceCustomFont = self.customItalicFontName;
+    BOOL forceCustomFont = (self.customItalicFontName!=nil)?YES:NO;;
     if (!italicFontRef || forceCustomFont)
     {
         UIFont *font = [self italicFontOfSize:CTFontGetSize(actualFontRef)];
@@ -1203,7 +1203,7 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
     CFTypeRef actualFontRef = CFAttributedStringGetAttribute(text, range.location, kCTFontAttributeName, NULL);
     CTFontRef boldFontRef = CTFontCreateCopyWithSymbolicTraits(actualFontRef, 0.0, NULL, kCTFontBoldTrait, kCTFontBoldTrait);
 
-    BOOL forceCustomFont = self.customBoldFontName;
+    BOOL forceCustomFont = (self.customBoldFontName!=nil)?YES:NO;
     if (!boldFontRef || forceCustomFont)
     {
 //        UIFont *font = [UIFont boldSystemFontOfSize:CTFontGetSize(actualFontRef)];
@@ -1222,7 +1222,7 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
     CFTypeRef actualFontRef = CFAttributedStringGetAttribute(text, range.location, kCTFontAttributeName, NULL);
     CTFontRef boldItalicFontRef = CTFontCreateCopyWithSymbolicTraits(actualFontRef, 0.0, NULL, kCTFontBoldTrait | kCTFontItalicTrait , kCTFontBoldTrait | kCTFontItalicTrait);
 
-    BOOL forceCustomFont = self.customBoldItalicFontName;
+    BOOL forceCustomFont = (self.customBoldItalicFontName!=nil)?YES:NO;
     if (!boldItalicFontRef || forceCustomFont)
     {
 //        NSString *fontName = [NSString stringWithFormat:@"%@-BoldOblique", self.font.fontName];

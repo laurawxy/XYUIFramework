@@ -17,6 +17,8 @@
 #import "UIView+XYCornerBorder.h"
 #import "XYTabBarViewController.h"
 #import "SVProgressHUD+XYCustomization.h"
+#import "XYThemeFont.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 @implementation XYUtils
 
@@ -434,11 +436,6 @@
     return NO;
 }
 
-+ (AppDelegate *)getAppDelegate{
-    
-    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
-}
-
 +(BOOL)checkPassword:(NSString *)password;
 {
     NSString * pattern = @"^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{6,20}";
@@ -446,7 +443,24 @@
     BOOL isMatch = [pred evaluateWithObject:password];
     return isMatch;
 }
-
++ (void)setUpAppearance{
+    
+    [IQKeyboardManager sharedManager].enable = YES;
+    [IQKeyboardManager sharedManager].enableAutoToolbar = YES;
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    
+    [SVProgressHUD setupDefault];
+    
+    NSDictionary *normalAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[XYThemeColor navigationTitleColor],NSForegroundColorAttributeName,[XYThemeFont navigationTitleFont],NSFontAttributeName, nil];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:normalAttributes];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    
+    //    [[UINavigationBar appearance] setBarTintColor:NavigationBarColor];
+    //隐藏导航栏底部的线条 1、
+    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+}
 @end
 
 @implementation XYSingletonLabel

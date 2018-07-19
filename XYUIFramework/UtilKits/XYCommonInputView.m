@@ -8,7 +8,7 @@
 
 #import "XYCommonInputView.h"
 #import "XYThemeFont.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import "XYThemeColor.h"
 #import "XYAutoLayout.h"
 #import "NSObject+XYUtils.h"

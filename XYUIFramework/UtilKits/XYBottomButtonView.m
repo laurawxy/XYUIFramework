@@ -7,7 +7,7 @@
 //
 
 #import "XYBottomButtonView.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import "XYThemeColor.h"
 #import "XYAutoLayout.h"
 #import "XYThemeFont.h"

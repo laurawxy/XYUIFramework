@@ -12,7 +12,7 @@
 #import "XYThemeColor.h"
 #import "XYAutoLayout.h"
 #import "XYMacroConfig.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import "UIView+XYLine.h"
 #import "ImageTitleButton.h"
 #import "XYUtils.h"

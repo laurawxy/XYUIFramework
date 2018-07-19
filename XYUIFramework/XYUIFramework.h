@@ -11,18 +11,16 @@
 
 #import <UIKit/UIKit.h>
 #import "XYMacroConfig.h"
-#import "XYMacroConfig.h"
 #import "CommonDefine.h"
-#import "XYInterfaceConfig.h"
 
-#import <AFNetworking.h>
-#import <SVProgressHUD.h>
-#import <Masonry.h>
-#import <MJRefresh.h>
-#import <MJExtension.h>
-#import <IQKeyboardManager.h>
-#import <UIImageView+WebCache.h>
-#import <UIButton+WebCache.h>
+#import <AFNetworking/AFNetworking.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <Masonry/Masonry.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
 
 #import "XYUtils.h"
 #import "XYTableView.h"

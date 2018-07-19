@@ -7,7 +7,7 @@
 //
 
 #import "ImageTitleButton.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import "XYButton.h"
 #import "UIView+frame.h"
 #import "XYMacroConfig.h"

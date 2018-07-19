@@ -7,7 +7,6 @@
 //
 
 #import <SVProgressHUD/SVProgressHUD.h>
-#import <SVProgressHUD.h>
 
 @interface SVProgressHUD (XYCustomization)
 

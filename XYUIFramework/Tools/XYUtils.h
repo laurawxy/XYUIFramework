@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AppDelegate.h"
 #import "XYModelViewController.h"
 #import "CommonDefine.h"
 
@@ -264,13 +263,6 @@
 + (BOOL) isNotLogin;
 
 /**
- 获取AppDelegate对象
-
- @return AppDelegate
- */
-+ (AppDelegate *)getAppDelegate;
-
-/**
  判断密码数字和字母组合
 
  @param password 密码
@@ -278,7 +270,7 @@
  */
 +(BOOL)checkPassword:(NSString *)password;
 
-
++ (void)setUpAppearance;
 @end
 
 @interface XYSingletonLabel : UILabel
