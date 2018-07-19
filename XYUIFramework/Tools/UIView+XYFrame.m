@@ -1,12 +1,12 @@
 //
-//  UIView+frame.m
+//  UIView+XYFrame.m
 //  XYUIFramework
 //
 //  Created by Xiangyu Wang on 2018/07/16.
 //  Copyright © 2018年 WXiangYu. All rights reserved.
 //
 
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import <objc/runtime.h>
 
 @implementation UIView (frame)

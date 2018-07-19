@@ -7,7 +7,7 @@
 //
 
 #import "XYTableFootView.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "XYThemeColor.h"
 
 @interface XYTableFootView()

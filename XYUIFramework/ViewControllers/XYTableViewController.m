@@ -12,7 +12,7 @@
 #import "XYMacroConfig.h"
 #import "UIView+XYLayout.h"
 #import <MJRefresh/MJRefresh.h>
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "XYAutoLayout.h"
 #import "NSObject+XYUtils.h"
 #import "XYThemeImage.h"

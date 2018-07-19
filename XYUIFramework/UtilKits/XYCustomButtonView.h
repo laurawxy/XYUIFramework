@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ImageTitleButton.h"
+#import "XYImageTitleButton.h"
 
 #define XYCustomButtonViewLeftMargin ScaleX750(32)
 
 
 @interface XYCustomButtonView : UIView
-@property (nonatomic, strong) ImageTitleButton *button;
+@property (nonatomic, strong) XYImageTitleButton *button;
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) UIImage *image;
@@ -22,7 +22,7 @@
 
 @property (nonatomic, copy) XYButtonActionBlock customActionBlock;
 
-- (instancetype)initWithImageTitleButtonType:(ImageTitleButtonType)imageTitleButtonType;
+- (instancetype)initWithXYImageTitleButtonType:(XYImageTitleButtonType)imageTitleButtonType;
 - (instancetype)initWithFrame:(CGRect)frame;
 
 - (void)enabledButton;

@@ -1,5 +1,5 @@
 //
-//  WKDelegateController.h
+//  XYWKDelegateController.h
 //  XYUIFramework
 //
 //  Created by Xiangyu Wang on 2018/07/16.
@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
-@protocol WKDelegate <NSObject>
+@protocol XYWKDelegate <NSObject>
 
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message;
 
 @end
 
-@interface WKDelegateController : UIViewController <WKScriptMessageHandler>
-@property (weak , nonatomic) id<WKDelegate> delegate;
+@interface XYWKDelegateController : UIViewController <WKScriptMessageHandler>
+@property (weak , nonatomic) id<XYWKDelegate> XYDelegate;
 
 @end

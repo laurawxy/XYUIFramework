@@ -20,7 +20,7 @@
 @property (nonatomic, strong) UIColor *buttonaLayerColor;
 @property (nonatomic, strong) UIFont *titleFont;
 
-@property (nonatomic, assign) ImageTitleButtonType imageTitleButtonType;
+@property (nonatomic, assign) XYImageTitleButtonType imageTitleButtonType;
 
 @end
 
@@ -34,7 +34,7 @@
 }
 */
 
-- (instancetype)initWithImageTitleButtonType:(ImageTitleButtonType)imageTitleButtonType{
+- (instancetype)initWithXYImageTitleButtonType:(XYImageTitleButtonType)imageTitleButtonType{
     self.imageTitleButtonType = imageTitleButtonType;
 
     if (self = [super init]) {
@@ -45,7 +45,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        if (self.imageTitleButtonType == ImageTitleButtonTypeNone) {
+        if (self.imageTitleButtonType == XYImageTitleButtonTypeNone) {
             self.imageTitleButtonType = ImageDownTitleUp;
         }
         
@@ -106,11 +106,11 @@
     self.button.titleLabel.font = _titleFont;
 }
 
-- (ImageTitleButton *)button{
+- (XYImageTitleButton *)button{
     if (!_button) {
-        _button = [[ImageTitleButton alloc] initWithType:_imageTitleButtonType andTitleFont:KThemeNormalFont(17) andTitle:@"" andImage:nil andFrame:CGRectZero];
+        _button = [[XYImageTitleButton alloc] initWithType:_imageTitleButtonType andTitleFont:KThemeNormalFont(17) andTitle:@"" andImage:nil andFrame:CGRectZero];
         WeakSelf
-        _button.imageTitleButtonActionBlock = ^(ImageTitleButton *button) {
+        _button.imageTitleButtonActionBlock = ^(XYImageTitleButton *button) {
             if (weakSelf.customActionBlock) {
                 weakSelf.customActionBlock(button);
             }

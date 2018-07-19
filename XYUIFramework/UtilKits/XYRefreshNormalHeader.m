@@ -8,7 +8,7 @@
 
 #import "XYRefreshNormalHeader.h"
 #import "XYThemeColor.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "XYThemeImage.h"
 
 @interface XYRefreshNormalHeader ()

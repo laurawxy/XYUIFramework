@@ -8,7 +8,7 @@
 
 #import "XYModelViewController.h"
 #import "XYButton.h"
-#import "CommonDefine.h"
+#import "XYCommonDefine.h"
 
 @interface XYAlertViewController : XYModelViewController
 

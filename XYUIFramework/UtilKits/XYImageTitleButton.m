@@ -1,24 +1,24 @@
 //
-//  ImageTitleButton.m
+//  XYImageTitleButton.m
 //  XYUIFramework
 //
 //  Created by Xiangyu Wang on 2018/07/16.
 //  Copyright © 2018年 WXiangYu. All rights reserved.
 //
 
-#import "ImageTitleButton.h"
+#import "XYImageTitleButton.h"
 #import <Masonry/Masonry.h>
 #import "XYButton.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "XYMacroConfig.h"
 
-@interface ImageTitleButton ()
+@interface XYImageTitleButton ()
 
 @property (nonatomic) CGSize titleButtonSize;
 
 @end
 
-@implementation ImageTitleButton
+@implementation XYImageTitleButton
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -32,8 +32,8 @@
     [_imageButton removeObserver:self forKeyPath:@"highlighted"];
 
 }
-- (instancetype)initWithType:(ImageTitleButtonType)type andTitleFont:(UIFont*)font andTitle:(NSString*)title andImage:(UIImage*)image andFrame:(CGRect)frame{
-    self = [[ImageTitleButton alloc] initWithBlock];
+- (instancetype)initWithType:(XYImageTitleButtonType)type andTitleFont:(UIFont*)font andTitle:(NSString*)title andImage:(UIImage*)image andFrame:(CGRect)frame{
+    self = [[XYImageTitleButton alloc] initWithBlock];
     _imageButton = [[XYButton alloc] initWithBlock];
     _titleButton = [[XYButton alloc] initWithBlock];
 
@@ -68,9 +68,9 @@
     return self;
 }
 
-- (void)setType:(ImageTitleButtonType)type{
+- (void)setType:(XYImageTitleButtonType)type{
     _type = type;
-    [self sizeToFitImageTitleButton];
+    [self sizeToFitXYImageTitleButton];
     [self reloadFrames];
 }
 
@@ -175,7 +175,7 @@
         [self.imageButton setTransform:at];
     }];
 }
-- (void)sizeToFitImageTitleButton{
+- (void)sizeToFitXYImageTitleButton{
 
     if (_type == ImageTopTitleBottom || _type == ImageBottomTitleTop) {
         self.size = CGSizeMake(self.titleButtonSize.width>_imageButton.width?self.titleButtonSize.width:_imageButton.width, self.titleButtonSize.height+_imageButton.height+_imageTitleMargin);

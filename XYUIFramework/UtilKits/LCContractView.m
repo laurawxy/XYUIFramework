@@ -6,7 +6,7 @@
 //  Copyright © 2018年 WXiangYu. All rights reserved.
 //
 #import "LCContractView.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import <Masonry/Masonry.h>
 
 @interface LCContractView()

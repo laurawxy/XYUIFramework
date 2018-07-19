@@ -1,5 +1,5 @@
 //
-//  CommonDefine.h
+//  XYCommonDefine.h
 //  XYUIFramework
 //
 //  Created by Xiangyu Wang on 2018/07/16.
@@ -63,6 +63,6 @@ static BOOL queryedNoInternetUrl = NO;
 #define XYNotifictionCenterPostLogin @"XYNotifictionCenterPostLogin"    //上线
 
 
-@interface CommonDefine : NSObject
+@interface XYCommonDefine : NSObject
 
 @end

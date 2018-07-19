@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ImageTitleButton.h"
-#import "CommonDefine.h"
+#import "XYImageTitleButton.h"
+#import "XYCommonDefine.h"
 
 @class XYNavigationBar;
 
@@ -153,9 +153,9 @@ typedef void(^XYBarButtonItemActionBlock)(UIBarButtonItem *barButtonItem, UIButt
  @param actionBlock 点击回调
  @return UIBarButtonItem
  */
-- (UIBarButtonItem *)addImageTitleButtonWithImage:(UIImage*)image
+- (UIBarButtonItem *)addXYImageTitleButtonWithImage:(UIImage*)image
                                                title:(NSString*)title
-                                                type:(ImageTitleButtonType)type
+                                                type:(XYImageTitleButtonType)type
                                         positionType:(XYBarButtonPosition)positionType
                                          actionBlock:(XYBarButtonItemActionBlock _Nullable)actionBlock;
 
@@ -215,19 +215,19 @@ typedef void(^XYBarButtonItemActionBlock)(UIBarButtonItem *barButtonItem, UIButt
 
 - (instancetype)initWithImage:(UIImage *)image
                         title:(NSString *)title
-                         type:(ImageTitleButtonType)type
+                         type:(XYImageTitleButtonType)type
                   actionBlock:(void(^)(UIBarButtonItem *barButtonItem, UIButton *button))actionBlock;
 
 - (instancetype)initWithImage:(UIImage *)image
                         title:(NSString *)title
-                         type:(ImageTitleButtonType)type
+                         type:(XYImageTitleButtonType)type
                        action:(SEL)selector
                        target:(id)target;
 @end
 
 @interface XYNavigationBar : UIView{
-    ImageTitleButton *_leftButtonItem;
-    ImageTitleButton *_rightButtonItem;
+    XYImageTitleButton *_leftButtonItem;
+    XYImageTitleButton *_rightButtonItem;
 }
 @property(nonatomic, strong)UIImageView *backImageView;
 
@@ -244,11 +244,11 @@ typedef void(^XYBarButtonItemActionBlock)(UIBarButtonItem *barButtonItem, UIButt
 
 @property(nonatomic, strong)UILabel *redTagLabel;
 
-@property(nonatomic, strong)ImageTitleButton *leftButtonItem;
+@property(nonatomic, strong)XYImageTitleButton *leftButtonItem;
 @property(nonatomic, strong)NSString *leftBarTitle;
 @property(nonatomic) ObjectBlock leftCompletionBlock;
 
-@property(nonatomic, strong)ImageTitleButton *rightButtonItem;
+@property(nonatomic, strong)XYImageTitleButton *rightButtonItem;
 @property(nonatomic) ObjectBlock rightCompletionBlock;
 
 @property(nonatomic, assign)BOOL showBigTitleAlways;
@@ -258,19 +258,19 @@ typedef void(^XYBarButtonItemActionBlock)(UIBarButtonItem *barButtonItem, UIButt
 
 - (void)setShowRedTag:(BOOL)showRedTag showOnLeftButton:(BOOL)showOnLeftButton;
 
-- (ImageTitleButton *)addLeftButtonWithTitle:(NSString *)title completionBlock:(void(^)(ImageTitleButton *button))completionBlock;
-- (ImageTitleButton *)addLeftButtonWithTitle:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(ImageTitleButton *button))completionBlock;
+- (XYImageTitleButton *)addLeftButtonWithTitle:(NSString *)title completionBlock:(void(^)(XYImageTitleButton *button))completionBlock;
+- (XYImageTitleButton *)addLeftButtonWithTitle:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(XYImageTitleButton *button))completionBlock;
 
-- (ImageTitleButton *)addLeftButtonWithImage:(UIImage *)image completionBlock:(void(^)(ImageTitleButton *button))completionBlock;
-- (ImageTitleButton *)addLeftButtonWithImage:(UIImage *)image Title:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(ImageTitleButton *button))completionBlock;
+- (XYImageTitleButton *)addLeftButtonWithImage:(UIImage *)image completionBlock:(void(^)(XYImageTitleButton *button))completionBlock;
+- (XYImageTitleButton *)addLeftButtonWithImage:(UIImage *)image Title:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(XYImageTitleButton *button))completionBlock;
 
 
-- (ImageTitleButton *)addRightButtonWithTitle:(NSString *)title completionBlock:(void(^)(ImageTitleButton *button))completionBlock;
-- (ImageTitleButton *)addRightButtonWithTitle:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(ImageTitleButton *button))completionBlock;
+- (XYImageTitleButton *)addRightButtonWithTitle:(NSString *)title completionBlock:(void(^)(XYImageTitleButton *button))completionBlock;
+- (XYImageTitleButton *)addRightButtonWithTitle:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(XYImageTitleButton *button))completionBlock;
 
-- (ImageTitleButton *)addRightButtonWithImage:(UIImage *)image completionBlock:(void(^)(ImageTitleButton *button))completionBlock;
+- (XYImageTitleButton *)addRightButtonWithImage:(UIImage *)image completionBlock:(void(^)(XYImageTitleButton *button))completionBlock;
 
-- (ImageTitleButton *)addRightButtonWithImage:(UIImage *)image title:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(ImageTitleButton *button))completionBlock;
+- (XYImageTitleButton *)addRightButtonWithImage:(UIImage *)image title:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(XYImageTitleButton *button))completionBlock;
 
 
 - (void)showIndicatorViewWithStatus:(NSString*)status;

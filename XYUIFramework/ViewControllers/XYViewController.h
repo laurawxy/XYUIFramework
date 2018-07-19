@@ -1,5 +1,5 @@
 //
-//  BaseViewController.h
+//  XYViewController.h
 //  XYUIFramework
 //
 //  Created by Xiangyu Wang on 2018/07/16.
@@ -13,7 +13,7 @@
 
 @class XYTabBarViewController;
 
-@interface BaseViewController : UIViewController{
+@interface XYViewController : UIViewController{
     BOOL _showLargeTitle;
 }
 @property (nonatomic, strong) XYNavigationBar *navigationBar;
@@ -40,15 +40,15 @@
 
 - (void)rightBarButtonClick;
 
-- (void)setLeftBarButtonWithTitle:(NSString*)title completionBlock:(void(^)(ImageTitleButton *button))completionBlock;
-- (void)setLeftBarButtonWithImage:(id)image actioinBlock:(void (^)(ImageTitleButton *button))actionBlock;
+- (void)setLeftBarButtonWithTitle:(NSString*)title completionBlock:(void(^)(XYImageTitleButton *button))completionBlock;
+- (void)setLeftBarButtonWithImage:(id)image actioinBlock:(void (^)(XYImageTitleButton *button))actionBlock;
 
 - (void)setRightBarButtonWithTitle:(NSString*)title;
 - (void)setRightBarButtonWithTitle:(NSString*)title color:(UIColor*)color;
-- (void)setRightBarButtonWithTitle:(NSString*)title actioinBlock:(void(^)(ImageTitleButton *button))actionBlock;
+- (void)setRightBarButtonWithTitle:(NSString*)title actioinBlock:(void(^)(XYImageTitleButton *button))actionBlock;
 
 - (void)setRightBarButtonWithImage:(id)image;
-- (void)setRightBarButtonWithImage:(id)image actioinBlock:(void(^)(ImageTitleButton *button))actionBlock;
+- (void)setRightBarButtonWithImage:(id)image actioinBlock:(void(^)(XYImageTitleButton *button))actionBlock;
 
 - (void)pushViewController:(UIViewController *)viewController;
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;

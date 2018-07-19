@@ -8,7 +8,7 @@
 
 #import "NSObject+XYUtils.h"
 #import <Masonry/Masonry.h>
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "XYUtils.h"
 #import "XYAutoLayout.h"
 #import "XYButton.h"

@@ -6,8 +6,8 @@
 //  Copyright © 2018年 WXiangYu. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "XYViewController.h"
 
-@interface MyViewController : BaseViewController
+@interface MyViewController : XYViewController
 
 @end

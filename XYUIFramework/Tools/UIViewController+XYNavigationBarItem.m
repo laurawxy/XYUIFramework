@@ -14,9 +14,9 @@
 #import "XYMacroConfig.h"
 #import <Masonry/Masonry.h>
 #import "UIView+XYLine.h"
-#import "ImageTitleButton.h"
+#import "XYImageTitleButton.h"
 #import "XYUtils.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "NSObject+XYUtils.h"
 #import "UIView+XYCornerBorder.h"
 
@@ -97,7 +97,7 @@
     return buttonItem;
 }
 
-- (UIBarButtonItem *)addImageTitleButtonWithImage:(UIImage *)image title:(NSString *)title type:(ImageTitleButtonType)type positionType:(XYBarButtonPosition)positionType actionBlock:(XYBarButtonItemActionBlock _Nullable)actionBlock{
+- (UIBarButtonItem *)addXYImageTitleButtonWithImage:(UIImage *)image title:(NSString *)title type:(XYImageTitleButtonType)type positionType:(XYBarButtonPosition)positionType actionBlock:(XYBarButtonItemActionBlock _Nullable)actionBlock{
     XYImageTitleBarButtonItem *buttonItem = [[XYImageTitleBarButtonItem alloc] initWithImage:image title:title type:type actionBlock:actionBlock];
     [self xy_setBarButtonItem:buttonItem positionType:positionType];
     return buttonItem;
@@ -262,13 +262,13 @@
 
 - (instancetype)initWithImage:(UIImage *)image
                         title:(NSString *)title
-                         type:(ImageTitleButtonType)type
+                         type:(XYImageTitleButtonType)type
                   actionBlock:(nonnull void (^)(UIBarButtonItem * _Nonnull, UIButton * _Nonnull))actionBlock{
-    ImageTitleButton *button = [[ImageTitleButton alloc] initWithType:ImageRightTitleLeft andTitleFont:[XYThemeFont navigationLeftRightFont] andTitle:title andImage:image andFrame:CGRectMake(0, 0, NavigationHeight, NavigationHeight)];
+    XYImageTitleButton *button = [[XYImageTitleButton alloc] initWithType:ImageRightTitleLeft andTitleFont:[XYThemeFont navigationLeftRightFont] andTitle:title andImage:image andFrame:CGRectMake(0, 0, NavigationHeight, NavigationHeight)];
     [button setTitleColor:[XYThemeColor navigationLeftRightColor] forState:UIControlStateNormal];
-    [button sizeToFitImageTitleButton];
+    [button sizeToFitXYImageTitleButton];
     WeakSelf
-    button.imageTitleButtonActionBlock = ^(ImageTitleButton *button) {
+    button.imageTitleButtonActionBlock = ^(XYImageTitleButton *button) {
         if (weakSelf.actionBlock) {
             weakSelf.actionBlock(weakSelf, button);
         }
@@ -280,10 +280,10 @@
     return self;
 }
 
-- (instancetype)initWithImage:(UIImage *)image title:(nonnull NSString *)title type:(ImageTitleButtonType)type action:(nonnull SEL)selector target:(nonnull id)target{
-    ImageTitleButton *button = [[ImageTitleButton alloc] initWithType:ImageRightTitleLeft andTitleFont:[XYThemeFont navigationLeftRightFont] andTitle:title andImage:image andFrame:CGRectMake(0, 0, NavigationHeight, NavigationHeight)];
+- (instancetype)initWithImage:(UIImage *)image title:(nonnull NSString *)title type:(XYImageTitleButtonType)type action:(nonnull SEL)selector target:(nonnull id)target{
+    XYImageTitleButton *button = [[XYImageTitleButton alloc] initWithType:ImageRightTitleLeft andTitleFont:[XYThemeFont navigationLeftRightFont] andTitle:title andImage:image andFrame:CGRectMake(0, 0, NavigationHeight, NavigationHeight)];
     [button setTitleColor:[XYThemeColor navigationLeftRightColor] forState:UIControlStateNormal];
-    [button sizeToFitImageTitleButton];
+    [button sizeToFitXYImageTitleButton];
     [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     [button.imageButton addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     [button.titleButton addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
@@ -391,7 +391,7 @@
 - (void)setLeftBarTitle:(NSString *)leftBarTitle{
     _leftBarTitle = leftBarTitle;
     [self.leftButtonItem setTitle:_leftBarTitle forState:UIControlStateNormal];
-    [self.leftButtonItem sizeToFitImageTitleButton];
+    [self.leftButtonItem sizeToFitXYImageTitleButton];
     if (self.leftButtonItem.width < 60) {
         self.leftButtonItem.width = 60;
     }
@@ -400,13 +400,13 @@
     }];
 }
 
-- (ImageTitleButton *)leftButtonItem{
+- (XYImageTitleButton *)leftButtonItem{
     if (!_leftButtonItem) {
-        _leftButtonItem = [[ImageTitleButton alloc] initWithType:ImageLeftTitleRight andTitleFont:KThemeNormalFont(16) andTitle:@"" andImage:nil andFrame:CGRectMake(0, 0, 60, NavigationHeight)];
+        _leftButtonItem = [[XYImageTitleButton alloc] initWithType:ImageLeftTitleRight andTitleFont:KThemeNormalFont(16) andTitle:@"" andImage:nil andFrame:CGRectMake(0, 0, 60, NavigationHeight)];
         _leftButtonItem.imageTitleMargin = 12;
         [_leftButtonItem setTitleColor:[XYThemeColor ThemeColor] forState:UIControlStateNormal];
         WeakSelf
-        _leftButtonItem.imageTitleButtonActionBlock = ^(ImageTitleButton*button){
+        _leftButtonItem.imageTitleButtonActionBlock = ^(XYImageTitleButton*button){
             if(weakSelf.leftCompletionBlock){
                 weakSelf.leftCompletionBlock(button);
             }
@@ -415,9 +415,9 @@
     return _leftButtonItem;
 }
 
-- (void)setLeftButtonItem:(ImageTitleButton *)leftButtonItem{
-    if ([leftButtonItem isKindOfClass:[ImageTitleButton class]]) {
-        [leftButtonItem sizeToFitImageTitleButton];
+- (void)setLeftButtonItem:(XYImageTitleButton *)leftButtonItem{
+    if ([leftButtonItem isKindOfClass:[XYImageTitleButton class]]) {
+        [leftButtonItem sizeToFitXYImageTitleButton];
         leftButtonItem.width = leftButtonItem.width+2*CommonLeftMargin;
         if (_leftButtonItem) {
             [self addSubview:leftButtonItem];
@@ -441,14 +441,14 @@
     }];
 }
 
-- (ImageTitleButton *)rightButtonItem{
+- (XYImageTitleButton *)rightButtonItem{
     if (!_rightButtonItem) {
-        _rightButtonItem = [[ImageTitleButton alloc] initWithType:ImageLeftTitleRight andTitleFont:KThemeNormalFont(16) andTitle:@"" andImage:nil andFrame:CGRectMake(0, 0, 60, NavigationHeight)];
+        _rightButtonItem = [[XYImageTitleButton alloc] initWithType:ImageLeftTitleRight andTitleFont:KThemeNormalFont(16) andTitle:@"" andImage:nil andFrame:CGRectMake(0, 0, 60, NavigationHeight)];
         _rightButtonItem.imageTitleMargin = 12;
         [_rightButtonItem setTitleColor:[XYThemeColor ThemeColor] forState:UIControlStateNormal];
-        [_rightButtonItem sizeToFitImageTitleButton];
+        [_rightButtonItem sizeToFitXYImageTitleButton];
         WeakSelf
-        _rightButtonItem.imageTitleButtonActionBlock = ^(ImageTitleButton *button){
+        _rightButtonItem.imageTitleButtonActionBlock = ^(XYImageTitleButton *button){
             if(weakSelf.rightCompletionBlock){
                 weakSelf.rightCompletionBlock(button);
             }
@@ -457,9 +457,9 @@
     return _rightButtonItem;
 }
 
-- (void)setRightButtonItem:(ImageTitleButton *)rightButtonItem{
-    if ([rightButtonItem isKindOfClass:[ImageTitleButton class]]) {
-        [rightButtonItem sizeToFitImageTitleButton];
+- (void)setRightButtonItem:(XYImageTitleButton *)rightButtonItem{
+    if ([rightButtonItem isKindOfClass:[XYImageTitleButton class]]) {
+        [rightButtonItem sizeToFitXYImageTitleButton];
         rightButtonItem.width = rightButtonItem.width+2*CommonLeftMargin;
         if (_rightButtonItem) {
             [self addSubview:rightButtonItem];
@@ -482,19 +482,19 @@
     }];
 }
 
-- (ImageTitleButton *)addLeftButtonWithTitle:(NSString *)title completionBlock:(void(^)(ImageTitleButton *button))completionBlock{
+- (XYImageTitleButton *)addLeftButtonWithTitle:(NSString *)title completionBlock:(void(^)(XYImageTitleButton *button))completionBlock{
     return [self addLeftButtonWithImage:nil Title:title textColor:[XYThemeColor navigationLeftRightColor] completionBlock:completionBlock];
 }
 
-- (ImageTitleButton *)addLeftButtonWithTitle:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(ImageTitleButton *button))completionBlock{
+- (XYImageTitleButton *)addLeftButtonWithTitle:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(XYImageTitleButton *button))completionBlock{
     return [self addLeftButtonWithImage:nil Title:title textColor:textColor completionBlock:completionBlock];
 }
 
-- (ImageTitleButton *)addLeftButtonWithImage:(UIImage *)image completionBlock:(void(^)(ImageTitleButton *button))completionBlock{
+- (XYImageTitleButton *)addLeftButtonWithImage:(UIImage *)image completionBlock:(void(^)(XYImageTitleButton *button))completionBlock{
     return [self addLeftButtonWithImage:image Title:nil textColor:nil  completionBlock:completionBlock];
 }
 
-- (ImageTitleButton *)addLeftButtonWithImage:(UIImage *)image Title:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void (^)(ImageTitleButton *))completionBlock{
+- (XYImageTitleButton *)addLeftButtonWithImage:(UIImage *)image Title:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void (^)(XYImageTitleButton *))completionBlock{
     if (image && [title isNotEmptyString]) {
         self.leftButtonItem.imageTitleMargin = 12;
     }else{
@@ -513,19 +513,19 @@
     return self.leftButtonItem;
 }
 
-- (ImageTitleButton *)addRightButtonWithTitle:(NSString *)title completionBlock:(void(^)(ImageTitleButton *button))completionBlock{
+- (XYImageTitleButton *)addRightButtonWithTitle:(NSString *)title completionBlock:(void(^)(XYImageTitleButton *button))completionBlock{
     return [self addRightButtonWithImage:nil title:title textColor:[XYThemeColor navigationLeftRightColor]  completionBlock:completionBlock];
 }
 
-- (ImageTitleButton *)addRightButtonWithTitle:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(ImageTitleButton *button))completionBlock{
+- (XYImageTitleButton *)addRightButtonWithTitle:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void(^)(XYImageTitleButton *button))completionBlock{
     return [self addRightButtonWithImage:nil title:title textColor:textColor  completionBlock:completionBlock];
 }
 
-- (ImageTitleButton *)addRightButtonWithImage:(UIImage *)image completionBlock:(void(^)(ImageTitleButton *button))completionBlock{
+- (XYImageTitleButton *)addRightButtonWithImage:(UIImage *)image completionBlock:(void(^)(XYImageTitleButton *button))completionBlock{
     return [self addRightButtonWithImage:image title:nil textColor:nil completionBlock:completionBlock];
 }
 
-- (ImageTitleButton *)addRightButtonWithImage:(UIImage *)image title:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void (^)(ImageTitleButton *))completionBlock{
+- (XYImageTitleButton *)addRightButtonWithImage:(UIImage *)image title:(NSString *)title textColor:(UIColor *)textColor completionBlock:(void (^)(XYImageTitleButton *))completionBlock{
     if (image && [title isNotEmptyString]) {
         self.rightButtonItem.imageTitleMargin = 12;
     }else{

@@ -1,16 +1,16 @@
 //
-//  WebViewController.h
+//  XYWebViewController.h
 //  XYUIFramework
 //
 //  Created by Xiangyu Wang on 2018/07/16.
 //  Copyright © 2018年 WXiangYu. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "XYViewController.h"
 #import <WebKit/WebKit.h>
-#import "WKDelegateController.h"
+#import "XYWKDelegateController.h"
 
-@interface WebViewController : BaseViewController
+@interface XYWebViewController : XYViewController
 
 @property (nonatomic, strong) WKWebView *webView;
 
@@ -24,7 +24,7 @@
 /**
  注册方法
  */
-@property (nonatomic, strong) WKDelegateController *delegateController;
+@property (nonatomic, strong) XYWKDelegateController *delegateController;
 
 @property (nonatomic, copy) NSString *webUrl;
 

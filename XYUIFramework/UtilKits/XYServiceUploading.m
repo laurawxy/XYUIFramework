@@ -7,7 +7,7 @@
 //
 
 #import "XYServiceUploading.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "XYAutoLayout.h"
 #import "XYThemeImage.h"
 #import <SDWebImage/UIImageView+WebCache.h>

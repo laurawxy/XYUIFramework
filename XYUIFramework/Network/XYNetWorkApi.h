@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
-#import "CommonDefine.h"
+#import "XYCommonDefine.h"
 
 @interface XYNetWorkApi : NSObject
 

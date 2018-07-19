@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "XYModelViewController.h"
-#import "CommonDefine.h"
+#import "XYCommonDefine.h"
 
 @interface XYUtils : NSObject
 

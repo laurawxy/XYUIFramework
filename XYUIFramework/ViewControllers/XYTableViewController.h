@@ -6,11 +6,11 @@
 //  Copyright © 2018年 WXiangYu. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "XYViewController.h"
 #import "XYTableView.h"
 #import "UIScrollView+XYEmptyDataSet.h"
 
-@interface XYTableViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate,EmptyDataSetSource,EmptyDataSetDelegate>
+@interface XYTableViewController : XYViewController<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate,EmptyDataSetSource,EmptyDataSetDelegate>
 {
     XYTableView *_xyTableView;
 }

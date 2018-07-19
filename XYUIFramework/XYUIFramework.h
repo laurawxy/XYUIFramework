@@ -31,10 +31,10 @@
 #import "XYLocalStorageUtil.h"
 
 #import "XYButton.h"
-#import "BaseViewController.h"
+#import "XYViewController.h"
 #import "XYTableView.h"
 
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "UIView+XYLine.h"
 #import "UIView+XYCornerBorder.h"
 #import "UIView+XYLayout.h"
@@ -42,5 +42,13 @@
 #import "UINavigationController+XYNavigation.h"
 #import "NSObject+XYUtils.h"
 #import "UIDevice+XYPlatForm.h"
+
+#import "XYNetWorkApi.h>
+#import "XYServerIpManageViewController.h"
+#import "XYUIApperanceConfig.h"
+#import "XYNetworkConfig.h"
+
+#import "UITextView+XYPlaceholder.h"
+
 
 #endif /* XYUIFramework_h */

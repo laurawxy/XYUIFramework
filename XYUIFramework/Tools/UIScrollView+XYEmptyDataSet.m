@@ -8,7 +8,7 @@
 
 #import "UIScrollView+XYEmptyDataSet.h"
 #import <objc/runtime.h>
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "UIView+XYCornerBorder.h"
 #import "XYMacroConfig.h"
 

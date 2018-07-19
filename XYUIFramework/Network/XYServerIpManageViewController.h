@@ -7,7 +7,7 @@
 //
 
 #import "XYTableViewController.h"
-#import "CommonDefine.h"
+#import "XYCommonDefine.h"
 
 @class IpModel;
 

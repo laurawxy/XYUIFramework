@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CommonDefine.h"
+#import "XYCommonDefine.h"
 
 @interface XYTableView : UITableView
 

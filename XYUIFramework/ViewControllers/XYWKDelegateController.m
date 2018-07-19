@@ -1,18 +1,18 @@
 //
-//  WKDelegateController.m
+//  XYWKDelegateController.m
 //  XYUIFramework
 //
 //  Created by Xiangyu Wang on 2018/07/16.
 //  Copyright © 2018年 WXiangYu. All rights reserved.
 //
 
-#import "WKDelegateController.h"
+#import "XYWKDelegateController.h"
 
-@interface WKDelegateController ()
+@interface XYWKDelegateController ()
 
 @end
 
-@implementation WKDelegateController
+@implementation XYWKDelegateController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,8 +20,8 @@
 }
 
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message{
-    if ([self.delegate respondsToSelector:@selector(userContentController:didReceiveScriptMessage:)]) {
-        [self.delegate userContentController:userContentController didReceiveScriptMessage:message];
+    if ([self.XYDelegate respondsToSelector:@selector(userContentController:didReceiveScriptMessage:)]) {
+        [self.XYDelegate userContentController:userContentController didReceiveScriptMessage:message];
     }
 }
 

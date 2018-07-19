@@ -11,7 +11,7 @@
 #import "XYRefreshNormalFooter.h"
 #import "XYTableFootView.h"
 #import "XYMacroConfig.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 
 @interface XYTableView()
 

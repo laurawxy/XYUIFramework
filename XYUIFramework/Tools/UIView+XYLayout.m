@@ -8,7 +8,7 @@
 
 #import "UIView+XYLayout.h"
 #import "XYAutoLayout.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "UIDevice+XYPlatForm.h"
 
 @implementation UIView (XYLayout)

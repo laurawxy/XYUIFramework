@@ -7,7 +7,7 @@
 //
 
 #import "XYAutoLayout.h"
-#import "BaseViewController.h"
+#import "XYViewController.h"
 #import "UINavigationController+XYNavigation.h"
 #import "UIDevice+XYPlatForm.h"
 
@@ -16,7 +16,7 @@
 + (float)safeArea_height{
     float height = SAFE_SCREEN_HEIGHT;
 
-    BaseViewController *vc = (BaseViewController*)[UINavigationController getDisplayingViewController];
+    XYViewController *vc = (XYViewController*)[UINavigationController getDisplayingViewController];
     if (vc) {
         if (vc.navigationController.viewControllers.count == 1) {
             height -= TabBarHeight;

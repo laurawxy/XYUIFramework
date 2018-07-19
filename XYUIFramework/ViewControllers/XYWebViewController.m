@@ -1,20 +1,20 @@
 //
-//  WebViewController.m
+//  XYWebViewController.m
 //  XYUIFramework
 //
 //  Created by Xiangyu Wang on 2018/07/16.
 //  Copyright © 2018年 WXiangYu. All rights reserved.
 //
 
-#import "WebViewController.h"
+#import "XYWebViewController.h"
 #import <Masonry/Masonry.h>
 #import "XYThemeColor.h"
 
-@interface WebViewController ()<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler,WKDelegate>
+@interface XYWebViewController ()<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler,XYWKDelegate>
 @property (nonatomic ,strong) UIProgressView *progressView;
 @end
 
-@implementation WebViewController
+@implementation XYWebViewController
 
 - (void)dealloc{
     //这里需要注意，前面增加过的方法一定要remove掉。
@@ -92,10 +92,10 @@
     return _configuration;
 }
 
-- (WKDelegateController *)delegateController{
+- (XYWKDelegateController *)delegateController{
     if (!_delegateController) {
-        _delegateController = [[WKDelegateController alloc]init];
-        _delegateController.delegate = self;
+        _delegateController = [[XYWKDelegateController alloc]init];
+        _delegateController.XYDelegate = self;
     }
     return _delegateController;
 }

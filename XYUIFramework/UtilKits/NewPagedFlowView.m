@@ -11,7 +11,7 @@
 #import "NewPagedFlowView.h"
 #import "XYThemeColor.h"
 #import "XYThemeFont.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 #import "XYAutoLayout.h"
 
 @interface NewPagedFlowView ()

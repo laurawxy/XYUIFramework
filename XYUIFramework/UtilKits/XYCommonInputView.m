@@ -12,7 +12,7 @@
 #import "XYThemeColor.h"
 #import "XYAutoLayout.h"
 #import "NSObject+XYUtils.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 
 @implementation XYCommonInputView{
     CGFloat _left;

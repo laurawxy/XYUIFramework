@@ -1,25 +1,25 @@
 //
-//  BaseViewController.m
+//  XYViewController.m
 //  XYUIFramework
 //
 //  Created by Xiangyu Wang on 2018/07/16.
 //  Copyright © 2018年 WXiangYu. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "XYViewController.h"
 #import "XYTableViewController.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "UIView+XYLine.h"
 #import "XYMacroConfig.h"
 #import "XYThemeImage.h"
 #import "XYAutoLayout.h"
-#import "UIView+frame.h"
+#import "UIView+XYFrame.h"
 
-@interface BaseViewController ()
+@interface XYViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation XYViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -138,19 +138,19 @@
     }
 }
 
-- (void)setLeftBarButtonWithTitle:(NSString*)title completionBlock:(void (^)(ImageTitleButton *))completionBlock{
+- (void)setLeftBarButtonWithTitle:(NSString*)title completionBlock:(void (^)(XYImageTitleButton *))completionBlock{
     [self.navigationBar addLeftButtonWithTitle:title completionBlock:completionBlock];
 }
-- (void)setLeftBarButtonWithImage:(id)image actioinBlock:(void (^)(ImageTitleButton *button))actionBlock{
+- (void)setLeftBarButtonWithImage:(id)image actioinBlock:(void (^)(XYImageTitleButton *button))actionBlock{
     if ([image isKindOfClass:[NSString class]]) {
-        [self.navigationBar addLeftButtonWithImage:[UIImage imageNamed:image] completionBlock:^(ImageTitleButton * button) {
+        [self.navigationBar addLeftButtonWithImage:[UIImage imageNamed:image] completionBlock:^(XYImageTitleButton * button) {
             if (actionBlock) {
                 actionBlock(button);
             }
         }];
         
     }else if([image isKindOfClass:[UIImage class]]){
-        [self.navigationBar addLeftButtonWithImage:image completionBlock:^(ImageTitleButton *button) {
+        [self.navigationBar addLeftButtonWithImage:image completionBlock:^(XYImageTitleButton *button) {
             if (actionBlock) {
                 actionBlock(button);
             }
@@ -160,13 +160,13 @@
 
 - (void)setRightBarButtonWithTitle:(NSString *)title{
     WeakSelf
-    [self.navigationBar addRightButtonWithTitle:title completionBlock:^(ImageTitleButton *button) {
+    [self.navigationBar addRightButtonWithTitle:title completionBlock:^(XYImageTitleButton *button) {
         [weakSelf rightBarButtonClick];
     }];
 }
 - (void)setRightBarButtonWithTitle:(NSString *)title color:(UIColor *)color{
     WeakSelf
-    [self.navigationBar addRightButtonWithTitle:title textColor:color completionBlock:^(ImageTitleButton * button) {
+    [self.navigationBar addRightButtonWithTitle:title textColor:color completionBlock:^(XYImageTitleButton * button) {
         [weakSelf rightBarButtonClick];
     }];
 }
@@ -174,32 +174,32 @@
 - (void)setRightBarButtonWithImage:(id)image{
     WeakSelf
     if ([image isKindOfClass:[NSString class]]) {
-        [self.navigationBar addRightButtonWithImage:[UIImage imageNamed:image] completionBlock:^(ImageTitleButton * _Nonnull button) {
+        [self.navigationBar addRightButtonWithImage:[UIImage imageNamed:image] completionBlock:^(XYImageTitleButton * _Nonnull button) {
             [weakSelf rightBarButtonClick];
         }];
         
     }else if([image isKindOfClass:[UIImage class]]){
-        [self.navigationBar addRightButtonWithImage:image completionBlock:^(ImageTitleButton * button) {
+        [self.navigationBar addRightButtonWithImage:image completionBlock:^(XYImageTitleButton * button) {
             [weakSelf rightBarButtonClick];
         }];
     }
 }
-- (void)setRightBarButtonWithTitle:(NSString *)title actioinBlock:(void (^)(ImageTitleButton *))actionBlock{
-    [self.navigationBar addRightButtonWithTitle:title completionBlock:^(ImageTitleButton * button) {
+- (void)setRightBarButtonWithTitle:(NSString *)title actioinBlock:(void (^)(XYImageTitleButton *))actionBlock{
+    [self.navigationBar addRightButtonWithTitle:title completionBlock:^(XYImageTitleButton * button) {
         if (actionBlock) {
             actionBlock(button);
         }
     }];
 }
-- (void)setRightBarButtonWithImage:(id)image actioinBlock:(void (^)(ImageTitleButton *))actionBlock{
+- (void)setRightBarButtonWithImage:(id)image actioinBlock:(void (^)(XYImageTitleButton *))actionBlock{
     if ([image isKindOfClass:[NSString class]]) {
-        [self.navigationBar addRightButtonWithImage:[UIImage imageNamed:image] completionBlock:^(ImageTitleButton * button) {
+        [self.navigationBar addRightButtonWithImage:[UIImage imageNamed:image] completionBlock:^(XYImageTitleButton * button) {
             if (actionBlock) {
                 actionBlock(button);
             }
         }];
     }else if([image isKindOfClass:[UIImage class]]){
-        [self.navigationBar addRightButtonWithImage:image completionBlock:^(ImageTitleButton * button) {
+        [self.navigationBar addRightButtonWithImage:image completionBlock:^(XYImageTitleButton * button) {
             if (actionBlock) {
                 actionBlock(button);
             }

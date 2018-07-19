@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "XYTabBarViewController.h"
 #import "UncaughtExceptionHandler.h"
-#import "BaseViewController.h"
+#import "XYViewController.h"
 #import "XYUtils.h"
 #import "XYUIApperanceConfig.h"
 #import "HomeViewController.h"
