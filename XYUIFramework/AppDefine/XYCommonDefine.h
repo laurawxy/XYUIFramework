@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "XYResponseObject.h"
 
 //************************** 公共block定义 **************************//
 
@@ -23,8 +22,8 @@ typedef void(^ImageBlock)(UIImage *image);
 typedef void(^ObjectBlock)(id object);
 typedef void(^ObjectAndObjectBlock)(id object,id object2);
 
-typedef void(^XYRequestSuccessBlock)(XYResponseObject *responseBody);
-typedef void(^XYRequestFailureBlock)(XYResponseObject *responseBody);
+typedef void(^XYRequestSuccessBlock)(id responseBody);
+typedef void(^XYRequestFailureBlock)(id responseBody);
 typedef void(^XYNetworkFailureBlock)(NSError *error);
 
 

@@ -200,13 +200,6 @@
  */
 + (void)showAlert:(NSString *)msg withCancelTitle:(NSString *)cancleTitle;
 
-/**
- 显示请求失败信息
-
- @param responseObj 请求返回对象
- */
-+ (void)showRequestFailureAlert:(XYResponseObject*)responseObj;
-
 
 /**
  显示模态视图（半透明）

@@ -130,11 +130,11 @@
 
 - (void)configCallback{
     WeakSelf
-    _successBlock = ^(XYResponseObject *responseObject){
+    _successBlock = ^(id responseObject){
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         [SVProgressHUD dismiss];
         if(responseObject){
-            if([responseObject.code isEqualToString:@"200"]){
+            if([responseObject[@"code"] integerValue] == 200){
                 if(weakSelf.requestSuccessBlock){
                     weakSelf.requestSuccessBlock(responseObject);
                 }
@@ -194,8 +194,7 @@
         [self responseSuccessCookie:task];
         [self logSuccessMessage:responseObject url:task.currentRequest.URL];
         if (success) {
-            XYResponseObject *response = [XYResponseObject mj_objectWithKeyValues:responseObject];
-            success(response);
+            success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self logFailureMessage:error url:task.currentRequest.URL];
@@ -224,8 +223,7 @@
         [self responseSuccessCookie:task];
         [self logSuccessMessage:responseObject url:task.currentRequest.URL];
         if (success) {
-            XYResponseObject *response = [XYResponseObject mj_objectWithKeyValues:responseObject];
-            success(response);
+            success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self logFailureMessage:error url:task.currentRequest.URL];
@@ -268,8 +266,7 @@
         [self responseSuccessCookie:task];
         [self logSuccessMessage:responseObject url:task.currentRequest.URL];
         if (success) {
-            XYResponseObject *response = [XYResponseObject mj_objectWithKeyValues:responseObject];
-            success(response);
+            success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self logFailureMessage:error url:task.currentRequest.URL];
@@ -309,8 +306,7 @@
         }else{
             [self logSuccessMessage:responseObject url:response.URL];
             if (success) {
-                XYResponseObject *response = [XYResponseObject mj_objectWithKeyValues:responseObject];
-                success(response);
+                success(responseObject);
             }
         }
     }] resume];
@@ -353,8 +349,7 @@
         }else{
             [self logSuccessMessage:responseObject url:response.URL];
             if (success) {
-                XYResponseObject *response = [XYResponseObject mj_objectWithKeyValues:responseObject];
-                success(response);
+                success(responseObject);
             }
         }
     }] resume];
@@ -375,8 +370,7 @@
         [self responseSuccessCookie:task];
         [self logSuccessMessage:responseObject url:task.currentRequest.URL];
         if (success) {
-            XYResponseObject *response = [XYResponseObject mj_objectWithKeyValues:responseObject];
-            success(response);
+            success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self logFailureMessage:error url:task.currentRequest.URL];
@@ -401,8 +395,7 @@
         [self responseSuccessCookie:task];
         [self logSuccessMessage:responseObject url:task.currentRequest.URL];
         if (success) {
-            XYResponseObject *response = [XYResponseObject mj_objectWithKeyValues:responseObject];
-            success(response);
+            success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self logFailureMessage:error url:task.currentRequest.URL];

@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "XYNetWorkApi.h"
 
 @interface HomeViewController ()
 
@@ -19,6 +20,15 @@
     // Do any additional setup after loading the view.
     
     [self setNavigationTitle:@"首页"];
+    
+    [XYNetWorkApi startRequestWithParams:nil requestUrl:@"https://duideren.in/api/v1/interest/getInterestList" actionName:@"查找兴趣专区" requestMethod:YTKRequestMethodGET requestSuccessBlock:^(id responseBody) {
+        
+        
+    } requestFaliureBlock:^(id responseBody) {
+        
+    } networkFaliureBlock:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -404,10 +404,6 @@
     [XYUtils showAlertWithTitle:nil message:msg cancelButtonTitle:cancleTitle otherButtonTitles:nil completeBlock:nil];
 }
 
-+ (void)showRequestFailureAlert:(XYResponseObject*)responseObj{
-    [SVProgressHUD showError:responseObj.message];
-}
-
 + (BOOL)containsString:(NSString*)string inString:(NSString*)longString{
     NSRange range = [longString rangeOfString:string];
     if (range.location != NSNotFound) {

@@ -37,7 +37,6 @@
 		CC0BB07F20FECBFF00664BDD /* NSObject+XYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02720FECBFF00664BDD /* NSObject+XYUtils.m */; };
 		CC0BB08020FECBFF00664BDD /* XYServerIpManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02A20FECBFF00664BDD /* XYServerIpManageViewController.m */; };
 		CC0BB08120FECBFF00664BDD /* XYNetWorkApi.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02B20FECBFF00664BDD /* XYNetWorkApi.m */; };
-		CC0BB08220FECBFF00664BDD /* XYResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02C20FECBFF00664BDD /* XYResponseObject.m */; };
 		CC0BB08320FECBFF00664BDD /* XYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03120FECBFF00664BDD /* XYHTTPSessionManager.m */; };
 		CC0BB08620FECBFF00664BDD /* XYCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03820FECBFF00664BDD /* XYCommonDefine.m */; };
 		CC0BB08720FECBFF00664BDD /* XYWKDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03C20FECBFF00664BDD /* XYWKDelegateController.m */; };
@@ -146,10 +145,8 @@
 		CC0BB02920FECBFF00664BDD /* XYHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHTTPSessionManager.h; sourceTree = "<group>"; };
 		CC0BB02A20FECBFF00664BDD /* XYServerIpManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYServerIpManageViewController.m; sourceTree = "<group>"; };
 		CC0BB02B20FECBFF00664BDD /* XYNetWorkApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNetWorkApi.m; sourceTree = "<group>"; };
-		CC0BB02C20FECBFF00664BDD /* XYResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYResponseObject.m; sourceTree = "<group>"; };
 		CC0BB03020FECBFF00664BDD /* XYServerIpManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYServerIpManageViewController.h; sourceTree = "<group>"; };
 		CC0BB03120FECBFF00664BDD /* XYHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHTTPSessionManager.m; sourceTree = "<group>"; };
-		CC0BB03420FECBFF00664BDD /* XYResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYResponseObject.h; sourceTree = "<group>"; };
 		CC0BB03520FECBFF00664BDD /* XYNetWorkApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNetWorkApi.h; sourceTree = "<group>"; };
 		CC0BB03820FECBFF00664BDD /* XYCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCommonDefine.m; sourceTree = "<group>"; };
 		CC0BB03A20FECBFF00664BDD /* XYCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCommonDefine.h; sourceTree = "<group>"; };
@@ -386,8 +383,6 @@
 				CC0BB03120FECBFF00664BDD /* XYHTTPSessionManager.m */,
 				CC0BB03520FECBFF00664BDD /* XYNetWorkApi.h */,
 				CC0BB02B20FECBFF00664BDD /* XYNetWorkApi.m */,
-				CC0BB03420FECBFF00664BDD /* XYResponseObject.h */,
-				CC0BB02C20FECBFF00664BDD /* XYResponseObject.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -713,7 +708,6 @@
 				CC0BB08F20FECBFF00664BDD /* XYTableFootView.m in Sources */,
 				CCD7935C21002ECD00831A6A /* XYUIApperanceConfig.m in Sources */,
 				CC0BB06F20FECBFF00664BDD /* UIViewController+XYNavigationBarItem.m in Sources */,
-				CC0BB08220FECBFF00664BDD /* XYResponseObject.m in Sources */,
 				CC0BAFDA20FECAEA00664BDD /* main.m in Sources */,
 				CC0BB08A20FECBFF00664BDD /* XYTabBarViewController.m in Sources */,
 				CC0BB08620FECBFF00664BDD /* XYCommonDefine.m in Sources */,
