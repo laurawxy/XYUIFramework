@@ -1,0 +1,15 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+target “XYUIFrameworkDemo” do
+pod 'Masonry'
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'FMDB'
+pod 'MJExtension'
+pod 'IQKeyboardManager'  #兼容IOS7
+pod 'SDWebImage'
+pod 'SDWebImage/GIF'
+#指示器
+pod 'SVProgressHUD'
+end

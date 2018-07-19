@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33C6B767F777AE33EC65046A /* libPods-XYUIFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CA46394AC9F3E549077064 /* libPods-XYUIFrameworkDemo.a */; };
+		CC0BAFC920FECAE800664BDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BAFC820FECAE800664BDD /* AppDelegate.m */; };
+		CC0BAFD220FECAE800664BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD020FECAE800664BDD /* Main.storyboard */; };
+		CC0BAFD420FECAEA00664BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD320FECAEA00664BDD /* Assets.xcassets */; };
+		CC0BAFD720FECAEA00664BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD520FECAEA00664BDD /* LaunchScreen.storyboard */; };
+		CC0BAFDA20FECAEA00664BDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BAFD920FECAEA00664BDD /* main.m */; };
+		CC0BAFE420FECAEA00664BDD /* XYUIFrameworkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BAFE320FECAEA00664BDD /* XYUIFrameworkDemoTests.m */; };
+		CC0BAFEF20FECAEA00664BDD /* XYUIFrameworkDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BAFEE20FECAEA00664BDD /* XYUIFrameworkDemoUITests.m */; };
+		CC0BB06B20FECBFF00664BDD /* XYThemeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00020FECBFF00664BDD /* XYThemeImage.m */; };
+		CC0BB06C20FECBFF00664BDD /* UIScrollView+XYEmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00120FECBFF00664BDD /* UIScrollView+XYEmptyDataSet.m */; };
+		CC0BB06D20FECBFF00664BDD /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00520FECBFF00664BDD /* UITextView+Placeholder.m */; };
+		CC0BB06E20FECBFF00664BDD /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00720FECBFF00664BDD /* UIView+frame.m */; };
+		CC0BB06F20FECBFF00664BDD /* UIViewController+XYNavigationBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00920FECBFF00664BDD /* UIViewController+XYNavigationBarItem.m */; };
+		CC0BB07020FECBFF00664BDD /* UIView+XYCornerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00A20FECBFF00664BDD /* UIView+XYCornerBorder.m */; };
+		CC0BB07120FECBFF00664BDD /* XYBundleInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00B20FECBFF00664BDD /* XYBundleInfoHelper.m */; };
+		CC0BB07220FECBFF00664BDD /* XYThemeFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00C20FECBFF00664BDD /* XYThemeFont.m */; };
+		CC0BB07320FECBFF00664BDD /* NSMutableAttributedString+Short.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00D20FECBFF00664BDD /* NSMutableAttributedString+Short.m */; };
+		CC0BB07420FECBFF00664BDD /* XYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB00E20FECBFF00664BDD /* XYUtils.m */; };
+		CC0BB07520FECBFF00664BDD /* SVProgressHUD+XYCustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB01020FECBFF00664BDD /* SVProgressHUD+XYCustomization.m */; };
+		CC0BB07620FECBFF00664BDD /* XYAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB01220FECBFF00664BDD /* XYAutoLayout.m */; };
+		CC0BB07720FECBFF00664BDD /* UIView+XYLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB01420FECBFF00664BDD /* UIView+XYLayout.m */; };
+		CC0BB07820FECBFF00664BDD /* XYThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB01520FECBFF00664BDD /* XYThemeColor.m */; };
+		CC0BB07920FECBFF00664BDD /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB01620FECBFF00664BDD /* UncaughtExceptionHandler.m */; };
+		CC0BB07A20FECBFF00664BDD /* UINavigationController+XYNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB01820FECBFF00664BDD /* UINavigationController+XYNavigation.m */; };
+		CC0BB07B20FECBFF00664BDD /* UIView+XYLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB01920FECBFF00664BDD /* UIView+XYLine.m */; };
+		CC0BB07C20FECBFF00664BDD /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB01A20FECBFF00664BDD /* UINavigationController+FDFullscreenPopGesture.m */; };
+		CC0BB07D20FECBFF00664BDD /* XYLocalStorageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02220FECBFF00664BDD /* XYLocalStorageUtil.m */; };
+		CC0BB07E20FECBFF00664BDD /* UIDevice+XYPlatForm.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02520FECBFF00664BDD /* UIDevice+XYPlatForm.m */; };
+		CC0BB07F20FECBFF00664BDD /* NSObject+XYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02720FECBFF00664BDD /* NSObject+XYUtils.m */; };
+		CC0BB08020FECBFF00664BDD /* XYServerIpManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02A20FECBFF00664BDD /* XYServerIpManageViewController.m */; };
+		CC0BB08120FECBFF00664BDD /* XYNetWorkApi.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02B20FECBFF00664BDD /* XYNetWorkApi.m */; };
+		CC0BB08220FECBFF00664BDD /* XYResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02C20FECBFF00664BDD /* XYResponseObject.m */; };
+		CC0BB08320FECBFF00664BDD /* XYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03120FECBFF00664BDD /* XYHTTPSessionManager.m */; };
+		CC0BB08620FECBFF00664BDD /* CommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03820FECBFF00664BDD /* CommonDefine.m */; };
+		CC0BB08720FECBFF00664BDD /* WKDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03C20FECBFF00664BDD /* WKDelegateController.m */; };
+		CC0BB08820FECBFF00664BDD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03D20FECBFF00664BDD /* BaseViewController.m */; };
+		CC0BB08920FECBFF00664BDD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03E20FECBFF00664BDD /* WebViewController.m */; };
+		CC0BB08A20FECBFF00664BDD /* XYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04320FECBFF00664BDD /* XYTabBarViewController.m */; };
+		CC0BB08B20FECBFF00664BDD /* XYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04420FECBFF00664BDD /* XYTableViewController.m */; };
+		CC0BB08C20FECBFF00664BDD /* MDHTMLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04720FECBFF00664BDD /* MDHTMLLabel.m */; };
+		CC0BB08D20FECBFF00664BDD /* XYCustomButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04A20FECBFF00664BDD /* XYCustomButtonView.m */; };
+		CC0BB08E20FECBFF00664BDD /* XYModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04B20FECBFF00664BDD /* XYModelViewController.m */; };
+		CC0BB08F20FECBFF00664BDD /* XYTableFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04C20FECBFF00664BDD /* XYTableFootView.m */; };
+		CC0BB09020FECBFF00664BDD /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04D20FECBFF00664BDD /* PGIndexBannerSubiew.m */; };
+		CC0BB09120FECBFF00664BDD /* XYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB05020FECBFF00664BDD /* XYAlertViewController.m */; };
+		CC0BB09220FECBFF00664BDD /* XYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB05120FECBFF00664BDD /* XYTableView.m */; };
+		CC0BB09320FECBFF00664BDD /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB05220FECBFF00664BDD /* NewPagedFlowView.m */; };
+		CC0BB09420FECBFF00664BDD /* ImageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB05320FECBFF00664BDD /* ImageTitleButton.m */; };
+		CC0BB09520FECBFF00664BDD /* XYBottomButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB05520FECBFF00664BDD /* XYBottomButtonView.m */; };
+		CC0BB09720FECBFF00664BDD /* XYServiceUploading.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB05A20FECBFF00664BDD /* XYServiceUploading.m */; };
+		CC0BB09820FECBFF00664BDD /* XYCommonInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB05B20FECBFF00664BDD /* XYCommonInputView.m */; };
+		CC0BB09920FECBFF00664BDD /* LCContractView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB05D20FECBFF00664BDD /* LCContractView.m */; };
+		CC0BB09A20FECBFF00664BDD /* XYTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB06220FECBFF00664BDD /* XYTabbar.m */; };
+		CC0BB09B20FECBFF00664BDD /* XYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB06720FECBFF00664BDD /* XYButton.m */; };
+		CC0BB09C20FECBFF00664BDD /* XYRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB06820FECBFF00664BDD /* XYRefreshNormalHeader.m */; };
+		CC0BB09D20FECBFF00664BDD /* XYRefreshNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB06920FECBFF00664BDD /* XYRefreshNormalFooter.m */; };
+		CC0BB0A420FEDF9600664BDD /* XYMacroConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB0A320FEDF9600664BDD /* XYMacroConfig.m */; };
+		CC0BB0A720FEE3B100664BDD /* XYNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB0A620FEE3B100664BDD /* XYNetworkConfig.m */; };
+		CCD7935C21002ECD00831A6A /* XYUIApperanceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD7935B21002ECD00831A6A /* XYUIApperanceConfig.m */; };
+		CCD793732100366700831A6A /* XYUIBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CCD793722100366700831A6A /* XYUIBundle.bundle */; };
+		CCD793762100388F00831A6A /* AppDelegate+XYConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD793752100388F00831A6A /* AppDelegate+XYConfig.m */; };
+		CCD7937921005BCB00831A6A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD7937821005BCB00831A6A /* HomeViewController.m */; };
+		CCD7937C21005BD000831A6A /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD7937B21005BD000831A6A /* MyViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC0BAFE020FECAEA00664BDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC0BAFBC20FECAE800664BDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC0BAFC320FECAE800664BDD;
+			remoteInfo = XYUIFrameworkDemo;
+		};
+		CC0BAFEB20FECAEA00664BDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC0BAFBC20FECAE800664BDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC0BAFC320FECAE800664BDD;
+			remoteInfo = XYUIFrameworkDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0956F8A6EFB6562DA36B372A /* Pods-XYUIFrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYUIFrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYUIFrameworkDemo/Pods-XYUIFrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		96CA46394AC9F3E549077064 /* libPods-XYUIFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XYUIFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0BAFC420FECAE800664BDD /* XYUIFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYUIFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0BAFC720FECAE800664BDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC0BAFC820FECAE800664BDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC0BAFD120FECAE800664BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC0BAFD320FECAEA00664BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC0BAFD620FECAEA00664BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC0BAFD820FECAEA00664BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0BAFD920FECAEA00664BDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC0BAFDF20FECAEA00664BDD /* XYUIFrameworkDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYUIFrameworkDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0BAFE320FECAEA00664BDD /* XYUIFrameworkDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYUIFrameworkDemoTests.m; sourceTree = "<group>"; };
+		CC0BAFE520FECAEA00664BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0BAFEA20FECAEA00664BDD /* XYUIFrameworkDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYUIFrameworkDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0BAFEE20FECAEA00664BDD /* XYUIFrameworkDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYUIFrameworkDemoUITests.m; sourceTree = "<group>"; };
+		CC0BAFF020FECAEA00664BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0BAFFE20FECBFF00664BDD /* XYThemeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYThemeColor.h; sourceTree = "<group>"; };
+		CC0BAFFF20FECBFF00664BDD /* UIView+XYLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XYLayout.h"; sourceTree = "<group>"; };
+		CC0BB00020FECBFF00664BDD /* XYThemeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYThemeImage.m; sourceTree = "<group>"; };
+		CC0BB00120FECBFF00664BDD /* UIScrollView+XYEmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XYEmptyDataSet.m"; sourceTree = "<group>"; };
+		CC0BB00220FECBFF00664BDD /* UIView+XYLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XYLine.h"; sourceTree = "<group>"; };
+		CC0BB00420FECBFF00664BDD /* UINavigationController+XYNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+XYNavigation.h"; sourceTree = "<group>"; };
+		CC0BB00520FECBFF00664BDD /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		CC0BB00620FECBFF00664BDD /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		CC0BB00720FECBFF00664BDD /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		CC0BB00820FECBFF00664BDD /* XYLocalStorageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLocalStorageUtil.h; sourceTree = "<group>"; };
+		CC0BB00920FECBFF00664BDD /* UIViewController+XYNavigationBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XYNavigationBarItem.m"; sourceTree = "<group>"; };
+		CC0BB00A20FECBFF00664BDD /* UIView+XYCornerBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XYCornerBorder.m"; sourceTree = "<group>"; };
+		CC0BB00B20FECBFF00664BDD /* XYBundleInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBundleInfoHelper.m; sourceTree = "<group>"; };
+		CC0BB00C20FECBFF00664BDD /* XYThemeFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYThemeFont.m; sourceTree = "<group>"; };
+		CC0BB00D20FECBFF00664BDD /* NSMutableAttributedString+Short.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Short.m"; sourceTree = "<group>"; };
+		CC0BB00E20FECBFF00664BDD /* XYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUtils.m; sourceTree = "<group>"; };
+		CC0BB00F20FECBFF00664BDD /* NSObject+XYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XYUtils.h"; sourceTree = "<group>"; };
+		CC0BB01020FECBFF00664BDD /* SVProgressHUD+XYCustomization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+XYCustomization.m"; sourceTree = "<group>"; };
+		CC0BB01120FECBFF00664BDD /* UIDevice+XYPlatForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+XYPlatForm.h"; sourceTree = "<group>"; };
+		CC0BB01220FECBFF00664BDD /* XYAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAutoLayout.m; sourceTree = "<group>"; };
+		CC0BB01320FECBFF00664BDD /* XYThemeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYThemeImage.h; sourceTree = "<group>"; };
+		CC0BB01420FECBFF00664BDD /* UIView+XYLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XYLayout.m"; sourceTree = "<group>"; };
+		CC0BB01520FECBFF00664BDD /* XYThemeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYThemeColor.m; sourceTree = "<group>"; };
+		CC0BB01620FECBFF00664BDD /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		CC0BB01720FECBFF00664BDD /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		CC0BB01820FECBFF00664BDD /* UINavigationController+XYNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+XYNavigation.m"; sourceTree = "<group>"; };
+		CC0BB01920FECBFF00664BDD /* UIView+XYLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XYLine.m"; sourceTree = "<group>"; };
+		CC0BB01A20FECBFF00664BDD /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		CC0BB01B20FECBFF00664BDD /* UIScrollView+XYEmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XYEmptyDataSet.h"; sourceTree = "<group>"; };
+		CC0BB01C20FECBFF00664BDD /* XYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUtils.h; sourceTree = "<group>"; };
+		CC0BB01D20FECBFF00664BDD /* NSMutableAttributedString+Short.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Short.h"; sourceTree = "<group>"; };
+		CC0BB01E20FECBFF00664BDD /* XYThemeFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYThemeFont.h; sourceTree = "<group>"; };
+		CC0BB01F20FECBFF00664BDD /* XYBundleInfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBundleInfoHelper.h; sourceTree = "<group>"; };
+		CC0BB02020FECBFF00664BDD /* UIView+XYCornerBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XYCornerBorder.h"; sourceTree = "<group>"; };
+		CC0BB02120FECBFF00664BDD /* UIViewController+XYNavigationBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XYNavigationBarItem.h"; sourceTree = "<group>"; };
+		CC0BB02220FECBFF00664BDD /* XYLocalStorageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLocalStorageUtil.m; sourceTree = "<group>"; };
+		CC0BB02320FECBFF00664BDD /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		CC0BB02420FECBFF00664BDD /* XYAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAutoLayout.h; sourceTree = "<group>"; };
+		CC0BB02520FECBFF00664BDD /* UIDevice+XYPlatForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XYPlatForm.m"; sourceTree = "<group>"; };
+		CC0BB02620FECBFF00664BDD /* SVProgressHUD+XYCustomization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+XYCustomization.h"; sourceTree = "<group>"; };
+		CC0BB02720FECBFF00664BDD /* NSObject+XYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XYUtils.m"; sourceTree = "<group>"; };
+		CC0BB02920FECBFF00664BDD /* XYHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHTTPSessionManager.h; sourceTree = "<group>"; };
+		CC0BB02A20FECBFF00664BDD /* XYServerIpManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYServerIpManageViewController.m; sourceTree = "<group>"; };
+		CC0BB02B20FECBFF00664BDD /* XYNetWorkApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNetWorkApi.m; sourceTree = "<group>"; };
+		CC0BB02C20FECBFF00664BDD /* XYResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYResponseObject.m; sourceTree = "<group>"; };
+		CC0BB03020FECBFF00664BDD /* XYServerIpManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYServerIpManageViewController.h; sourceTree = "<group>"; };
+		CC0BB03120FECBFF00664BDD /* XYHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHTTPSessionManager.m; sourceTree = "<group>"; };
+		CC0BB03420FECBFF00664BDD /* XYResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYResponseObject.h; sourceTree = "<group>"; };
+		CC0BB03520FECBFF00664BDD /* XYNetWorkApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNetWorkApi.h; sourceTree = "<group>"; };
+		CC0BB03820FECBFF00664BDD /* CommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonDefine.m; sourceTree = "<group>"; };
+		CC0BB03A20FECBFF00664BDD /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		CC0BB03C20FECBFF00664BDD /* WKDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDelegateController.m; sourceTree = "<group>"; };
+		CC0BB03D20FECBFF00664BDD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CC0BB03E20FECBFF00664BDD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		CC0BB03F20FECBFF00664BDD /* XYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTableViewController.h; sourceTree = "<group>"; };
+		CC0BB04020FECBFF00664BDD /* XYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTabBarViewController.h; sourceTree = "<group>"; };
+		CC0BB04120FECBFF00664BDD /* WKDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDelegateController.h; sourceTree = "<group>"; };
+		CC0BB04220FECBFF00664BDD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CC0BB04320FECBFF00664BDD /* XYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTabBarViewController.m; sourceTree = "<group>"; };
+		CC0BB04420FECBFF00664BDD /* XYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTableViewController.m; sourceTree = "<group>"; };
+		CC0BB04520FECBFF00664BDD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		CC0BB04720FECBFF00664BDD /* MDHTMLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDHTMLLabel.m; sourceTree = "<group>"; };
+		CC0BB04820FECBFF00664BDD /* XYServiceUploading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYServiceUploading.h; sourceTree = "<group>"; };
+		CC0BB04920FECBFF00664BDD /* XYCommonInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCommonInputView.h; sourceTree = "<group>"; };
+		CC0BB04A20FECBFF00664BDD /* XYCustomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCustomButtonView.m; sourceTree = "<group>"; };
+		CC0BB04B20FECBFF00664BDD /* XYModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYModelViewController.m; sourceTree = "<group>"; };
+		CC0BB04C20FECBFF00664BDD /* XYTableFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTableFootView.m; sourceTree = "<group>"; };
+		CC0BB04D20FECBFF00664BDD /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
+		CC0BB04E20FECBFF00664BDD /* LCContractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCContractView.h; sourceTree = "<group>"; };
+		CC0BB04F20FECBFF00664BDD /* XYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYButton.h; sourceTree = "<group>"; };
+		CC0BB05020FECBFF00664BDD /* XYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAlertViewController.m; sourceTree = "<group>"; };
+		CC0BB05120FECBFF00664BDD /* XYTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTableView.m; sourceTree = "<group>"; };
+		CC0BB05220FECBFF00664BDD /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPagedFlowView.m; sourceTree = "<group>"; };
+		CC0BB05320FECBFF00664BDD /* ImageTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTitleButton.m; sourceTree = "<group>"; };
+		CC0BB05420FECBFF00664BDD /* XYTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTabbar.h; sourceTree = "<group>"; };
+		CC0BB05520FECBFF00664BDD /* XYBottomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBottomButtonView.m; sourceTree = "<group>"; };
+		CC0BB05620FECBFF00664BDD /* XYRefreshNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRefreshNormalFooter.h; sourceTree = "<group>"; };
+		CC0BB05820FECBFF00664BDD /* XYRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRefreshNormalHeader.h; sourceTree = "<group>"; };
+		CC0BB05920FECBFF00664BDD /* XYCustomButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCustomButtonView.h; sourceTree = "<group>"; };
+		CC0BB05A20FECBFF00664BDD /* XYServiceUploading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYServiceUploading.m; sourceTree = "<group>"; };
+		CC0BB05B20FECBFF00664BDD /* XYCommonInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCommonInputView.m; sourceTree = "<group>"; };
+		CC0BB05C20FECBFF00664BDD /* MDHTMLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDHTMLLabel.h; sourceTree = "<group>"; };
+		CC0BB05D20FECBFF00664BDD /* LCContractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCContractView.m; sourceTree = "<group>"; };
+		CC0BB05E20FECBFF00664BDD /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIndexBannerSubiew.h; sourceTree = "<group>"; };
+		CC0BB05F20FECBFF00664BDD /* XYTableFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTableFootView.h; sourceTree = "<group>"; };
+		CC0BB06020FECBFF00664BDD /* XYModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYModelViewController.h; sourceTree = "<group>"; };
+		CC0BB06120FECBFF00664BDD /* XYBottomButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBottomButtonView.h; sourceTree = "<group>"; };
+		CC0BB06220FECBFF00664BDD /* XYTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTabbar.m; sourceTree = "<group>"; };
+		CC0BB06320FECBFF00664BDD /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
+		CC0BB06420FECBFF00664BDD /* ImageTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTitleButton.h; sourceTree = "<group>"; };
+		CC0BB06520FECBFF00664BDD /* XYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTableView.h; sourceTree = "<group>"; };
+		CC0BB06620FECBFF00664BDD /* XYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAlertViewController.h; sourceTree = "<group>"; };
+		CC0BB06720FECBFF00664BDD /* XYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYButton.m; sourceTree = "<group>"; };
+		CC0BB06820FECBFF00664BDD /* XYRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYRefreshNormalHeader.m; sourceTree = "<group>"; };
+		CC0BB06920FECBFF00664BDD /* XYRefreshNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYRefreshNormalFooter.m; sourceTree = "<group>"; };
+		CC0BB09F20FECDF300664BDD /* XYUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYUIFramework.h; sourceTree = "<group>"; };
+		CC0BB0A020FED45300664BDD /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		CC0BB0A220FEDF9600664BDD /* XYMacroConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYMacroConfig.h; sourceTree = "<group>"; };
+		CC0BB0A320FEDF9600664BDD /* XYMacroConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYMacroConfig.m; sourceTree = "<group>"; };
+		CC0BB0A520FEE3B100664BDD /* XYNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYNetworkConfig.h; sourceTree = "<group>"; };
+		CC0BB0A620FEE3B100664BDD /* XYNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYNetworkConfig.m; sourceTree = "<group>"; };
+		CCD7935A21002ECD00831A6A /* XYUIApperanceConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYUIApperanceConfig.h; sourceTree = "<group>"; };
+		CCD7935B21002ECD00831A6A /* XYUIApperanceConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYUIApperanceConfig.m; sourceTree = "<group>"; };
+		CCD793722100366700831A6A /* XYUIBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XYUIBundle.bundle; sourceTree = "<group>"; };
+		CCD793742100388F00831A6A /* AppDelegate+XYConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+XYConfig.h"; sourceTree = "<group>"; };
+		CCD793752100388F00831A6A /* AppDelegate+XYConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+XYConfig.m"; sourceTree = "<group>"; };
+		CCD7937721005BCB00831A6A /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CCD7937821005BCB00831A6A /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CCD7937A21005BD000831A6A /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		CCD7937B21005BD000831A6A /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		F328D69ED8B64526E355E656 /* Pods-XYUIFrameworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYUIFrameworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYUIFrameworkDemo/Pods-XYUIFrameworkDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC0BAFC120FECAE800664BDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C6B767F777AE33EC65046A /* libPods-XYUIFrameworkDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0BAFDC20FECAEA00664BDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0BAFE720FECAEA00664BDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ADBE7EA0625FB3BD2F08B63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96CA46394AC9F3E549077064 /* libPods-XYUIFrameworkDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2BFFD9F3F27C72176F58CD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0956F8A6EFB6562DA36B372A /* Pods-XYUIFrameworkDemo.debug.xcconfig */,
+				F328D69ED8B64526E355E656 /* Pods-XYUIFrameworkDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC0BAFBB20FECAE800664BDD = {
+			isa = PBXGroup;
+			children = (
+				CC0BAFFC20FECBFF00664BDD /* XYUIFramework */,
+				CC0BAFC620FECAE800664BDD /* XYUIFrameworkDemo */,
+				CC0BAFE220FECAEA00664BDD /* XYUIFrameworkDemoTests */,
+				CC0BAFED20FECAEA00664BDD /* XYUIFrameworkDemoUITests */,
+				CC0BAFC520FECAE800664BDD /* Products */,
+				C2BFFD9F3F27C72176F58CD5 /* Pods */,
+				5ADBE7EA0625FB3BD2F08B63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC0BAFC520FECAE800664BDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BAFC420FECAE800664BDD /* XYUIFrameworkDemo.app */,
+				CC0BAFDF20FECAEA00664BDD /* XYUIFrameworkDemoTests.xctest */,
+				CC0BAFEA20FECAEA00664BDD /* XYUIFrameworkDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC0BAFC620FECAE800664BDD /* XYUIFrameworkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BAFC720FECAE800664BDD /* AppDelegate.h */,
+				CC0BAFC820FECAE800664BDD /* AppDelegate.m */,
+				CCD7937721005BCB00831A6A /* HomeViewController.h */,
+				CCD7937821005BCB00831A6A /* HomeViewController.m */,
+				CCD7937A21005BD000831A6A /* MyViewController.h */,
+				CCD7937B21005BD000831A6A /* MyViewController.m */,
+				CC0BAFD020FECAE800664BDD /* Main.storyboard */,
+				CC0BAFD320FECAEA00664BDD /* Assets.xcassets */,
+				CC0BAFD520FECAEA00664BDD /* LaunchScreen.storyboard */,
+				CC0BAFD820FECAEA00664BDD /* Info.plist */,
+				CC0BAFD920FECAEA00664BDD /* main.m */,
+			);
+			path = XYUIFrameworkDemo;
+			sourceTree = "<group>";
+		};
+		CC0BAFE220FECAEA00664BDD /* XYUIFrameworkDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BAFE320FECAEA00664BDD /* XYUIFrameworkDemoTests.m */,
+				CC0BAFE520FECAEA00664BDD /* Info.plist */,
+			);
+			path = XYUIFrameworkDemoTests;
+			sourceTree = "<group>";
+		};
+		CC0BAFED20FECAEA00664BDD /* XYUIFrameworkDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BAFEE20FECAEA00664BDD /* XYUIFrameworkDemoUITests.m */,
+				CC0BAFF020FECAEA00664BDD /* Info.plist */,
+			);
+			path = XYUIFrameworkDemoUITests;
+			sourceTree = "<group>";
+		};
+		CC0BAFFC20FECBFF00664BDD /* XYUIFramework */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BB09F20FECDF300664BDD /* XYUIFramework.h */,
+				CCD793712100366700831A6A /* Resources */,
+				CC0BB03620FECBFF00664BDD /* AppDefine */,
+				CC0BB02820FECBFF00664BDD /* Network */,
+				CC0BAFFD20FECBFF00664BDD /* Tools */,
+				CC0BB04620FECBFF00664BDD /* UtilKits */,
+				CC0BB03B20FECBFF00664BDD /* ViewControllers */,
+			);
+			name = XYUIFramework;
+			path = ../XYUIFramework;
+			sourceTree = "<group>";
+		};
+		CC0BAFFD20FECBFF00664BDD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BB00820FECBFF00664BDD /* XYLocalStorageUtil.h */,
+				CC0BB02220FECBFF00664BDD /* XYLocalStorageUtil.m */,
+				CC0BB01D20FECBFF00664BDD /* NSMutableAttributedString+Short.h */,
+				CC0BB00D20FECBFF00664BDD /* NSMutableAttributedString+Short.m */,
+				CC0BB00F20FECBFF00664BDD /* NSObject+XYUtils.h */,
+				CC0BB02720FECBFF00664BDD /* NSObject+XYUtils.m */,
+				CC0BB02620FECBFF00664BDD /* SVProgressHUD+XYCustomization.h */,
+				CC0BB01020FECBFF00664BDD /* SVProgressHUD+XYCustomization.m */,
+				CC0BB01120FECBFF00664BDD /* UIDevice+XYPlatForm.h */,
+				CC0BB02520FECBFF00664BDD /* UIDevice+XYPlatForm.m */,
+				CC0BB01A20FECBFF00664BDD /* UINavigationController+FDFullscreenPopGesture.m */,
+				CC0BB0A020FED45300664BDD /* UINavigationController+FDFullscreenPopGesture.h */,
+				CC0BB00420FECBFF00664BDD /* UINavigationController+XYNavigation.h */,
+				CC0BB01820FECBFF00664BDD /* UINavigationController+XYNavigation.m */,
+				CC0BB01B20FECBFF00664BDD /* UIScrollView+XYEmptyDataSet.h */,
+				CC0BB00120FECBFF00664BDD /* UIScrollView+XYEmptyDataSet.m */,
+				CC0BB01720FECBFF00664BDD /* UITextView+Placeholder.h */,
+				CC0BB00520FECBFF00664BDD /* UITextView+Placeholder.m */,
+				CC0BB02320FECBFF00664BDD /* UIView+frame.h */,
+				CC0BB00720FECBFF00664BDD /* UIView+frame.m */,
+				CC0BB02020FECBFF00664BDD /* UIView+XYCornerBorder.h */,
+				CC0BB00A20FECBFF00664BDD /* UIView+XYCornerBorder.m */,
+				CC0BAFFF20FECBFF00664BDD /* UIView+XYLayout.h */,
+				CC0BB01420FECBFF00664BDD /* UIView+XYLayout.m */,
+				CC0BB00220FECBFF00664BDD /* UIView+XYLine.h */,
+				CC0BB01920FECBFF00664BDD /* UIView+XYLine.m */,
+				CC0BB02120FECBFF00664BDD /* UIViewController+XYNavigationBarItem.h */,
+				CC0BB00920FECBFF00664BDD /* UIViewController+XYNavigationBarItem.m */,
+				CC0BB00620FECBFF00664BDD /* UncaughtExceptionHandler.h */,
+				CC0BB01620FECBFF00664BDD /* UncaughtExceptionHandler.m */,
+				CC0BB02420FECBFF00664BDD /* XYAutoLayout.h */,
+				CC0BB01220FECBFF00664BDD /* XYAutoLayout.m */,
+				CC0BB01F20FECBFF00664BDD /* XYBundleInfoHelper.h */,
+				CC0BB00B20FECBFF00664BDD /* XYBundleInfoHelper.m */,
+				CC0BAFFE20FECBFF00664BDD /* XYThemeColor.h */,
+				CC0BB01520FECBFF00664BDD /* XYThemeColor.m */,
+				CC0BB01E20FECBFF00664BDD /* XYThemeFont.h */,
+				CC0BB00C20FECBFF00664BDD /* XYThemeFont.m */,
+				CC0BB01320FECBFF00664BDD /* XYThemeImage.h */,
+				CC0BB00020FECBFF00664BDD /* XYThemeImage.m */,
+				CC0BB01C20FECBFF00664BDD /* XYUtils.h */,
+				CC0BB00E20FECBFF00664BDD /* XYUtils.m */,
+				CCD793742100388F00831A6A /* AppDelegate+XYConfig.h */,
+				CCD793752100388F00831A6A /* AppDelegate+XYConfig.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CC0BB02820FECBFF00664BDD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BB03020FECBFF00664BDD /* XYServerIpManageViewController.h */,
+				CC0BB02A20FECBFF00664BDD /* XYServerIpManageViewController.m */,
+				CC0BB02920FECBFF00664BDD /* XYHTTPSessionManager.h */,
+				CC0BB03120FECBFF00664BDD /* XYHTTPSessionManager.m */,
+				CC0BB03520FECBFF00664BDD /* XYNetWorkApi.h */,
+				CC0BB02B20FECBFF00664BDD /* XYNetWorkApi.m */,
+				CC0BB03420FECBFF00664BDD /* XYResponseObject.h */,
+				CC0BB02C20FECBFF00664BDD /* XYResponseObject.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CC0BB03620FECBFF00664BDD /* AppDefine */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BB03A20FECBFF00664BDD /* CommonDefine.h */,
+				CC0BB03820FECBFF00664BDD /* CommonDefine.m */,
+				CC0BB0A220FEDF9600664BDD /* XYMacroConfig.h */,
+				CC0BB0A320FEDF9600664BDD /* XYMacroConfig.m */,
+				CC0BB0A520FEE3B100664BDD /* XYNetworkConfig.h */,
+				CC0BB0A620FEE3B100664BDD /* XYNetworkConfig.m */,
+				CCD7935A21002ECD00831A6A /* XYUIApperanceConfig.h */,
+				CCD7935B21002ECD00831A6A /* XYUIApperanceConfig.m */,
+			);
+			path = AppDefine;
+			sourceTree = "<group>";
+		};
+		CC0BB03B20FECBFF00664BDD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BB04220FECBFF00664BDD /* BaseViewController.h */,
+				CC0BB03D20FECBFF00664BDD /* BaseViewController.m */,
+				CC0BB04520FECBFF00664BDD /* WebViewController.h */,
+				CC0BB03E20FECBFF00664BDD /* WebViewController.m */,
+				CC0BB04120FECBFF00664BDD /* WKDelegateController.h */,
+				CC0BB03C20FECBFF00664BDD /* WKDelegateController.m */,
+				CC0BB04020FECBFF00664BDD /* XYTabBarViewController.h */,
+				CC0BB04320FECBFF00664BDD /* XYTabBarViewController.m */,
+				CC0BB03F20FECBFF00664BDD /* XYTableViewController.h */,
+				CC0BB04420FECBFF00664BDD /* XYTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC0BB04620FECBFF00664BDD /* UtilKits */ = {
+			isa = PBXGroup;
+			children = (
+				CC0BB06420FECBFF00664BDD /* ImageTitleButton.h */,
+				CC0BB05320FECBFF00664BDD /* ImageTitleButton.m */,
+				CC0BB04E20FECBFF00664BDD /* LCContractView.h */,
+				CC0BB05D20FECBFF00664BDD /* LCContractView.m */,
+				CC0BB05C20FECBFF00664BDD /* MDHTMLLabel.h */,
+				CC0BB04720FECBFF00664BDD /* MDHTMLLabel.m */,
+				CC0BB06320FECBFF00664BDD /* NewPagedFlowView.h */,
+				CC0BB05220FECBFF00664BDD /* NewPagedFlowView.m */,
+				CC0BB05E20FECBFF00664BDD /* PGIndexBannerSubiew.h */,
+				CC0BB04D20FECBFF00664BDD /* PGIndexBannerSubiew.m */,
+				CC0BB06620FECBFF00664BDD /* XYAlertViewController.h */,
+				CC0BB05020FECBFF00664BDD /* XYAlertViewController.m */,
+				CC0BB06120FECBFF00664BDD /* XYBottomButtonView.h */,
+				CC0BB05520FECBFF00664BDD /* XYBottomButtonView.m */,
+				CC0BB04F20FECBFF00664BDD /* XYButton.h */,
+				CC0BB06720FECBFF00664BDD /* XYButton.m */,
+				CC0BB04920FECBFF00664BDD /* XYCommonInputView.h */,
+				CC0BB05B20FECBFF00664BDD /* XYCommonInputView.m */,
+				CC0BB05920FECBFF00664BDD /* XYCustomButtonView.h */,
+				CC0BB04A20FECBFF00664BDD /* XYCustomButtonView.m */,
+				CC0BB06020FECBFF00664BDD /* XYModelViewController.h */,
+				CC0BB04B20FECBFF00664BDD /* XYModelViewController.m */,
+				CC0BB05620FECBFF00664BDD /* XYRefreshNormalFooter.h */,
+				CC0BB06920FECBFF00664BDD /* XYRefreshNormalFooter.m */,
+				CC0BB05820FECBFF00664BDD /* XYRefreshNormalHeader.h */,
+				CC0BB06820FECBFF00664BDD /* XYRefreshNormalHeader.m */,
+				CC0BB04820FECBFF00664BDD /* XYServiceUploading.h */,
+				CC0BB05A20FECBFF00664BDD /* XYServiceUploading.m */,
+				CC0BB05420FECBFF00664BDD /* XYTabbar.h */,
+				CC0BB06220FECBFF00664BDD /* XYTabbar.m */,
+				CC0BB05F20FECBFF00664BDD /* XYTableFootView.h */,
+				CC0BB04C20FECBFF00664BDD /* XYTableFootView.m */,
+				CC0BB06520FECBFF00664BDD /* XYTableView.h */,
+				CC0BB05120FECBFF00664BDD /* XYTableView.m */,
+			);
+			path = UtilKits;
+			sourceTree = "<group>";
+		};
+		CCD793712100366700831A6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCD793722100366700831A6A /* XYUIBundle.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC0BAFC320FECAE800664BDD /* XYUIFrameworkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC0BAFF320FECAEA00664BDD /* Build configuration list for PBXNativeTarget "XYUIFrameworkDemo" */;
+			buildPhases = (
+				9C08850D21B4311B0A41B1D9 /* [CP] Check Pods Manifest.lock */,
+				CC0BAFC020FECAE800664BDD /* Sources */,
+				CC0BAFC120FECAE800664BDD /* Frameworks */,
+				CC0BAFC220FECAE800664BDD /* Resources */,
+				9A56BFDCC0EB73C52CA43A38 /* [CP] Embed Pods Frameworks */,
+				CCB2FBEF83F99B12D4F19854 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYUIFrameworkDemo;
+			productName = XYUIFrameworkDemo;
+			productReference = CC0BAFC420FECAE800664BDD /* XYUIFrameworkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC0BAFDE20FECAEA00664BDD /* XYUIFrameworkDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC0BAFF620FECAEA00664BDD /* Build configuration list for PBXNativeTarget "XYUIFrameworkDemoTests" */;
+			buildPhases = (
+				CC0BAFDB20FECAEA00664BDD /* Sources */,
+				CC0BAFDC20FECAEA00664BDD /* Frameworks */,
+				CC0BAFDD20FECAEA00664BDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC0BAFE120FECAEA00664BDD /* PBXTargetDependency */,
+			);
+			name = XYUIFrameworkDemoTests;
+			productName = XYUIFrameworkDemoTests;
+			productReference = CC0BAFDF20FECAEA00664BDD /* XYUIFrameworkDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC0BAFE920FECAEA00664BDD /* XYUIFrameworkDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC0BAFF920FECAEA00664BDD /* Build configuration list for PBXNativeTarget "XYUIFrameworkDemoUITests" */;
+			buildPhases = (
+				CC0BAFE620FECAEA00664BDD /* Sources */,
+				CC0BAFE720FECAEA00664BDD /* Frameworks */,
+				CC0BAFE820FECAEA00664BDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC0BAFEC20FECAEA00664BDD /* PBXTargetDependency */,
+			);
+			name = XYUIFrameworkDemoUITests;
+			productName = XYUIFrameworkDemoUITests;
+			productReference = CC0BAFEA20FECAEA00664BDD /* XYUIFrameworkDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC0BAFBC20FECAE800664BDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = WXiangYu;
+				TargetAttributes = {
+					CC0BAFC320FECAE800664BDD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CC0BAFDE20FECAEA00664BDD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CC0BAFC320FECAE800664BDD;
+					};
+					CC0BAFE920FECAEA00664BDD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CC0BAFC320FECAE800664BDD;
+					};
+				};
+			};
+			buildConfigurationList = CC0BAFBF20FECAE800664BDD /* Build configuration list for PBXProject "XYUIFrameworkDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC0BAFBB20FECAE800664BDD;
+			productRefGroup = CC0BAFC520FECAE800664BDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC0BAFC320FECAE800664BDD /* XYUIFrameworkDemo */,
+				CC0BAFDE20FECAEA00664BDD /* XYUIFrameworkDemoTests */,
+				CC0BAFE920FECAEA00664BDD /* XYUIFrameworkDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC0BAFC220FECAE800664BDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0BAFD720FECAEA00664BDD /* LaunchScreen.storyboard in Resources */,
+				CC0BAFD420FECAEA00664BDD /* Assets.xcassets in Resources */,
+				CCD793732100366700831A6A /* XYUIBundle.bundle in Resources */,
+				CC0BAFD220FECAE800664BDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0BAFDD20FECAEA00664BDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0BAFE820FECAEA00664BDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A56BFDCC0EB73C52CA43A38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYUIFrameworkDemo/Pods-XYUIFrameworkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C08850D21B4311B0A41B1D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XYUIFrameworkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB2FBEF83F99B12D4F19854 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XYUIFrameworkDemo/Pods-XYUIFrameworkDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYUIFrameworkDemo/Pods-XYUIFrameworkDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC0BAFC020FECAE800664BDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0BB07320FECBFF00664BDD /* NSMutableAttributedString+Short.m in Sources */,
+				CC0BB08920FECBFF00664BDD /* WebViewController.m in Sources */,
+				CC0BB08320FECBFF00664BDD /* XYHTTPSessionManager.m in Sources */,
+				CC0BB07920FECBFF00664BDD /* UncaughtExceptionHandler.m in Sources */,
+				CC0BB07D20FECBFF00664BDD /* XYLocalStorageUtil.m in Sources */,
+				CC0BB07620FECBFF00664BDD /* XYAutoLayout.m in Sources */,
+				CC0BB06E20FECBFF00664BDD /* UIView+frame.m in Sources */,
+				CC0BB09320FECBFF00664BDD /* NewPagedFlowView.m in Sources */,
+				CC0BB09D20FECBFF00664BDD /* XYRefreshNormalFooter.m in Sources */,
+				CC0BB06B20FECBFF00664BDD /* XYThemeImage.m in Sources */,
+				CC0BB08820FECBFF00664BDD /* BaseViewController.m in Sources */,
+				CC0BB09420FECBFF00664BDD /* ImageTitleButton.m in Sources */,
+				CC0BB08B20FECBFF00664BDD /* XYTableViewController.m in Sources */,
+				CC0BB07020FECBFF00664BDD /* UIView+XYCornerBorder.m in Sources */,
+				CC0BB08E20FECBFF00664BDD /* XYModelViewController.m in Sources */,
+				CC0BB07E20FECBFF00664BDD /* UIDevice+XYPlatForm.m in Sources */,
+				CC0BB09520FECBFF00664BDD /* XYBottomButtonView.m in Sources */,
+				CC0BB09820FECBFF00664BDD /* XYCommonInputView.m in Sources */,
+				CC0BB07A20FECBFF00664BDD /* UINavigationController+XYNavigation.m in Sources */,
+				CC0BB06D20FECBFF00664BDD /* UITextView+Placeholder.m in Sources */,
+				CC0BB07F20FECBFF00664BDD /* NSObject+XYUtils.m in Sources */,
+				CC0BB08720FECBFF00664BDD /* WKDelegateController.m in Sources */,
+				CC0BB08C20FECBFF00664BDD /* MDHTMLLabel.m in Sources */,
+				CC0BB06C20FECBFF00664BDD /* UIScrollView+XYEmptyDataSet.m in Sources */,
+				CC0BB07B20FECBFF00664BDD /* UIView+XYLine.m in Sources */,
+				CC0BB09220FECBFF00664BDD /* XYTableView.m in Sources */,
+				CC0BB09C20FECBFF00664BDD /* XYRefreshNormalHeader.m in Sources */,
+				CC0BB09920FECBFF00664BDD /* LCContractView.m in Sources */,
+				CCD7937921005BCB00831A6A /* HomeViewController.m in Sources */,
+				CC0BB07720FECBFF00664BDD /* UIView+XYLayout.m in Sources */,
+				CC0BB08020FECBFF00664BDD /* XYServerIpManageViewController.m in Sources */,
+				CC0BB07820FECBFF00664BDD /* XYThemeColor.m in Sources */,
+				CC0BB09720FECBFF00664BDD /* XYServiceUploading.m in Sources */,
+				CC0BAFC920FECAE800664BDD /* AppDelegate.m in Sources */,
+				CCD7937C21005BD000831A6A /* MyViewController.m in Sources */,
+				CC0BB07C20FECBFF00664BDD /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				CC0BB09020FECBFF00664BDD /* PGIndexBannerSubiew.m in Sources */,
+				CC0BB07420FECBFF00664BDD /* XYUtils.m in Sources */,
+				CC0BB09B20FECBFF00664BDD /* XYButton.m in Sources */,
+				CC0BB0A720FEE3B100664BDD /* XYNetworkConfig.m in Sources */,
+				CC0BB08120FECBFF00664BDD /* XYNetWorkApi.m in Sources */,
+				CC0BB09A20FECBFF00664BDD /* XYTabbar.m in Sources */,
+				CC0BB09120FECBFF00664BDD /* XYAlertViewController.m in Sources */,
+				CC0BB08D20FECBFF00664BDD /* XYCustomButtonView.m in Sources */,
+				CC0BB07520FECBFF00664BDD /* SVProgressHUD+XYCustomization.m in Sources */,
+				CC0BB07220FECBFF00664BDD /* XYThemeFont.m in Sources */,
+				CC0BB08F20FECBFF00664BDD /* XYTableFootView.m in Sources */,
+				CCD7935C21002ECD00831A6A /* XYUIApperanceConfig.m in Sources */,
+				CC0BB06F20FECBFF00664BDD /* UIViewController+XYNavigationBarItem.m in Sources */,
+				CC0BB08220FECBFF00664BDD /* XYResponseObject.m in Sources */,
+				CC0BAFDA20FECAEA00664BDD /* main.m in Sources */,
+				CC0BB08A20FECBFF00664BDD /* XYTabBarViewController.m in Sources */,
+				CC0BB08620FECBFF00664BDD /* CommonDefine.m in Sources */,
+				CC0BB07120FECBFF00664BDD /* XYBundleInfoHelper.m in Sources */,
+				CC0BB0A420FEDF9600664BDD /* XYMacroConfig.m in Sources */,
+				CCD793762100388F00831A6A /* AppDelegate+XYConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0BAFDB20FECAEA00664BDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0BAFE420FECAEA00664BDD /* XYUIFrameworkDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0BAFE620FECAEA00664BDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0BAFEF20FECAEA00664BDD /* XYUIFrameworkDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC0BAFE120FECAEA00664BDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC0BAFC320FECAE800664BDD /* XYUIFrameworkDemo */;
+			targetProxy = CC0BAFE020FECAEA00664BDD /* PBXContainerItemProxy */;
+		};
+		CC0BAFEC20FECAEA00664BDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC0BAFC320FECAE800664BDD /* XYUIFrameworkDemo */;
+			targetProxy = CC0BAFEB20FECAEA00664BDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC0BAFD020FECAE800664BDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC0BAFD120FECAE800664BDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC0BAFD520FECAEA00664BDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC0BAFD620FECAEA00664BDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC0BAFF120FECAEA00664BDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC0BAFF220FECAEA00664BDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC0BAFF420FECAEA00664BDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0956F8A6EFB6562DA36B372A /* Pods-XYUIFrameworkDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XYUIFrameworkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxy.XYUIFrameworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC0BAFF520FECAEA00664BDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F328D69ED8B64526E355E656 /* Pods-XYUIFrameworkDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XYUIFrameworkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxy.XYUIFrameworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC0BAFF720FECAEA00664BDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XYUIFrameworkDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxy.XYUIFrameworkDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XYUIFrameworkDemo.app/XYUIFrameworkDemo";
+			};
+			name = Debug;
+		};
+		CC0BAFF820FECAEA00664BDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XYUIFrameworkDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxy.XYUIFrameworkDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XYUIFrameworkDemo.app/XYUIFrameworkDemo";
+			};
+			name = Release;
+		};
+		CC0BAFFA20FECAEA00664BDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XYUIFrameworkDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxy.XYUIFrameworkDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XYUIFrameworkDemo;
+			};
+			name = Debug;
+		};
+		CC0BAFFB20FECAEA00664BDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XYUIFrameworkDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxy.XYUIFrameworkDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XYUIFrameworkDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC0BAFBF20FECAE800664BDD /* Build configuration list for PBXProject "XYUIFrameworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC0BAFF120FECAEA00664BDD /* Debug */,
+				CC0BAFF220FECAEA00664BDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC0BAFF320FECAEA00664BDD /* Build configuration list for PBXNativeTarget "XYUIFrameworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC0BAFF420FECAEA00664BDD /* Debug */,
+				CC0BAFF520FECAEA00664BDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC0BAFF620FECAEA00664BDD /* Build configuration list for PBXNativeTarget "XYUIFrameworkDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC0BAFF720FECAEA00664BDD /* Debug */,
+				CC0BAFF820FECAEA00664BDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC0BAFF920FECAEA00664BDD /* Build configuration list for PBXNativeTarget "XYUIFrameworkDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC0BAFFA20FECAEA00664BDD /* Debug */,
+				CC0BAFFB20FECAEA00664BDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC0BAFBC20FECAE800664BDD /* Project object */;
+}
