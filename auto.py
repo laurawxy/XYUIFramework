@@ -97,7 +97,7 @@ def gitOperation():
     os.system('git push --tags')
 
     # git push
-    push_command = 'git push origin master'
+    os.system('git push origin master')
 
 def podPush():
     print("--------  waiting for pod push  ...... ---------")
