@@ -24,7 +24,7 @@ def podCommandEdit():
     source_suffix = 'https://github.com/CocoaPods/Specs.git --allow-warnings'
     lib_command = 'pod lib lint --sources= --allow-warnings'
 #    pod_push_command = 'pod repo push ' + project_name + ' ' + podspec_file_name + ' --allow-warnings'
-    pod_push_command = 'pod repo push --allow-warnings'
+    pod_push_command = 'pod trunk push --allow-warnings'
 
     if len(sources) > 0:
         # rely on  private sourece
