@@ -9,7 +9,7 @@ new_tag = ""
 lib_command = "pod lib lint --allow-warnings"
 #pod_push_command = "pod trunk push --allow-warnings"
 
-pod_push_command = 'pod repo push ' + project_name + podspec_file_name + '--allow-warnings'
+pod_push_command = 'pod repo push ' + project_name + ' ' + podspec_file_name + ' --allow-warnings'
 
 spec_file_path = "./" + podspec_file_name
 find_version_flag = False
