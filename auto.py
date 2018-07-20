@@ -23,7 +23,9 @@ def podCommandEdit():
     global pod_push_command
     source_suffix = 'https://github.com/CocoaPods/Specs.git --allow-warnings'
     lib_command = 'pod lib lint --sources= --allow-warnings'
-    pod_push_command = 'pod repo push ' + project_name + ' ' + podspec_file_name + ' --allow-warnings'
+#    pod_push_command = 'pod repo push ' + project_name + ' ' + podspec_file_name + ' --allow-warnings'
+    pod_push_command = 'pod repo push --allow-warnings'
+
     if len(sources) > 0:
         # rely on  private sourece
         pod_push_command += ' --sources='
@@ -113,8 +115,10 @@ def gitOperation():
     commit_command = 'git commit -m "' + commit_desc + '"'
     os.system(commit_command)
     # git push
-    r = os.popen('git symbolic-ref --short -q HEAD')
-    current_branch = r.read()
+#    r = os.popen('git symbolic-ref --short -q HEAD')
+#    current_branch = r.read()
+    current_branch = 'master'
+
     r.close()
     push_command = 'git push origin ' + current_branch
     
