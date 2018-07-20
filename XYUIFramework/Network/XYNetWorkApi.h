@@ -13,10 +13,17 @@
 
 @interface XYNetWorkApi : NSObject
 
-@property (nonatomic, strong) NSString *classModel;
-@property (nonatomic, strong) NSString *responseType;
-@property (nonatomic, strong) NSDictionary *singleHTTPRequestHeaders;
+@property (nonatomic, copy) NSDictionary *singleHTTPRequestHeaders;
 
+@property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
+
+@property (nonatomic) XYRequestSuccessBlock successBlock;
+@property (nonatomic) XYNetworkFailureBlock failureBlock;
+
+
+@property (nonatomic) XYRequestSuccessBlock requestSuccessBlock;
+@property (nonatomic) XYRequestFailureBlock requestFailureBlock;
+@property (nonatomic) XYNetworkFailureBlock networkFailureBlock;
 
 +(XYNetWorkApi *)sharedManager;
 

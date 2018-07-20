@@ -24,20 +24,11 @@
 
 @property (nonatomic,strong) XYHTTPSessionManager *manager;
 @property (nonatomic,strong) AFHTTPRequestSerializer *requestSerializer;
-@property (nonatomic,strong) AFSecurityPolicy *securityPolicy;
 
-@property (nonatomic,strong) NSDictionary *params;
+@property (nonatomic,copy) NSDictionary *params;
 @property (nonatomic,copy) NSString *actionName;
 @property (nonatomic,copy) NSString *requestUrl;
 @property (nonatomic,assign) YTKRequestMethod requestMethod;
-
-@property (nonatomic) XYRequestSuccessBlock successBlock;
-@property (nonatomic) XYNetworkFailureBlock failureBlock;
-
-
-@property (nonatomic) XYRequestSuccessBlock requestSuccessBlock;
-@property (nonatomic) XYRequestFailureBlock requestFailureBlock;
-@property (nonatomic) XYNetworkFailureBlock networkFailureBlock;
 
 @end
 

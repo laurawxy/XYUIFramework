@@ -63,6 +63,7 @@
 		CC0BB09D20FECBFF00664BDD /* XYRefreshNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB06920FECBFF00664BDD /* XYRefreshNormalFooter.m */; };
 		CC0BB0A420FEDF9600664BDD /* XYMacroConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB0A320FEDF9600664BDD /* XYMacroConfig.m */; };
 		CC0BB0A720FEE3B100664BDD /* XYNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB0A620FEE3B100664BDD /* XYNetworkConfig.m */; };
+		CCCA5AF82101787D00D51EE8 /* DemoNetworkApi.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCA5AF72101787D00D51EE8 /* DemoNetworkApi.m */; };
 		CCD7935C21002ECD00831A6A /* XYUIApperanceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD7935B21002ECD00831A6A /* XYUIApperanceConfig.m */; };
 		CCD793732100366700831A6A /* XYUIBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CCD793722100366700831A6A /* XYUIBundle.bundle */; };
 		CCD7937921005BCB00831A6A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD7937821005BCB00831A6A /* HomeViewController.m */; };
@@ -200,6 +201,8 @@
 		CC0BB0A320FEDF9600664BDD /* XYMacroConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYMacroConfig.m; sourceTree = "<group>"; };
 		CC0BB0A520FEE3B100664BDD /* XYNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYNetworkConfig.h; sourceTree = "<group>"; };
 		CC0BB0A620FEE3B100664BDD /* XYNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYNetworkConfig.m; sourceTree = "<group>"; };
+		CCCA5AF62101787D00D51EE8 /* DemoNetworkApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoNetworkApi.h; sourceTree = "<group>"; };
+		CCCA5AF72101787D00D51EE8 /* DemoNetworkApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoNetworkApi.m; sourceTree = "<group>"; };
 		CCD7935A21002ECD00831A6A /* XYUIApperanceConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYUIApperanceConfig.h; sourceTree = "<group>"; };
 		CCD7935B21002ECD00831A6A /* XYUIApperanceConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYUIApperanceConfig.m; sourceTree = "<group>"; };
 		CCD793722100366700831A6A /* XYUIBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XYUIBundle.bundle; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				CCD7937821005BCB00831A6A /* HomeViewController.m */,
 				CCD7937A21005BD000831A6A /* MyViewController.h */,
 				CCD7937B21005BD000831A6A /* MyViewController.m */,
+				CCCA5AF62101787D00D51EE8 /* DemoNetworkApi.h */,
+				CCCA5AF72101787D00D51EE8 /* DemoNetworkApi.m */,
 				CC0BAFD020FECAE800664BDD /* Main.storyboard */,
 				CC0BAFD320FECAEA00664BDD /* Assets.xcassets */,
 				CC0BAFD520FECAEA00664BDD /* LaunchScreen.storyboard */,
@@ -664,6 +669,7 @@
 				CC0BB08320FECBFF00664BDD /* XYHTTPSessionManager.m in Sources */,
 				CC0BB07920FECBFF00664BDD /* UncaughtExceptionHandler.m in Sources */,
 				CC0BB07D20FECBFF00664BDD /* XYLocalStorageUtil.m in Sources */,
+				CCCA5AF82101787D00D51EE8 /* DemoNetworkApi.m in Sources */,
 				CC0BB07620FECBFF00664BDD /* XYAutoLayout.m in Sources */,
 				CC0BB06E20FECBFF00664BDD /* UIView+XYFrame.m in Sources */,
 				CC0BB09320FECBFF00664BDD /* NewPagedFlowView.m in Sources */,
