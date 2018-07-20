@@ -114,13 +114,6 @@ def gitOperation():
     commit_desc = "version_" + new_tag
     commit_command = 'git commit -m "' + commit_desc + '"'
     os.system(commit_command)
-    # git push
-#    r = os.popen('git symbolic-ref --short -q HEAD')
-#    current_branch = r.read()
-    current_branch = 'master'
-
-    r.close()
-    push_command = 'git push origin ' + current_branch
     
     # tag
     tag_command = 'git tag -m "' + new_tag + '" ' + new_tag
@@ -128,6 +121,9 @@ def gitOperation():
     
     # push tags
     os.system('git push --tags')
+
+    # git push
+    push_command = 'git push origin master'
 
 def podPush():
     print("--------  waiting for pod push  ...... ---------")
