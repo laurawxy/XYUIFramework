@@ -63,7 +63,6 @@
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "UITextView+XYPlaceholder.h"
 #import "UIScrollView+XYEmptyDataSet.h"
-#Import "UIViewController+XYNavigationBarItem.h"
 
 #import "XYNetWorkApi.h"
 #import "XYServerIpManageViewController.h"
