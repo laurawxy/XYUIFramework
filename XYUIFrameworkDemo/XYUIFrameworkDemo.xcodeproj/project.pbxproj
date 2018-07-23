@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		33C6B767F777AE33EC65046A /* libPods-XYUIFrameworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CA46394AC9F3E549077064 /* libPods-XYUIFrameworkDemo.a */; };
+		C50BEAA52105D5570005AB82 /* XYTitleDetailArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BEA9F2105D5560005AB82 /* XYTitleDetailArrowCell.m */; };
+		C50BEAA62105D5570005AB82 /* XYTitleArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BEAA02105D5560005AB82 /* XYTitleArrowCell.m */; };
+		C50BEAA72105D5570005AB82 /* XYImageTitleDetailArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BEAA22105D5560005AB82 /* XYImageTitleDetailArrowCell.m */; };
 		CC0BAFC920FECAE800664BDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BAFC820FECAE800664BDD /* AppDelegate.m */; };
 		CC0BAFD220FECAE800664BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD020FECAE800664BDD /* Main.storyboard */; };
 		CC0BAFD420FECAEA00664BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD320FECAEA00664BDD /* Assets.xcassets */; };
@@ -90,6 +93,12 @@
 /* Begin PBXFileReference section */
 		0956F8A6EFB6562DA36B372A /* Pods-XYUIFrameworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYUIFrameworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYUIFrameworkDemo/Pods-XYUIFrameworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		96CA46394AC9F3E549077064 /* libPods-XYUIFrameworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XYUIFrameworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C50BEA9F2105D5560005AB82 /* XYTitleDetailArrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTitleDetailArrowCell.m; sourceTree = "<group>"; };
+		C50BEAA02105D5560005AB82 /* XYTitleArrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTitleArrowCell.m; sourceTree = "<group>"; };
+		C50BEAA12105D5560005AB82 /* XYTitleArrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTitleArrowCell.h; sourceTree = "<group>"; };
+		C50BEAA22105D5560005AB82 /* XYImageTitleDetailArrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYImageTitleDetailArrowCell.m; sourceTree = "<group>"; };
+		C50BEAA32105D5560005AB82 /* XYImageTitleDetailArrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYImageTitleDetailArrowCell.h; sourceTree = "<group>"; };
+		C50BEAA42105D5560005AB82 /* XYTitleDetailArrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTitleDetailArrowCell.h; sourceTree = "<group>"; };
 		CC0BAFC420FECAE800664BDD /* XYUIFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYUIFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0BAFC720FECAE800664BDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC0BAFC820FECAE800664BDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -461,6 +470,12 @@
 				CC0BB04C20FECBFF00664BDD /* XYTableFootView.m */,
 				CC0BB06520FECBFF00664BDD /* XYTableView.h */,
 				CC0BB05120FECBFF00664BDD /* XYTableView.m */,
+				C50BEAA32105D5560005AB82 /* XYImageTitleDetailArrowCell.h */,
+				C50BEAA22105D5560005AB82 /* XYImageTitleDetailArrowCell.m */,
+				C50BEAA12105D5560005AB82 /* XYTitleArrowCell.h */,
+				C50BEAA02105D5560005AB82 /* XYTitleArrowCell.m */,
+				C50BEAA42105D5560005AB82 /* XYTitleDetailArrowCell.h */,
+				C50BEA9F2105D5560005AB82 /* XYTitleDetailArrowCell.m */,
 			);
 			path = UtilKits;
 			sourceTree = "<group>";
@@ -665,6 +680,7 @@
 				CC0BB07020FECBFF00664BDD /* UIView+XYCornerBorder.m in Sources */,
 				CC0BB08E20FECBFF00664BDD /* XYModelViewController.m in Sources */,
 				CC0BB07E20FECBFF00664BDD /* UIDevice+XYPlatForm.m in Sources */,
+				C50BEAA62105D5570005AB82 /* XYTitleArrowCell.m in Sources */,
 				CC0BB09520FECBFF00664BDD /* XYBottomButtonView.m in Sources */,
 				CC0BB09820FECBFF00664BDD /* XYCommonInputView.m in Sources */,
 				CC0BB07A20FECBFF00664BDD /* UINavigationController+XYNavigation.m in Sources */,
@@ -679,7 +695,9 @@
 				CC0BB09920FECBFF00664BDD /* LCContractView.m in Sources */,
 				CCD7937921005BCB00831A6A /* HomeViewController.m in Sources */,
 				CC0BB07720FECBFF00664BDD /* UIView+XYLayout.m in Sources */,
+				C50BEAA72105D5570005AB82 /* XYImageTitleDetailArrowCell.m in Sources */,
 				CC0BB08020FECBFF00664BDD /* XYServerIpManageViewController.m in Sources */,
+				C50BEAA52105D5570005AB82 /* XYTitleDetailArrowCell.m in Sources */,
 				CC0BB07820FECBFF00664BDD /* XYThemeColor.m in Sources */,
 				CC0BB09720FECBFF00664BDD /* XYServiceUploading.m in Sources */,
 				CC0BAFC920FECAE800664BDD /* AppDelegate.m in Sources */,

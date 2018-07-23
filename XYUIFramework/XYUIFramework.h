@@ -51,6 +51,9 @@
 #import "XYWebViewController.h"
 #import "XYTabBarViewController.h"
 #import "XYTableViewController.h"
+#import "XYImageTitleDetailArrowCell.h"
+#import "XYTitleArrowCell.h"
+#import "XYTitleDetailArrowCell.h"
 
 #import "UIView+XYFrame.h"
 #import "UIView+XYLine.h"
