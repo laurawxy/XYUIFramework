@@ -317,8 +317,8 @@
         [self addSubview:_largeTitleLabel];
         [_largeTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(NavigationAndStatusHeight+8);
-            make.left.mas_equalTo(CommonLeftMargin);
-            make.right.mas_equalTo(-CommonLeftMargin);
+            make.left.mas_equalTo(XYCommonLeftMargin);
+            make.right.mas_equalTo(-XYCommonLeftMargin);
             make.height.mas_equalTo(NavigationHeight);
         }];
         
@@ -418,7 +418,7 @@
 - (void)setLeftButtonItem:(XYImageTitleButton *)leftButtonItem{
     if ([leftButtonItem isKindOfClass:[XYImageTitleButton class]]) {
         [leftButtonItem sizeToFitXYImageTitleButton];
-        leftButtonItem.width = leftButtonItem.width+2*CommonLeftMargin;
+        leftButtonItem.width = leftButtonItem.width+2*XYCommonLeftMargin;
         if (_leftButtonItem) {
             [self addSubview:leftButtonItem];
         }
@@ -460,7 +460,7 @@
 - (void)setRightButtonItem:(XYImageTitleButton *)rightButtonItem{
     if ([rightButtonItem isKindOfClass:[XYImageTitleButton class]]) {
         [rightButtonItem sizeToFitXYImageTitleButton];
-        rightButtonItem.width = rightButtonItem.width+2*CommonLeftMargin;
+        rightButtonItem.width = rightButtonItem.width+2*XYCommonLeftMargin;
         if (_rightButtonItem) {
             [self addSubview:rightButtonItem];
         }

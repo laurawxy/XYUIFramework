@@ -99,4 +99,14 @@
 + (UIColor*)unselectedItemTintColor;
 + (void)xy_setUnselectedItemTintColor:(UIColor*)unselectedItemTintColor;
 
+/**
+ webView ProgressColor
+ 
+ @return color
+ */
++ (UIColor*)webViewProgressColor;
++ (void)xy_setWebViewProgressColor:(UIColor*)webViewProgressColor;
+
+
+
 @end

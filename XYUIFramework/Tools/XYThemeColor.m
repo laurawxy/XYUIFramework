@@ -263,5 +263,17 @@ static UIColor *_unselectedItemTintColor;
     _unselectedItemTintColor = unselectedItemTintColor;
 }
 
+static UIColor *_webViewProgressColor;
+
++ (UIColor*)webViewProgressColor{
+    if (!_webViewProgressColor) {
+        _webViewProgressColor = [XYThemeColor ThemeColor];
+    }
+    return _webViewProgressColor;
+}
++ (void)xy_setWebViewProgressColor:(UIColor*)webViewProgressColor{
+    _webViewProgressColor = webViewProgressColor;
+}
+
 
 @end

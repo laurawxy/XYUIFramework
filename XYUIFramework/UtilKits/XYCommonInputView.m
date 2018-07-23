@@ -38,7 +38,7 @@
     rePasswordLabel.text = title;
     [self addSubview:rePasswordLabel];
     [rePasswordLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(CommonLeftMargin);
+        make.left.mas_equalTo(XYCommonLeftMargin);
         make.top.bottom.mas_equalTo(0);
     }];
     [rePasswordLabel sizeToFitLabelWidth];
@@ -52,7 +52,7 @@
     [self addSubview:_textField];
     [_textField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.left);
-        make.right.mas_equalTo(-CommonLeftMargin);
+        make.right.mas_equalTo(-XYCommonLeftMargin);
         make.top.bottom.mas_equalTo(0);
     }];
 }

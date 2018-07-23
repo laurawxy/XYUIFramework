@@ -24,13 +24,13 @@
     self.layer.cornerRadius = cornerRadius;
     self.layer.masksToBounds = YES;
     self.layer.borderColor = [XYThemeColor ThemeColor].CGColor;
-    self.layer.borderWidth = LineHeight;
+    self.layer.borderWidth = XYLineHeight;
 }
 - (void)addCornerAndBorderWithCornerRadius:(CGFloat)cornerRadius borderColor:(UIColor *)borderColor{
     self.layer.cornerRadius = cornerRadius;
     self.layer.masksToBounds = YES;
     self.layer.borderColor = borderColor.CGColor;
-    self.layer.borderWidth = LineHeight;
+    self.layer.borderWidth = XYLineHeight;
 }
 - (void)createCornerRadiusShadowWithCornerRadius:(CGFloat)cornerRadius shadowCornerRadius:(CGFloat)shadowCornerRadius offset:(CGSize)offset opacity:(CGFloat)opacity shadowRadius:(CGFloat)shadowRadius{
     self.layer.shadowColor = [UIColor blackColor].CGColor;

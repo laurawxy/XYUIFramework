@@ -46,18 +46,15 @@
         make.left.right.bottom.mas_equalTo(0);
         make.top.mas_equalTo(self.navigationBar.mas_bottom);
     }];
-    
-//    self.webUrl = @"http://www.baidu.com/";
-    [self loadLocalFileWithFileName:@"h5" type:@"html"];
 }
 
 - (UIProgressView *)progressView{
     if (!_progressView) {
         _progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-        _progressView.progressTintColor = [XYThemeColor ThemeColor];
+        _progressView.progressTintColor = [XYThemeColor webViewProgressColor];
         _progressView.trackTintColor = [UIColor whiteColor];
-        _progressView.tintColor = [XYThemeColor orangeColor];
-        _progressView.backgroundColor = [XYThemeColor greenColor];
+        _progressView.tintColor = [UIColor whiteColor];
+        _progressView.backgroundColor = [UIColor whiteColor];
     }
     return _progressView;
 }

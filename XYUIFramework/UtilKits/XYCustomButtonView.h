@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "XYImageTitleButton.h"
 
-#define XYCustomButtonViewLeftMargin ScaleX750(32)
 
 
 @interface XYCustomButtonView : UIView

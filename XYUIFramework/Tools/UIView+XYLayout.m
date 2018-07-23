@@ -47,7 +47,7 @@
 
 - (void)setLayoutLeftNoWidth{
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(CommonLeftMargin);
+        make.left.mas_equalTo(XYCommonLeftMargin);
         make.top.bottom.mas_equalTo(0);
     }];
 }
@@ -62,21 +62,21 @@
 
 - (void)setLayoutRightNoWidth{
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(-CommonLeftMargin);
+        make.right.mas_equalTo(-XYCommonLeftMargin);
         make.top.bottom.mas_equalTo(0);
     }];
 }
 
 - (void)setLayoutRightNoSizeWithCenterYView:(UIView *)view{
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(-CommonLeftMargin);
+        make.right.mas_equalTo(-XYCommonLeftMargin);
         make.centerY.mas_equalTo(view);
     }];
 }
 
 - (void)setLayoutLeftNoSizeCenterYView:(UIView *)view{
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(CommonLeftMargin);
+        make.left.mas_equalTo(XYCommonLeftMargin);
         make.centerY.mas_equalTo(view);
     }];
 }

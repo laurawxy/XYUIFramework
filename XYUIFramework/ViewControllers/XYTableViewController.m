@@ -179,7 +179,7 @@
         
         [self.largeTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(12);
-            make.left.mas_equalTo(CommonLeftMargin);
+            make.left.mas_equalTo(XYCommonLeftMargin);
             make.height.mas_equalTo([self.largeTitleLabel labelHeight]);
         }];
         
@@ -192,7 +192,7 @@
         
         [_largeTitleView addSubview:self.largeTitleImageButton];
         [self.largeTitleImageButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(-CommonLeftMargin);
+            make.right.mas_equalTo(-XYCommonLeftMargin);
             make.size.mas_equalTo(CGSizeMake(50, 50));
             make.centerY.mas_equalTo(self.largeTitleView);
         }];

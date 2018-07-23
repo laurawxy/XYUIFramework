@@ -37,7 +37,7 @@
         }
         self.leftLineView.backgroundColor = color;
         [self.leftLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(LineHeight);
+            make.width.mas_equalTo(XYLineHeight);
             make.bottom.mas_equalTo(-topBottom);
             make.top.mas_equalTo(topBottom);
             make.left.mas_equalTo(left);
@@ -68,7 +68,7 @@
         }
         self.rightLineView.backgroundColor = color;
         [self.rightLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(LineHeight);
+            make.width.mas_equalTo(XYLineHeight);
             make.bottom.mas_equalTo(-topBottom);
             make.top.mas_equalTo(topBottom);
             make.right.mas_equalTo(right);
@@ -99,7 +99,7 @@
         }
         self.topLineView.backgroundColor = color;
         [self.topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(LineHeight);
+            make.height.mas_equalTo(XYLineHeight);
             make.left.mas_equalTo(leftRight);
             make.right.mas_equalTo(-leftRight);
             make.top.mas_equalTo(top);
@@ -141,7 +141,7 @@
 }
 
 - (void)addBottomLineWithBottom:(float)bottom leftRight:(float)leftRight color:(UIColor *)color{
-    [self addBottomLineWithBottom:bottom leftRight:leftRight color:color lineHeight:LineHeight];
+    [self addBottomLineWithBottom:bottom leftRight:leftRight color:color lineHeight:XYLineHeight];
 }
 - (void)addBottomLineWithBottom:(float)bottom leftRight:(float)leftRight color:(UIColor *)color lineHeight:(CGFloat)lineHeight{
     if(self && [self isKindOfClass:UIView.class]){
@@ -175,7 +175,7 @@
         }
         self.centerXLineView.backgroundColor = color;
         [self.centerXLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(LineHeight);
+            make.height.mas_equalTo(XYLineHeight);
             make.left.mas_equalTo(leftRight);
             make.right.mas_equalTo(-leftRight);
             make.centerY.mas_equalTo(self.mas_centerY);
@@ -205,7 +205,7 @@
         }
         self.centerYLineView.backgroundColor = color;
         [self.centerYLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(LineHeight);
+            make.width.mas_equalTo(XYLineHeight);
             make.top.mas_equalTo(top);
             make.bottom.mas_equalTo(-bottom);
             make.centerX.mas_equalTo(self.mas_centerX);

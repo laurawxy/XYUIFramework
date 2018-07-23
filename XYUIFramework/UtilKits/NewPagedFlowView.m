@@ -431,7 +431,7 @@ static NSString *subviewClassName;
             
             self.allPageLabel.text = [NSString stringWithFormat:@"%d",(int)self.orginPageCount];
             [self.allPageLabel sizeToFit];
-            self.allPageLabel.frame = CGRectMake(self.width-CommonLeftMargin-self.allPageLabel.width, self.height-12-self.allPageLabel.height, self.allPageLabel.width, self.allPageLabel.height);
+            self.allPageLabel.frame = CGRectMake(self.width-XYCommonLeftMargin-self.allPageLabel.width, self.height-12-self.allPageLabel.height, self.allPageLabel.width, self.allPageLabel.height);
             
             self.currentPageLabel.text = @"1/";
             [self.currentPageLabel sizeToFit];
