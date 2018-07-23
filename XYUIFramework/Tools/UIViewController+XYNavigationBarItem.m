@@ -322,7 +322,7 @@
             make.height.mas_equalTo(NavigationHeight);
         }];
         
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [XYThemeColor navigationBackgroundColor];
         self.userInteractionEnabled = YES;
         _backImageView = [[UIImageView alloc] init];
         _backImageView.userInteractionEnabled = YES;
@@ -641,16 +641,6 @@
         }
     }    
     return [super hitTest:point withEvent:event];
-}
-
-+ (void)setAppearanceBackgroundColor:(UIColor*)color{
-    [[NSUserDefaults standardUserDefaults] setValue:color forKey:@"com.xy.navigationbar.backgroundcolor"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-+ (void)setAppearanceTitleFont:(UIFont*)font{
-    [[NSUserDefaults standardUserDefaults] setValue:font forKey:@"com.xy.navigationbar.titlefont"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

@@ -276,10 +276,6 @@ typedef void(^XYBarButtonItemActionBlock)(UIBarButtonItem *barButtonItem, UIButt
 - (void)showIndicatorViewWithStatus:(NSString*)status;
 - (void)hideIndicatorView;
 
-+ (void)setAppearanceBackgroundColor:(UIColor*)color;
-
-+ (void)setAppearanceTitleFont:(UIFont*)font;
-
 @end
 //NS_ASSUME_NONNULL_BEGIN
 //NS_ASSUME_NONNULL_END

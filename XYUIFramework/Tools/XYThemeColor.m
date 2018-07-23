@@ -9,223 +9,229 @@
 #import "XYThemeColor.h"
 
 @implementation XYThemeColor
-static UIColor *_currentThemeColor;
-static UIColor *_currentBlackLevelOneColor;
-static UIColor *_currentBlackLevelTwoColor;
-static UIColor *_currentBlackLevelThreeColor;
-static UIColor *_currentBlackLevelFourColor;
-static UIColor *_currentTableViewBackgroundColor;
-static UIColor *_currentViewBackgroundColor;
-static UIColor *_currentBackgroundTwoColor;
-static UIColor *_currentTagBackgroundColor;
-static UIColor *_currentHighlightBackgroundColor;
 
-static UIColor *_currentGreenColor;
-static UIColor *_currentRedColor;
-static UIColor *_currentOrangeColor;
-static UIColor *_currentLightBlueColor;
-static UIColor *_currentTextViewPlaceholderTextColor;
-static UIColor *_currentPromptColor;
-static UIColor *_currentLineColor;
-static UIColor *_currentNavigationTitleColor;
-static UIColor *_currentNavigationLeftRightColor;
 
-+ (UIColor *)ThemeColorAlpha:(CGFloat)alpha{
-    return [_currentThemeColor colorWithAlphaComponent:alpha];
-}
+
+
+static UIColor *_ThemeColor;
 + (UIColor *)ThemeColor{
-    if (!_currentThemeColor) {
-        _currentThemeColor = RGB(46, 147, 238);
+    if (!_ThemeColor) {
+        _ThemeColor = RGB(46, 147, 238);
     }
-    return _currentThemeColor;
+    return _ThemeColor;
 }
-
 + (void)xy_setThemeColor:(UIColor *)color{
-    _currentThemeColor = color;
+    _ThemeColor = color;
+}
++ (UIColor *)ThemeColorAlpha:(CGFloat)alpha{
+    return [_ThemeColor colorWithAlphaComponent:alpha];
 }
 
+static UIColor *_BlackLevelOneColor;
 + (UIColor *)blackLevelOneColor{
-    if (!_currentBlackLevelOneColor) {
-        _currentBlackLevelOneColor = RGB(51, 51, 51);
+    if (!_BlackLevelOneColor) {
+        _BlackLevelOneColor = RGB(51, 51, 51);
     }
-    return _currentBlackLevelOneColor;
+    return _BlackLevelOneColor;
 }
 + (void)xy_setBlackLevelOneColor:(UIColor *)color{
-    _currentBlackLevelOneColor = color;
+    _BlackLevelOneColor = color;
 }
 
+
+static UIColor *_BlackLevelTwoColor;
 + (UIColor *)blackLevelTwoColor{
-    if (!_currentBlackLevelTwoColor) {
-        _currentBlackLevelTwoColor = RGB(102, 102, 102);
+    if (!_BlackLevelTwoColor) {
+        _BlackLevelTwoColor = RGB(102, 102, 102);
     }
-    return _currentBlackLevelTwoColor;
+    return _BlackLevelTwoColor;
 }
 + (void)xy_setBlackLevelTwoColor:(UIColor *)color{
-    _currentBlackLevelTwoColor = color;
+    _BlackLevelTwoColor = color;
 }
+
+static UIColor *_BlackLevelThreeColor;
 
 + (UIColor *)blackLevelThreeColor{
-    if (!_currentBlackLevelThreeColor) {
-        _currentBlackLevelThreeColor = RGB(153, 153, 153);
+    if (!_BlackLevelThreeColor) {
+        _BlackLevelThreeColor = RGB(153, 153, 153);
     }
-    return _currentBlackLevelThreeColor;
+    return _BlackLevelThreeColor;
 }
 + (void)xy_setBlackLevelThreeColor:(UIColor *)color{
-    _currentBlackLevelThreeColor = color;
+    _BlackLevelThreeColor = color;
 }
 
+
+static UIColor *_BlackLevelFourColor;
 + (UIColor *)blackLevelFourColor{
-    if (!_currentBlackLevelFourColor) {
-        _currentBlackLevelFourColor = RGB(204, 204, 204);
+    if (!_BlackLevelFourColor) {
+        _BlackLevelFourColor = RGB(204, 204, 204);
     }
-    return _currentBlackLevelFourColor;
+    return _BlackLevelFourColor;
 }
 + (void)xy_setBlackLevelFourColor:(UIColor *)color{
-    _currentBlackLevelFourColor = color;
+    _BlackLevelFourColor = color;
 }
 
+static UIColor *_TableViewBackgroundColor;
 + (UIColor *)tableViewBackgroundColor{
-    if (!_currentTableViewBackgroundColor) {
-        _currentTableViewBackgroundColor = RGB(240,244,248);
+    if (!_TableViewBackgroundColor) {
+        _TableViewBackgroundColor = RGB(240,244,248);
     }
-    return _currentTableViewBackgroundColor;
+    return _TableViewBackgroundColor;
 }
 + (void)xy_setTableViewBackgroundColor:(UIColor *)color{
-    _currentTableViewBackgroundColor = color;
+    _TableViewBackgroundColor = color;
 }
 
-
+static UIColor *_ViewBackgroundColor;
 + (UIColor *)viewBackgroundColor{
-    if (!_currentViewBackgroundColor) {
-        _currentViewBackgroundColor = RGB(238, 242, 247);
+    if (!_ViewBackgroundColor) {
+        _ViewBackgroundColor = RGB(238, 242, 247);
     }
-    return _currentViewBackgroundColor;
+    return _ViewBackgroundColor;
 }
 + (void)xy_setViewBackgroundColor:(UIColor *)color{
-    _currentViewBackgroundColor = color;
+    _ViewBackgroundColor = color;
 }
 
+
+static UIColor *_BackgroundTwoColor;
 + (UIColor *)backgroundTwoColor{
-    if (!_currentBackgroundTwoColor) {
-        _currentBackgroundTwoColor = RGB(240,244,248);
+    if (!_BackgroundTwoColor) {
+        _BackgroundTwoColor = RGB(240,244,248);
     }
-    return _currentBackgroundTwoColor;
+    return _BackgroundTwoColor;
 }
 + (void)xy_setBackgroundTwoColor:(UIColor *)color{
-    _currentBackgroundTwoColor = color;
+    _BackgroundTwoColor = color;
 }
 
+static UIColor *_TagBackgroundColor;
 + (UIColor *)tagBackgroundColor{
-    if (!_currentTagBackgroundColor) {
-        _currentTagBackgroundColor = RGB(238, 242, 247);
+    if (!_TagBackgroundColor) {
+        _TagBackgroundColor = RGB(238, 242, 247);
     }
-    return _currentTagBackgroundColor;
+    return _TagBackgroundColor;
 }
 + (void)xy_setTagBackgroundColor:(UIColor *)color{
-    _currentTagBackgroundColor = color;
+    _TagBackgroundColor = color;
 }
 
+static UIColor *_HighlightBackgroundColor;
 + (UIColor *)highlightBackgroundColor{
-    if (!_currentHighlightBackgroundColor) {
-        _currentHighlightBackgroundColor = RGB(243, 243, 243);
+    if (!_HighlightBackgroundColor) {
+        _HighlightBackgroundColor = RGB(243, 243, 243);
     }
-    return _currentHighlightBackgroundColor;
+    return _HighlightBackgroundColor;
 }
 + (void)xy_setHighlightBackgroundColor:(UIColor *)color{
-    _currentHighlightBackgroundColor = color;
+    _HighlightBackgroundColor = color;
 }
 
-
+static UIColor *_GreenColor;
 + (UIColor *)greenColor{
-    if (!_currentGreenColor) {
-        _currentGreenColor = RGB(86,197,56);
+    if (!_GreenColor) {
+        _GreenColor = RGB(86,197,56);
     }
-    return _currentGreenColor;
+    return _GreenColor;
 }
 + (void)xy_setGreenColor:(UIColor *)color{
-    _currentGreenColor = color;
+    _GreenColor = color;
 }
-
+static UIColor *_RedColor;
 + (UIColor *)redColor{
-    if (!_currentRedColor) {
-        _currentRedColor = RGB(253, 84, 84);
+    if (!_RedColor) {
+        _RedColor = RGB(253, 84, 84);
     }
-    return _currentRedColor;
+    return _RedColor;
 }
 + (void)xy_setRedColor:(UIColor *)color{
-    _currentRedColor = color;
+    _RedColor = color;
 }
 
+static UIColor *_OrangeColor;
 + (UIColor *)orangeColor{
-    if (!_currentOrangeColor) {
-        _currentOrangeColor = RGBA(255, 146, 0, 1);
+    if (!_OrangeColor) {
+        _OrangeColor = RGBA(255, 146, 0, 1);
     }
-    return _currentOrangeColor;
+    return _OrangeColor;
 }
 + (void)xy_setOrangeColor:(UIColor *)color{
-    _currentOrangeColor = color;
+    _OrangeColor = color;
 }
 
-+ (UIColor *)lightBlueColor{
-    if (!_currentLightBlueColor) {
-        _currentLightBlueColor = RGB(104, 179, 246);
-    }
-    return _currentLightBlueColor;
-}
-
-+ (void)xy_setLightBlueColor:(UIColor *)color{
-    _currentLightBlueColor = color;
-}
+static UIColor *_TextViewPlaceholderTextColor;
 
 + (UIColor *)textViewPlaceholderTextColor{
-    if (!_currentTextViewPlaceholderTextColor) {
-        _currentTextViewPlaceholderTextColor = RGB(216,216,216);
+    if (!_TextViewPlaceholderTextColor) {
+        _TextViewPlaceholderTextColor = RGB(216,216,216);
     }
-    return _currentTextViewPlaceholderTextColor;
+    return _TextViewPlaceholderTextColor;
 }
 + (void)xy_setTextViewPlaceholderTextColor:(UIColor *)color{
-    _currentTextViewPlaceholderTextColor = color;
+    _TextViewPlaceholderTextColor = color;
 }
-
+static UIColor *_PromptColor;
 + (UIColor *)promptColor{
-    if (!_currentPromptColor) {
-        _currentPromptColor = RGB(252, 242, 192);
+    if (!_PromptColor) {
+        _PromptColor = RGB(252, 242, 192);
     }
-    return _currentPromptColor;
+    return _PromptColor;
 }
 + (void)xy_setPromptColor:(UIColor *)color{
-    _currentPromptColor = color;
+    _PromptColor = color;
 }
+
+static UIColor *_LineColor;
 
 + (UIColor *)lineColor{
-    if (!_currentLineColor) {
-        _currentLineColor = RGB(223, 223, 223);
+    if (!_LineColor) {
+        _LineColor = RGB(223, 223, 223);
     }
-    return _currentLineColor;
+    return _LineColor;
 }
 + (void)xy_setLineColor:(UIColor *)color{
-    _currentLineColor = color;
+    _LineColor = color;
 }
 
-+ (UIColor *)navigationTitleColor{
-    if (!_currentNavigationTitleColor) {
-        _currentNavigationTitleColor = RGB(0, 0, 0);
+static UIColor *_navigationBackgroundColor;
+
++ (UIColor *)navigationBackgroundColor{
+    if (!_navigationBackgroundColor) {
+        _navigationBackgroundColor = [UIColor whiteColor];
     }
-    return _currentNavigationTitleColor;
+    return _navigationBackgroundColor;
+}
+
++ (void)xy_setNavigationBackgroundColor:(UIColor *)color{
+    _navigationBackgroundColor = color;
+}
+
+static UIColor *_NavigationTitleColor;
+
++ (UIColor *)navigationTitleColor{
+    if (!_NavigationTitleColor) {
+        _NavigationTitleColor = RGB(0, 0, 0);
+    }
+    return _NavigationTitleColor;
 }
 
 + (void)xy_setNavigationTitleColor:(UIColor *)color{
-    _currentNavigationTitleColor = color;
+    _NavigationTitleColor = color;
 }
 
+static UIColor *_NavigationLeftRightColor;
+
 + (UIColor *)navigationLeftRightColor{
-    if (!_currentNavigationLeftRightColor) {
-        _currentNavigationLeftRightColor = RGB(51, 51, 51);
+    if (!_NavigationLeftRightColor) {
+        _NavigationLeftRightColor = RGB(51, 51, 51);
     }
-    return _currentNavigationLeftRightColor;
+    return _NavigationLeftRightColor;
 }
 + (void)xy_setNavigationLeftRightColor:(UIColor *)color{
-    _currentNavigationLeftRightColor = color;
+    _NavigationLeftRightColor = color;
 }
 
 static UIColor *_tabBarBarTintColor;
@@ -275,5 +281,60 @@ static UIColor *_webViewProgressColor;
     _webViewProgressColor = webViewProgressColor;
 }
 
+static UIColor *_ButtonNormalHighlightedColor;
++ (UIColor *)ButtonNormalHighlightedColor{
+    if (!_ButtonNormalHighlightedColor) {
+        _ButtonNormalHighlightedColor = RGB(142, 197, 245);
+    }
+    return _ButtonNormalHighlightedColor;
+}
++ (void)xy_setButtonNormalHighlightedColor:(UIColor *)color{
+    _ButtonNormalHighlightedColor = color;
+}
+
+static UIColor *_ButtonThemeWhiteHighlightedColor;
++ (UIColor *)ButtonThemeWhiteHighlightedColor{
+    if (!_ButtonThemeWhiteHighlightedColor) {
+        _ButtonThemeWhiteHighlightedColor = RGB(147, 191, 231);
+    }
+    return _ButtonThemeWhiteHighlightedColor;
+}
++ (void)xy_setButtonThemeWhiteHighlightedColor:(UIColor *)color{
+    _ButtonThemeWhiteHighlightedColor = color;
+}
+
+static UIColor *_ButtonThemeWhiteBackHighlightedColor;
++ (UIColor *)ButtonThemeWhiteBackHighlightedColor{
+    if (!_ButtonThemeWhiteBackHighlightedColor) {
+        _ButtonThemeWhiteBackHighlightedColor = RGB(40, 128, 208);
+    }
+    return _ButtonThemeWhiteBackHighlightedColor;
+}
++ (void)xy_setButtonThemeWhiteBackHighlightedColor:(UIColor *)color{
+    _ButtonThemeWhiteBackHighlightedColor = color;
+}
+
+
+static UIColor *_ButtonThemeWhiteDisabledColor;
++ (UIColor *)ButtonThemeWhiteDisabledColor{
+    if (!_ButtonThemeWhiteDisabledColor) {
+        _ButtonThemeWhiteDisabledColor = RGBA(255,255,255,0.3);
+    }
+    return _ButtonThemeWhiteDisabledColor;
+}
++ (void)xy_setButtonThemeWhiteDisabledColor:(UIColor *)color{
+    _ButtonThemeWhiteDisabledColor = color;
+}
+
+static UIColor *_ButtonThemeWhiteBackDisabledColor;
++ (UIColor *)ButtonThemeWhiteBackDisabledColor{
+    if (!_ButtonThemeWhiteBackDisabledColor) {
+        _ButtonThemeWhiteBackDisabledColor = RGB(150,201,246);
+    }
+    return _ButtonThemeWhiteBackDisabledColor;
+}
++ (void)xy_setButtonThemeWhiteBackDisabledColor:(UIColor *)color{
+    _ButtonThemeWhiteBackDisabledColor = color;
+}
 
 @end

@@ -58,7 +58,7 @@
     switch (_buttonStyle) {
         case XYCustomButtonStyleNormal:{
             [self setTitleColor:[XYThemeColor ThemeColor] forState:UIControlStateNormal];
-            [self setTitleColor:RGB(142, 197, 245) forState:UIControlStateHighlighted];
+            [self setTitleColor:[XYThemeColor ButtonNormalHighlightedColor] forState:UIControlStateHighlighted];
             [self setTitleColor:[XYThemeColor ThemeColor] forState:UIControlStateDisabled];
 
             [self setBackgroundColor:[UIColor clearColor] forState:UIControlStateNormal];
@@ -69,12 +69,12 @@
         case XYCustomButtonStyleThemeWhiteColor:{
 
             [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            [self setTitleColor:RGB(147, 191, 231) forState:UIControlStateHighlighted];
-            [self setTitleColor:RGBA(255,255,255,0.3) forState:UIControlStateDisabled];
+            [self setTitleColor:[XYThemeColor ButtonThemeWhiteHighlightedColor] forState:UIControlStateHighlighted];
+            [self setTitleColor:[XYThemeColor ButtonThemeWhiteDisabledColor] forState:UIControlStateDisabled];
             
             [self setBackgroundColor:[XYThemeColor ThemeColor] forState:UIControlStateNormal];
-            [self setBackgroundColor:RGB(40, 128, 208) forState:UIControlStateHighlighted];
-            [self setBackgroundColor:RGB(150,201,246) forState:UIControlStateDisabled];
+            [self setBackgroundColor:[XYThemeColor ButtonThemeWhiteBackHighlightedColor] forState:UIControlStateHighlighted];
+            [self setBackgroundColor:[XYThemeColor ButtonThemeWhiteBackDisabledColor] forState:UIControlStateDisabled];
 
         }
             

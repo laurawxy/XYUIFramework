@@ -55,9 +55,6 @@
 + (UIColor *)orangeColor;//橙色
 + (void)xy_setOrangeColor:(UIColor *)color;
 
-+ (UIColor *)lightBlueColor;//浅蓝
-+ (void)xy_setLightBlueColor:(UIColor *)color;
-
 
 + (UIColor *)textViewPlaceholderTextColor;
 + (void)xy_setTextViewPlaceholderTextColor:(UIColor *)color;
@@ -67,6 +64,9 @@
 
 + (UIColor *)lineColor;
 + (void)xy_setLineColor:(UIColor *)color;
+
++ (UIColor *)navigationBackgroundColor;
++ (void)xy_setNavigationBackgroundColor:(UIColor *)color;
 
 + (UIColor *)navigationTitleColor;
 + (void)xy_setNavigationTitleColor:(UIColor *)color;
@@ -107,6 +107,21 @@
 + (UIColor*)webViewProgressColor;
 + (void)xy_setWebViewProgressColor:(UIColor*)webViewProgressColor;
 
+
++ (UIColor *)ButtonNormalHighlightedColor;
++ (void)xy_setButtonNormalHighlightedColor:(UIColor *)color;
+
++ (UIColor *)ButtonThemeWhiteHighlightedColor;
++ (void)xy_setButtonThemeWhiteHighlightedColor:(UIColor *)color;
+
++ (UIColor *)ButtonThemeWhiteBackHighlightedColor;
++ (void)xy_setButtonThemeWhiteBackHighlightedColor:(UIColor *)color;
+
++ (UIColor *)ButtonThemeWhiteDisabledColor;
++ (void)xy_setButtonThemeWhiteDisabledColor:(UIColor *)color;
+
++ (UIColor *)ButtonThemeWhiteBackDisabledColor;
++ (void)xy_setButtonThemeWhiteBackDisabledColor:(UIColor *)color;
 
 
 @end
