@@ -14,6 +14,7 @@
 #import "XYUIApperanceConfig.h"
 #import "HomeViewController.h"
 #import "MyViewController.h"
+#import "XYNetworkConfig.h"
 
 @interface AppDelegate ()
 
@@ -46,7 +47,8 @@
 }
 
 - (void)setUpXYNetworkConfig{
-    
+//    [XYNetworkConfig xy_setSecurityPolicyCerPath:[[NSBundle mainBundle] pathForResource:@"duideren.in" ofType:@"cer"]];
+    [XYNetworkConfig xy_setRequestDefaultParams:@{}];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

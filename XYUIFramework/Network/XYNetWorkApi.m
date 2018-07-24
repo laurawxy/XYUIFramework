@@ -72,6 +72,7 @@
         NSData *certData = [NSData dataWithContentsOfFile:[XYNetworkConfig securityPolicyCerPath]];
         NSSet *certSet = [NSSet setWithObject:certData];
         _securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate withPinnedCertificates:certSet];
+        _securityPolicy.validatesDomainName = NO;
         _securityPolicy.allowInvalidCertificates = YES;
     }
     return _securityPolicy;

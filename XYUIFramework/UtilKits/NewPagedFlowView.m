@@ -28,11 +28,6 @@
  */
 @property (nonatomic,assign) CGSize pageSize;
 
-/**
- *  指示器
- */
-@property (nonatomic,retain)  UILabel *allPageLabel;
-@property (nonatomic,retain)  UILabel *currentPageLabel;
 
 @end
 
@@ -75,15 +70,9 @@ static NSString *subviewClassName;
     
     [self addSubview:self.scrollView];
     
-    self.allPageLabel = [[UILabel alloc] init];
-    self.allPageLabel.textColor = [XYThemeColor blackLevelOneColor];
-    self.allPageLabel.font = KThemeNormalFont(14);
-    [self addSubview:self.allPageLabel];
-    
-    self.currentPageLabel = [[UILabel alloc] init];
-    self.currentPageLabel.textColor = [XYThemeColor blackLevelOneColor];
-    self.currentPageLabel.font = KThemeNormalFont(20);
-    [self addSubview:self.currentPageLabel];
+    self.pageControl = [[XYPageControl alloc] initWithFrame:CGRectMake(0, self.height-20, self.width, 20)];
+    [self addSubview:self.pageControl];
+
 }
 
 - (void)setLeftRightMargin:(CGFloat)leftRightMargin {
@@ -429,13 +418,9 @@ static NSString *subviewClassName;
                 return;
             }
             
-            self.allPageLabel.text = [NSString stringWithFormat:@"%d",(int)self.orginPageCount];
-            [self.allPageLabel sizeToFit];
-            self.allPageLabel.frame = CGRectMake(self.width-XYCommonLeftMargin-self.allPageLabel.width, self.height-12-self.allPageLabel.height, self.allPageLabel.width, self.allPageLabel.height);
-            
-            self.currentPageLabel.text = @"1/";
-            [self.currentPageLabel sizeToFit];
-            self.currentPageLabel.frame = CGRectMake(self.allPageLabel.left-self.currentPageLabel.width, self.height-12-self.currentPageLabel.height, self.currentPageLabel.width, self.currentPageLabel.height);
+            if (self.pageControl && [self.pageControl respondsToSelector:@selector(setNumberOfPages:)]) {
+                [self.pageControl setNumberOfPages:self.orginPageCount];
+            }
         }
         
         //重置pageWidth
@@ -664,10 +649,10 @@ static NSString *subviewClassName;
     [self setPagesAtContentOffset:scrollView.contentOffset];
     [self refreshVisibleCellAppearance];
     
-    self.currentPageLabel.text = [NSString stringWithFormat:@"%d/",(int)pageIndex+1];
-    [self.currentPageLabel sizeToFit];
-    self.currentPageLabel.frame = CGRectMake(self.allPageLabel.left-self.currentPageLabel.width, self.height-12-self.currentPageLabel.height, self.currentPageLabel.width, self.currentPageLabel.height);
-    
+    if (self.pageControl && [self.pageControl respondsToSelector:@selector(setCurrentPage:)]) {
+        
+        [self.pageControl setCurrentPage:pageIndex];
+    }
     
     if ([_delegate respondsToSelector:@selector(didScrollToPage:inFlowView:)] && _currentPageIndex != pageIndex && pageIndex >= 0) {
         [_delegate didScrollToPage:pageIndex inFlowView:self];

@@ -11,6 +11,8 @@
 		C50BEAA52105D5570005AB82 /* XYTitleDetailArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BEA9F2105D5560005AB82 /* XYTitleDetailArrowCell.m */; };
 		C50BEAA62105D5570005AB82 /* XYTitleArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BEAA02105D5560005AB82 /* XYTitleArrowCell.m */; };
 		C50BEAA72105D5570005AB82 /* XYImageTitleDetailArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BEAA22105D5560005AB82 /* XYImageTitleDetailArrowCell.m */; };
+		C546A0B82106E80000211655 /* duideren.in.cer in Resources */ = {isa = PBXBuildFile; fileRef = C546A0B72106E80000211655 /* duideren.in.cer */; };
+		C546A0BB2106F0FD00211655 /* XYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0BA2106F0FD00211655 /* XYPageControl.m */; };
 		CC0BAFC920FECAE800664BDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BAFC820FECAE800664BDD /* AppDelegate.m */; };
 		CC0BAFD220FECAE800664BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD020FECAE800664BDD /* Main.storyboard */; };
 		CC0BAFD420FECAEA00664BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD320FECAEA00664BDD /* Assets.xcassets */; };
@@ -99,6 +101,9 @@
 		C50BEAA22105D5560005AB82 /* XYImageTitleDetailArrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYImageTitleDetailArrowCell.m; sourceTree = "<group>"; };
 		C50BEAA32105D5560005AB82 /* XYImageTitleDetailArrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYImageTitleDetailArrowCell.h; sourceTree = "<group>"; };
 		C50BEAA42105D5560005AB82 /* XYTitleDetailArrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTitleDetailArrowCell.h; sourceTree = "<group>"; };
+		C546A0B72106E80000211655 /* duideren.in.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = duideren.in.cer; sourceTree = "<group>"; };
+		C546A0B92106F0FD00211655 /* XYPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPageControl.h; sourceTree = "<group>"; };
+		C546A0BA2106F0FD00211655 /* XYPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYPageControl.m; sourceTree = "<group>"; };
 		CC0BAFC420FECAE800664BDD /* XYUIFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYUIFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0BAFC720FECAE800664BDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC0BAFC820FECAE800664BDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -299,6 +304,7 @@
 				CCD7937B21005BD000831A6A /* MyViewController.m */,
 				CCCA5AF62101787D00D51EE8 /* DemoNetworkApi.h */,
 				CCCA5AF72101787D00D51EE8 /* DemoNetworkApi.m */,
+				C546A0B72106E80000211655 /* duideren.in.cer */,
 				CC0BAFD020FECAE800664BDD /* Main.storyboard */,
 				CC0BAFD320FECAEA00664BDD /* Assets.xcassets */,
 				CC0BAFD520FECAEA00664BDD /* LaunchScreen.storyboard */,
@@ -444,6 +450,8 @@
 				CC0BB04720FECBFF00664BDD /* MDHTMLLabel.m */,
 				CC0BB06320FECBFF00664BDD /* NewPagedFlowView.h */,
 				CC0BB05220FECBFF00664BDD /* NewPagedFlowView.m */,
+				C546A0B92106F0FD00211655 /* XYPageControl.h */,
+				C546A0BA2106F0FD00211655 /* XYPageControl.m */,
 				CC0BB05E20FECBFF00664BDD /* PGIndexBannerSubiew.h */,
 				CC0BB04D20FECBFF00664BDD /* PGIndexBannerSubiew.m */,
 				CC0BB06620FECBFF00664BDD /* XYAlertViewController.h */,
@@ -595,6 +603,7 @@
 			files = (
 				CC0BAFD720FECAEA00664BDD /* LaunchScreen.storyboard in Resources */,
 				CC0BAFD420FECAEA00664BDD /* Assets.xcassets in Resources */,
+				C546A0B82106E80000211655 /* duideren.in.cer in Resources */,
 				CCD793732100366700831A6A /* XYUIBundle.bundle in Resources */,
 				CC0BAFD220FECAE800664BDD /* Main.storyboard in Resources */,
 			);
@@ -715,6 +724,7 @@
 				CC0BB07220FECBFF00664BDD /* XYThemeFont.m in Sources */,
 				CC0BB08F20FECBFF00664BDD /* XYTableFootView.m in Sources */,
 				CCD7935C21002ECD00831A6A /* XYUIApperanceConfig.m in Sources */,
+				C546A0BB2106F0FD00211655 /* XYPageControl.m in Sources */,
 				CC0BB06F20FECBFF00664BDD /* UIViewController+XYNavigationBarItem.m in Sources */,
 				CC0BAFDA20FECAEA00664BDD /* main.m in Sources */,
 				CC0BB08A20FECBFF00664BDD /* XYTabBarViewController.m in Sources */,

@@ -11,7 +11,9 @@
 #import "AFNetworking.h"
 #import "XYCommonDefine.h"
 
-@interface XYNetWorkApi : NSObject
+@interface XYNetWorkApi : NSObject{
+    AFSecurityPolicy *_securityPolicy;
+}
 
 @property (nonatomic, copy) NSDictionary *singleHTTPRequestHeaders;
 

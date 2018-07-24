@@ -10,6 +10,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PGIndexBannerSubiew.h"
+#import "XYPageControl.h"
 
 @protocol NewPagedFlowViewDataSource;
 @protocol NewPagedFlowViewDelegate;
@@ -53,6 +54,12 @@ typedef enum{
  *  如果以后需要支持reuseIdentifier，这边就得使用字典类型了
  */
 @property (nonatomic,strong) NSMutableArray *reusableCells;
+
+/**
+ *  指示器
+ */
+@property (nonatomic,retain)  XYPageControl *pageControl;
+
 
 @property (nonatomic,assign)   id <NewPagedFlowViewDataSource> dataSource;
 @property (nonatomic,assign)   id <NewPagedFlowViewDelegate>   delegate;

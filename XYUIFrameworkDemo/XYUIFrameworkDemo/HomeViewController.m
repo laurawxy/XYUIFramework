@@ -22,7 +22,15 @@
     [self setNavigationTitle:@"首页"];
     
     [XYNetWorkApi startRequestWithParams:nil requestUrl:@"https://duideren.in/api/v1/interest/getInterestList" actionName:@"查找兴趣专区" requestMethod:YTKRequestMethodGET requestSuccessBlock:^(id responseBody) {
-        
+
+
+    } requestFaliureBlock:^(id responseBody) {
+
+    } networkFaliureBlock:^(NSError *error) {
+
+    }];
+    
+    [XYNetWorkApi startRequestWithParams:nil requestUrl:@"https://duideren.in/api/v1/topBanner/getTopBanners" actionName:@"" requestMethod:YTKRequestMethodPOST requestSuccessBlock:^(id responseBody) {
         
     } requestFaliureBlock:^(id responseBody) {
         
