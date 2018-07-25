@@ -54,6 +54,8 @@
 #import "XYImageTitleDetailArrowCell.h"
 #import "XYTitleArrowCell.h"
 #import "XYTitleDetailArrowCell.h"
+#import "XYHorizontalScrollView.h"
+#import "XYListSectionHeadView.h"
 
 #import "UIView+XYFrame.h"
 #import "UIView+XYLine.h"
@@ -72,7 +74,6 @@
 #import "XYUIApperanceConfig.h"
 #import "XYNetworkConfig.h"
 #import "XYHTTPSessionManager.h"
-
 
 
 #endif /* XYUIFramework_h */
