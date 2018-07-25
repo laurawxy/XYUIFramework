@@ -337,4 +337,53 @@ static UIColor *_ButtonThemeWhiteBackDisabledColor;
     _ButtonThemeWhiteBackDisabledColor = color;
 }
 
+static UIColor *_ButtonWhiteBlackBorderColor;
++ (UIColor *)ButtonWhiteBlackBorderColor{
+    if (!_ButtonWhiteBlackBorderColor) {
+        _ButtonWhiteBlackBorderColor = [XYThemeColor blackLevelFourColor];
+    }
+    return _ButtonWhiteBlackBorderColor;
+}
++ (void)xy_setButtonWhiteBlackBorderColor:(UIColor *)color{
+    _ButtonWhiteBlackBorderColor = color;
+}
+
+
+static UIColor *_ButtonTWhiteBlackHighlightedColor;
++ (UIColor *)ButtonTWhiteBlackHighlightedColor{
+    if (!_ButtonTWhiteBlackHighlightedColor) {
+        _ButtonTWhiteBlackHighlightedColor = RGB(102, 102, 102);
+    }
+    return _ButtonTWhiteBlackHighlightedColor;
+}
++ (void)xy_setButtonTWhiteBlackHighlightedColor:(UIColor *)color{
+    _ButtonTWhiteBlackHighlightedColor = color;
+}
+
+
+
+static UIColor *_ButtonTWhiteBlackBackHighlightedColor;
++ (UIColor *)ButtonTWhiteBlackBackHighlightedColor{
+    if (!_ButtonTWhiteBlackBackHighlightedColor) {
+        _ButtonTWhiteBlackBackHighlightedColor = RGB(242,242,242);
+    }
+    return _ButtonTWhiteBlackBackHighlightedColor;
+}
++ (void)xy_setButtonTWhiteBlackBackHighlightedColor:(UIColor *)color{
+    _ButtonTWhiteBlackBackHighlightedColor = color;
+}
+
+
+static UIColor *_ButtonTWhiteBlackBackDisabledColor;
++ (UIColor *)ButtonTWhiteBlackBackDisabledColor{
+    if (!_ButtonTWhiteBlackBackDisabledColor) {
+        _ButtonTWhiteBlackBackDisabledColor = [UIColor whiteColor];
+    }
+    return _ButtonTWhiteBlackBackDisabledColor;
+}
++ (void)xy_setButtonTWhiteBlackBackDisabledColor:(UIColor *)color{
+    _ButtonTWhiteBlackBackDisabledColor = color;
+}
+
+
 @end

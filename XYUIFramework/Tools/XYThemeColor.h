@@ -124,4 +124,16 @@
 + (void)xy_setButtonThemeWhiteBackDisabledColor:(UIColor *)color;
 
 
++ (UIColor *)ButtonWhiteBlackBorderColor;
++ (void)xy_setButtonWhiteBlackBorderColor:(UIColor *)color;
+
++ (UIColor *)ButtonTWhiteBlackHighlightedColor;
++ (void)xy_setButtonTWhiteBlackHighlightedColor:(UIColor *)color;
+
++ (UIColor *)ButtonTWhiteBlackBackHighlightedColor;
++ (void)xy_setButtonTWhiteBlackBackHighlightedColor:(UIColor *)color;
+
++ (UIColor *)ButtonTWhiteBlackBackDisabledColor;
++ (void)xy_setButtonTWhiteBlackBackDisabledColor:(UIColor *)color;
+
 @end

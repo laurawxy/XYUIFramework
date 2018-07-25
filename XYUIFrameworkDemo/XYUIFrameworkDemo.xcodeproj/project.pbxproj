@@ -13,6 +13,9 @@
 		C50BEAA72105D5570005AB82 /* XYImageTitleDetailArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BEAA22105D5560005AB82 /* XYImageTitleDetailArrowCell.m */; };
 		C546A0B82106E80000211655 /* duideren.in.cer in Resources */ = {isa = PBXBuildFile; fileRef = C546A0B72106E80000211655 /* duideren.in.cer */; };
 		C546A0BB2106F0FD00211655 /* XYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0BA2106F0FD00211655 /* XYPageControl.m */; };
+		C546A0F82108530D00211655 /* XYHorizontalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F32108530B00211655 /* XYHorizontalScrollView.m */; };
+		C546A0F92108530D00211655 /* XYHorizontalScrollViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F42108530C00211655 /* XYHorizontalScrollViewItem.m */; };
+		C546A0FA2108530D00211655 /* XYListSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F62108530C00211655 /* XYListSectionHeadView.m */; };
 		CC0BAFC920FECAE800664BDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BAFC820FECAE800664BDD /* AppDelegate.m */; };
 		CC0BAFD220FECAE800664BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD020FECAE800664BDD /* Main.storyboard */; };
 		CC0BAFD420FECAEA00664BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD320FECAEA00664BDD /* Assets.xcassets */; };
@@ -104,6 +107,12 @@
 		C546A0B72106E80000211655 /* duideren.in.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = duideren.in.cer; sourceTree = "<group>"; };
 		C546A0B92106F0FD00211655 /* XYPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPageControl.h; sourceTree = "<group>"; };
 		C546A0BA2106F0FD00211655 /* XYPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYPageControl.m; sourceTree = "<group>"; };
+		C546A0F22108530B00211655 /* XYHorizontalScrollViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHorizontalScrollViewItem.h; sourceTree = "<group>"; };
+		C546A0F32108530B00211655 /* XYHorizontalScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHorizontalScrollView.m; sourceTree = "<group>"; };
+		C546A0F42108530C00211655 /* XYHorizontalScrollViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHorizontalScrollViewItem.m; sourceTree = "<group>"; };
+		C546A0F52108530C00211655 /* XYListSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYListSectionHeadView.h; sourceTree = "<group>"; };
+		C546A0F62108530C00211655 /* XYListSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYListSectionHeadView.m; sourceTree = "<group>"; };
+		C546A0F72108530D00211655 /* XYHorizontalScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHorizontalScrollView.h; sourceTree = "<group>"; };
 		CC0BAFC420FECAE800664BDD /* XYUIFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYUIFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0BAFC720FECAE800664BDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC0BAFC820FECAE800664BDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -442,6 +451,12 @@
 		CC0BB04620FECBFF00664BDD /* UtilKits */ = {
 			isa = PBXGroup;
 			children = (
+				C546A0F72108530D00211655 /* XYHorizontalScrollView.h */,
+				C546A0F32108530B00211655 /* XYHorizontalScrollView.m */,
+				C546A0F22108530B00211655 /* XYHorizontalScrollViewItem.h */,
+				C546A0F42108530C00211655 /* XYHorizontalScrollViewItem.m */,
+				C546A0F52108530C00211655 /* XYListSectionHeadView.h */,
+				C546A0F62108530C00211655 /* XYListSectionHeadView.m */,
 				CC0BB06420FECBFF00664BDD /* XYImageTitleButton.h */,
 				CC0BB05320FECBFF00664BDD /* XYImageTitleButton.m */,
 				CC0BB04E20FECBFF00664BDD /* LCContractView.h */,
@@ -680,6 +695,7 @@
 				CCCA5AF82101787D00D51EE8 /* DemoNetworkApi.m in Sources */,
 				CC0BB07620FECBFF00664BDD /* XYAutoLayout.m in Sources */,
 				CC0BB06E20FECBFF00664BDD /* UIView+XYFrame.m in Sources */,
+				C546A0F82108530D00211655 /* XYHorizontalScrollView.m in Sources */,
 				CC0BB09320FECBFF00664BDD /* NewPagedFlowView.m in Sources */,
 				CC0BB09D20FECBFF00664BDD /* XYRefreshNormalFooter.m in Sources */,
 				CC0BB06B20FECBFF00664BDD /* XYThemeImage.m in Sources */,
@@ -696,9 +712,11 @@
 				CC0BB06D20FECBFF00664BDD /* UITextView+XYPlaceholder.m in Sources */,
 				CC0BB07F20FECBFF00664BDD /* NSObject+XYUtils.m in Sources */,
 				CC0BB08720FECBFF00664BDD /* XYWKDelegateController.m in Sources */,
+				C546A0FA2108530D00211655 /* XYListSectionHeadView.m in Sources */,
 				CC0BB08C20FECBFF00664BDD /* MDHTMLLabel.m in Sources */,
 				CC0BB06C20FECBFF00664BDD /* UIScrollView+XYEmptyDataSet.m in Sources */,
 				CC0BB07B20FECBFF00664BDD /* UIView+XYLine.m in Sources */,
+				C546A0F92108530D00211655 /* XYHorizontalScrollViewItem.m in Sources */,
 				CC0BB09220FECBFF00664BDD /* XYTableView.m in Sources */,
 				CC0BB09C20FECBFF00664BDD /* XYRefreshNormalHeader.m in Sources */,
 				CC0BB09920FECBFF00664BDD /* LCContractView.m in Sources */,
