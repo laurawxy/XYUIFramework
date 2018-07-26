@@ -77,7 +77,7 @@
 
 #define XYLineHeight [XYAutoLayout LineHeight]
 
-#define XYCustomButtonViewLeftMargin [XYAutoLayout CustomButtonViewLeftMargin]
+#define XYCustomButtonViewHeight [XYAutoLayout CustomButtonViewHeight]
 
 #define XYBottomButtonViewHeight [XYAutoLayout BottomButtonViewHeight]
 
