@@ -35,6 +35,8 @@
 @property (nonatomic, assign) SEL logoutPostAction;
 
 
++ (void)xy_setBackImage:(UIImage *)backImage;
+
 - (void)hideBackBarButton;
 - (void)setNavigationTitle:(NSString*)title;
 

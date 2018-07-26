@@ -63,13 +63,24 @@
         [self addBackBarButtonWithActionBlock:^(UIBarButtonItem *barButtonItem, UIButton *button) {
             [weakSelf backAction];
         }];
-        [_navigationBar addLeftButtonWithImage:[XYThemeImage icon_navi_back] completionBlock:^(XYButton * _Nonnull button) {
+        [_navigationBar addLeftButtonWithImage:[XYViewController backImage] completionBlock:^(XYButton * _Nonnull button) {
             [weakSelf backAction];
         }];
     }
     self.showLargeTitle = NO;
     self.largeTitleHeight = 76;
     
+}
+
+static UIImage * _backImage;
++ (UIImage *)backImage{
+    if (!_backImage) {
+        _backImage = [XYThemeImage icon_navi_back];
+    }
+    return _backImage;
+}
++ (void)xy_setBackImage:(UIImage *)backImage{
+    _backImage = backImage;
 }
 
 //-----设置登录、登出 通知

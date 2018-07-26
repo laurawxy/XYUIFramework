@@ -31,9 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self setNavigationTitle:@"网页"];
-    
+        
     self.navigationBar.hideBigTitle = YES;
     [self.navigationBar addSubview:self.progressView];
     [self.progressView mas_makeConstraints:^(MASConstraintMaker *make) {
