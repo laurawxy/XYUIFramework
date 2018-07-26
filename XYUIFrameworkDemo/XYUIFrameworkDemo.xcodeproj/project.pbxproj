@@ -47,9 +47,7 @@
 		CC0BB08120FECBFF00664BDD /* XYNetWorkApi.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB02B20FECBFF00664BDD /* XYNetWorkApi.m */; };
 		CC0BB08320FECBFF00664BDD /* XYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03120FECBFF00664BDD /* XYHTTPSessionManager.m */; };
 		CC0BB08620FECBFF00664BDD /* XYCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03820FECBFF00664BDD /* XYCommonDefine.m */; };
-		CC0BB08720FECBFF00664BDD /* XYWKDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03C20FECBFF00664BDD /* XYWKDelegateController.m */; };
 		CC0BB08820FECBFF00664BDD /* XYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03D20FECBFF00664BDD /* XYViewController.m */; };
-		CC0BB08920FECBFF00664BDD /* XYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB03E20FECBFF00664BDD /* XYWebViewController.m */; };
 		CC0BB08A20FECBFF00664BDD /* XYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04320FECBFF00664BDD /* XYTabBarViewController.m */; };
 		CC0BB08B20FECBFF00664BDD /* XYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04420FECBFF00664BDD /* XYTableViewController.m */; };
 		CC0BB08C20FECBFF00664BDD /* MDHTMLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04720FECBFF00664BDD /* MDHTMLLabel.m */; };
@@ -174,16 +172,12 @@
 		CC0BB03520FECBFF00664BDD /* XYNetWorkApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNetWorkApi.h; sourceTree = "<group>"; };
 		CC0BB03820FECBFF00664BDD /* XYCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCommonDefine.m; sourceTree = "<group>"; };
 		CC0BB03A20FECBFF00664BDD /* XYCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCommonDefine.h; sourceTree = "<group>"; };
-		CC0BB03C20FECBFF00664BDD /* XYWKDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWKDelegateController.m; sourceTree = "<group>"; };
 		CC0BB03D20FECBFF00664BDD /* XYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYViewController.m; sourceTree = "<group>"; };
-		CC0BB03E20FECBFF00664BDD /* XYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWebViewController.m; sourceTree = "<group>"; };
 		CC0BB03F20FECBFF00664BDD /* XYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTableViewController.h; sourceTree = "<group>"; };
 		CC0BB04020FECBFF00664BDD /* XYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTabBarViewController.h; sourceTree = "<group>"; };
-		CC0BB04120FECBFF00664BDD /* XYWKDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWKDelegateController.h; sourceTree = "<group>"; };
 		CC0BB04220FECBFF00664BDD /* XYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYViewController.h; sourceTree = "<group>"; };
 		CC0BB04320FECBFF00664BDD /* XYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTabBarViewController.m; sourceTree = "<group>"; };
 		CC0BB04420FECBFF00664BDD /* XYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTableViewController.m; sourceTree = "<group>"; };
-		CC0BB04520FECBFF00664BDD /* XYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWebViewController.h; sourceTree = "<group>"; };
 		CC0BB04720FECBFF00664BDD /* MDHTMLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDHTMLLabel.m; sourceTree = "<group>"; };
 		CC0BB04820FECBFF00664BDD /* XYServiceUploading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYServiceUploading.h; sourceTree = "<group>"; };
 		CC0BB04920FECBFF00664BDD /* XYCommonInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCommonInputView.h; sourceTree = "<group>"; };
@@ -436,10 +430,6 @@
 			children = (
 				CC0BB04220FECBFF00664BDD /* XYViewController.h */,
 				CC0BB03D20FECBFF00664BDD /* XYViewController.m */,
-				CC0BB04520FECBFF00664BDD /* XYWebViewController.h */,
-				CC0BB03E20FECBFF00664BDD /* XYWebViewController.m */,
-				CC0BB04120FECBFF00664BDD /* XYWKDelegateController.h */,
-				CC0BB03C20FECBFF00664BDD /* XYWKDelegateController.m */,
 				CC0BB04020FECBFF00664BDD /* XYTabBarViewController.h */,
 				CC0BB04320FECBFF00664BDD /* XYTabBarViewController.m */,
 				CC0BB03F20FECBFF00664BDD /* XYTableViewController.h */,
@@ -688,7 +678,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC0BB08920FECBFF00664BDD /* XYWebViewController.m in Sources */,
 				CC0BB08320FECBFF00664BDD /* XYHTTPSessionManager.m in Sources */,
 				CC0BB07920FECBFF00664BDD /* UncaughtExceptionHandler.m in Sources */,
 				CC0BB07D20FECBFF00664BDD /* XYLocalStorageUtil.m in Sources */,
@@ -711,7 +700,6 @@
 				CC0BB07A20FECBFF00664BDD /* UINavigationController+XYNavigation.m in Sources */,
 				CC0BB06D20FECBFF00664BDD /* UITextView+XYPlaceholder.m in Sources */,
 				CC0BB07F20FECBFF00664BDD /* NSObject+XYUtils.m in Sources */,
-				CC0BB08720FECBFF00664BDD /* XYWKDelegateController.m in Sources */,
 				C546A0FA2108530D00211655 /* XYListSectionHeadView.m in Sources */,
 				CC0BB08C20FECBFF00664BDD /* MDHTMLLabel.m in Sources */,
 				CC0BB06C20FECBFF00664BDD /* UIScrollView+XYEmptyDataSet.m in Sources */,

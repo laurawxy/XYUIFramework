@@ -48,7 +48,6 @@
 #import "XYServiceUploading.h"
 #import "XYTabbar.h"
 #import "XYTableFootView.h"
-#import "XYWebViewController.h"
 #import "XYTabBarViewController.h"
 #import "XYTableViewController.h"
 #import "XYImageTitleDetailArrowCell.h"
