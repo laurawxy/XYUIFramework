@@ -12,11 +12,6 @@
 @property (nonatomic, strong) NSMutableArray * indicatorViews;
 @property (nonatomic, strong) UIView * contentView;
 
-@property (nonatomic, assign) CGFloat indicatorMargin;
-@property (nonatomic, assign) CGFloat indicatorWidth;
-@property (nonatomic, assign) CGFloat currentIndicatorWidth;
-@property (nonatomic, assign) CGFloat indicatorHeight;
-
 @end
 
 

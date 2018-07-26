@@ -16,5 +16,10 @@
 @property (nonatomic, strong) UIColor * currentPageIndicatorColor;
 @property (nonatomic, assign) NSInteger currentPage;
 
+@property (nonatomic, assign) CGFloat indicatorMargin;
+@property (nonatomic, assign) CGFloat indicatorWidth;
+@property (nonatomic, assign) CGFloat currentIndicatorWidth;
+@property (nonatomic, assign) CGFloat indicatorHeight;
+
 - (instancetype)initWithFrame:(CGRect)frame indicatorMargin:(CGFloat)margin indicatorWidth:(CGFloat)indicatorWidth currentIndicatorWidth:(CGFloat)currentIndicatorWidth indicatorHeight:(CGFloat)indicatorHeight;
 @end
