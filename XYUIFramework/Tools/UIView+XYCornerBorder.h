@@ -15,6 +15,6 @@
 
 - (void)addCornerAndBorderWithCornerRadius:(CGFloat)cornerRadius;
 - (void)addCornerAndBorderWithCornerRadius:(CGFloat)cornerRadius borderColor:(UIColor *)borderColor;
-- (void)createCornerRadiusShadowWithCornerRadius:(CGFloat)cornerRadius shadowCornerRadius:(CGFloat)shadowCornerRadius offset:(CGSize)offset opacity:(CGFloat)opacity shadowRadius:(CGFloat)shadowRadius;
+- (void)createCornerRadiusShadowWithCornerRadius:(CGFloat)cornerRadius shadowColor:(UIColor *)shadowColor shadowCornerRadius:(CGFloat)shadowCornerRadius offset:(CGSize)offset opacity:(CGFloat)opacity shadowRadius:(CGFloat)shadowRadius;
 
 @end

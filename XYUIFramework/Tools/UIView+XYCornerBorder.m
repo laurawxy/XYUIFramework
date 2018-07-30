@@ -32,8 +32,8 @@
     self.layer.borderColor = borderColor.CGColor;
     self.layer.borderWidth = XYLineHeight;
 }
-- (void)createCornerRadiusShadowWithCornerRadius:(CGFloat)cornerRadius shadowCornerRadius:(CGFloat)shadowCornerRadius offset:(CGSize)offset opacity:(CGFloat)opacity shadowRadius:(CGFloat)shadowRadius{
-    self.layer.shadowColor = [UIColor blackColor].CGColor;
+- (void)createCornerRadiusShadowWithCornerRadius:(CGFloat)cornerRadius shadowColor:(UIColor *)shadowColor shadowCornerRadius:(CGFloat)shadowCornerRadius offset:(CGSize)offset opacity:(CGFloat)opacity shadowRadius:(CGFloat)shadowRadius{
+    self.layer.shadowColor = shadowColor.CGColor;
     self.layer.shadowOpacity = opacity;
     self.layer.shadowOffset = offset;
     self.layer.shadowRadius = shadowRadius;
