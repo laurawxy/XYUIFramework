@@ -58,6 +58,7 @@
 
 #import "UIView+XYFrame.h"
 #import "UIView+XYLine.h"
+#import "UIView+XYGradientLayer.h"
 #import "UIView+XYCornerBorder.h"
 #import "UIView+XYLayout.h"
 #import "SVProgressHUD+XYCustomization.h"
