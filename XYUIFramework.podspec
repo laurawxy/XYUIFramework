@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "XYUIFramework"
-s.version      = "0.0.55"
+s.version      = "0.0.56"
 s.summary      = "XYUIFramework"
 s.homepage     = "https://github.com/laurawxy/XYUIFramework"
 s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -10,8 +10,6 @@ s.source       = {:git => "https://github.com/laurawxy/XYUIFramework.git", :tag 
 s.source_files = "XYUIFramework/**/*.{h,m}"
 
 s.requires_arc = true
-
-s.resource = "XYUIFramework/Resources/XYUIBundle.bundle"
 
 s.dependency 'Masonry'
 s.dependency 'AFNetworking'
