@@ -282,17 +282,6 @@ static UIColor *_webViewProgressColor;
 }
 
 
-static UIColor *_ButtonWhiteBlackBorderColor;
-+ (UIColor *)ButtonWhiteBlackBorderColor{
-    if (!_ButtonWhiteBlackBorderColor) {
-        _ButtonWhiteBlackBorderColor = [XYThemeColor blackLevelFourColor];
-    }
-    return _ButtonWhiteBlackBorderColor;
-}
-+ (void)xy_setButtonWhiteBlackBorderColor:(UIColor *)color{
-    _ButtonWhiteBlackBorderColor = color;
-}
-
 static UIColor *_ButtonWhiteBlackTitleColor;
 + (UIColor *)ButtonWhiteBlackTitleColor{
     if (!_ButtonWhiteBlackTitleColor) {

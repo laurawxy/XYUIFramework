@@ -108,10 +108,6 @@
 + (void)xy_setWebViewProgressColor:(UIColor*)webViewProgressColor;
 
 
-
-+ (UIColor *)ButtonWhiteBlackBorderColor;
-+ (void)xy_setButtonWhiteBlackBorderColor:(UIColor *)color;
-
 + (UIColor *)ButtonWhiteBlackTitleColor;
 + (void)xy_setButtonWhiteBlackTitleColor:(UIColor *)color;
 

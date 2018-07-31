@@ -69,14 +69,13 @@
             
             break;
         case XYCustomButtonStyleWhiteThemeColor:{
-            self.layer.borderColor = [XYThemeColor ThemeColor].CGColor;
+
             [self setTitleColor:[XYThemeColor ThemeColor] forState:UIControlStateNormal];
             [self setBackgroundColor:[UIColor whiteColor] forState:UIControlStateNormal];
         }
             break;
         case XYCustomButtonStyleWhiteBlackColor:{
             
-            self.layer.borderColor = [XYThemeColor ButtonWhiteBlackBorderColor].CGColor;
             [self setTitleColor:[XYThemeColor ButtonWhiteBlackTitleColor] forState:UIControlStateNormal];
             [self setBackgroundColor:[UIColor whiteColor] forState:UIControlStateNormal];
         }
