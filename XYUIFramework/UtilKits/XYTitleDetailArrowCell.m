@@ -78,6 +78,7 @@
 - (void)setShowIndicate:(BOOL)showIndicate {
     _showIndicate = showIndicate;
     self.indicateImageView.hidden = !_showIndicate;
+    [self.indicateImageView sizeToFit];
     [self.indicateImageView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(self.showIndicate ? self.indicateImageView.size:CGSizeZero);
     }];
