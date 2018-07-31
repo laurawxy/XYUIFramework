@@ -8,43 +8,39 @@
 
 #import "XYThemeImage.h"
 
-#define XYUIBundle_name @"XYUIBundle.bundle"
-#define XYUIBundle_Path [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:XYUIBundle_name]
-#define XYUIBundle [NSBundle bundleWithPath:XYUIBundle_Path]
-
 @implementation XYThemeImage
 
 + (UIImage *)icon_navi_back{
     
-    return [UIImage imageNamed:@"icon_navi_back" inBundle:XYUIBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:@"dogFood"];
 }
 + (UIImage *)icon_noInternet{
-    return [UIImage imageNamed:@"icon_noInternet" inBundle:XYUIBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:@"dogFood"];
 }
 + (UIImage *)icon_noData{
-    return [UIImage imageNamed:@"icon_noData" inBundle:XYUIBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:@"dogFood"];
 }
 + (UIImage *)icon_toast_success{
-    return [UIImage imageNamed:@"icon_toast_success" inBundle:XYUIBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:@"dogFood"];
 }
 + (UIImage *)icon_toast_failure{
-    return [UIImage imageNamed:@"icon_toast_success" inBundle:XYUIBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:@"dogFood"];
 }
 
 + (UIImage *)icon_tabbar_home_default{
-    return [UIImage imageNamed:@"icon_tabbar_home_default" inBundle:XYUIBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:@"dogFood"];
 }
 
 + (UIImage *)icon_tabbar_home_selected{
-    return [UIImage imageNamed:@"icon_tabbar_home_selected" inBundle:XYUIBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:@"dogFood"];
 }
 
 + (UIImage *)icon_tabbar_my_default{
-    return [UIImage imageNamed:@"icon_tabbar_my_default" inBundle:XYUIBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:@"dogFood"];
 }
 
 + (UIImage *)icon_tabbar_my_Selected{
-    return [UIImage imageNamed:@"icon_tabbar_my_Selected" inBundle:XYUIBundle compatibleWithTraitCollection:nil];
+    return [UIImage imageNamed:@"dogFood"];
 }
 
 
