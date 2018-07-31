@@ -16,6 +16,7 @@
 		C546A0F82108530D00211655 /* XYHorizontalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F32108530B00211655 /* XYHorizontalScrollView.m */; };
 		C546A0F92108530D00211655 /* XYHorizontalScrollViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F42108530C00211655 /* XYHorizontalScrollViewItem.m */; };
 		C546A0FA2108530D00211655 /* XYListSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F62108530C00211655 /* XYListSectionHeadView.m */; };
+		C5BB2E3D21104B810051D62D /* XYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BB2E3C21104B810051D62D /* XYImageView.m */; };
 		C5D01ECA210EAC800088972C /* UIView+XYGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D01EC9210EAC800088972C /* UIView+XYGradientLayer.m */; };
 		CC0BAFC920FECAE800664BDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BAFC820FECAE800664BDD /* AppDelegate.m */; };
 		CC0BAFD220FECAE800664BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0BAFD020FECAE800664BDD /* Main.storyboard */; };
@@ -111,6 +112,8 @@
 		C546A0F52108530C00211655 /* XYListSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYListSectionHeadView.h; sourceTree = "<group>"; };
 		C546A0F62108530C00211655 /* XYListSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYListSectionHeadView.m; sourceTree = "<group>"; };
 		C546A0F72108530D00211655 /* XYHorizontalScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHorizontalScrollView.h; sourceTree = "<group>"; };
+		C5BB2E3B21104B810051D62D /* XYImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYImageView.h; sourceTree = "<group>"; };
+		C5BB2E3C21104B810051D62D /* XYImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYImageView.m; sourceTree = "<group>"; };
 		C5D01EC8210EAC800088972C /* UIView+XYGradientLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XYGradientLayer.h"; sourceTree = "<group>"; };
 		C5D01EC9210EAC800088972C /* UIView+XYGradientLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XYGradientLayer.m"; sourceTree = "<group>"; };
 		CC0BAFC420FECAE800664BDD /* XYUIFrameworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYUIFrameworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -467,6 +470,8 @@
 				CC0BB05520FECBFF00664BDD /* XYBottomButtonView.m */,
 				CC0BB04F20FECBFF00664BDD /* XYButton.h */,
 				CC0BB06720FECBFF00664BDD /* XYButton.m */,
+				C5BB2E3B21104B810051D62D /* XYImageView.h */,
+				C5BB2E3C21104B810051D62D /* XYImageView.m */,
 				CC0BB04920FECBFF00664BDD /* XYCommonInputView.h */,
 				CC0BB05B20FECBFF00664BDD /* XYCommonInputView.m */,
 				CC0BB06020FECBFF00664BDD /* XYModelViewController.h */,
@@ -737,6 +742,7 @@
 				CC0BB08620FECBFF00664BDD /* XYCommonDefine.m in Sources */,
 				CC0BB07120FECBFF00664BDD /* XYBundleInfoHelper.m in Sources */,
 				CC0BB0A420FEDF9600664BDD /* XYMacroConfig.m in Sources */,
+				C5BB2E3D21104B810051D62D /* XYImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

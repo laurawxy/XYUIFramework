@@ -54,6 +54,7 @@
 #import "XYTitleDetailArrowCell.h"
 #import "XYHorizontalScrollView.h"
 #import "XYListSectionHeadView.h"
+#import "XYImageView.h"
 
 #import "UIView+XYFrame.h"
 #import "UIView+XYLine.h"

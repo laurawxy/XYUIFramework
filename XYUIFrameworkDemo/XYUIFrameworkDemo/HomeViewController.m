@@ -7,7 +7,12 @@
 //
 
 #import "HomeViewController.h"
-#import "XYNetWorkApi.h"
+#import "XYThemeColor.h"
+#import "XYThemeFont.h"
+#import "XYButton.h"
+#import "XYAutoLayout.h"
+#import "UIView+XYFrame.h"
+#import "UIView+XYCornerBorder.h"
 
 @interface HomeViewController ()
 
@@ -21,23 +26,18 @@
     
     [self setNavigationTitle:@"首页"];
     
-    [XYNetWorkApi startRequestWithParams:nil requestUrl:@"https://duideren.in/api/v1/interest/getInterestList" actionName:@"查找兴趣专区" requestMethod:YTKRequestMethodGET requestSuccessBlock:^(id responseBody) {
-
-
-    } requestFaliureBlock:^(id responseBody) {
-
-    } networkFaliureBlock:^(NSError *error) {
-
-    }];
+    XYButton *_unLockPhotoButton = [[XYButton alloc] initWithBlock];
+    _unLockPhotoButton.buttonFont = KThemeBoldFont(18);
+    [_unLockPhotoButton setTitle:@"解锁照片" forState:UIControlStateNormal];
+    [_unLockPhotoButton setButtonStyle:XYCustomButtonStyleWhiteBlackColor];
+    [_unLockPhotoButton setTitleColor:[XYThemeColor blackLevelTwoColor] forState:UIControlStateNormal];
+    _unLockPhotoButton.frame = CGRectMake(XYCommonLeftMargin, 100, SAFEAREA_WIDTH, XYCustomButtonViewHeight);
+    [_unLockPhotoButton createCornerRadiusShadowWithCornerRadius:_unLockPhotoButton.height/2 shadowColor:RGB(0,0,0) shadowCornerRadius:0.f offset:CGSizeMake(0, 4.f) opacity:0.1 shadowRadius:10.f];
     
-    [XYNetWorkApi startRequestWithParams:nil requestUrl:@"https://duideren.in/api/v1/topBanner/getTopBanners" actionName:@"" requestMethod:YTKRequestMethodPOST requestSuccessBlock:^(id responseBody) {
-        
-    } requestFaliureBlock:^(id responseBody) {
-        
-    } networkFaliureBlock:^(NSError *error) {
-        
-    }];
+    [self.view addSubview:_unLockPhotoButton];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

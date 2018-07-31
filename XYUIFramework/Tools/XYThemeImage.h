@@ -33,6 +33,10 @@
 + (UIImage *)imageWithColor:(UIColor *)color;
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size cornerRadious:(CGFloat)cornerRadious;
+
 + (NSArray<UIImage*>*)imagesWithGifFile:(NSString*)fileName;
+
++ (UIImage *)roundedCornerImageWithImage:(UIImage *)image cornerRadious:(CGFloat)cornerRadious;
 
 @end

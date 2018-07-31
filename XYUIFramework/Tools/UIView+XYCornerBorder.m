@@ -9,6 +9,7 @@
 #import "UIView+XYCornerBorder.h"
 #import "XYThemeColor.h"
 #import "XYAutoLayout.h"
+#import "XYButton.h"
 
 @implementation UIView (XYCornerBorder)
 
@@ -42,5 +43,12 @@
     self.layer.cornerRadius = cornerRadius;
     self.layer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:[self bounds] cornerRadius:shadowCornerRadius] CGPath];
     self.layer.masksToBounds = NO;
+    if ([self isKindOfClass:[XYButton class]]) {
+        XYButton *button = (XYButton *)self;
+        [button setBackgroundColor:button.backgroundImagecolor cornerRadious:cornerRadius forState:UIControlStateNormal];
+    }
 }
+
+
+
 @end

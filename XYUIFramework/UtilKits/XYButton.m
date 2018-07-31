@@ -50,7 +50,13 @@
     }
 }
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state{
+    _backgroundImagecolor = backgroundColor;
     [self setBackgroundImage:[XYThemeImage imageWithColor:backgroundColor] forState:state];
+}
+
+- (void)setBackgroundColor:(UIColor *)backgroundColor cornerRadious:(CGFloat)cornerRadious forState:(UIControlState)state{
+    _backgroundImagecolor = backgroundColor;
+    [self setBackgroundImage:[XYThemeImage imageWithColor:backgroundColor size:CGSizeMake(self.frame.size.width, self.frame.size.height) cornerRadious:cornerRadious] forState:state];
 }
 
 - (void)setButtonStyle:(XYCustomButtonStyle)buttonStyle{

@@ -80,6 +80,23 @@
     
     return image;
 }
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size cornerRadious:(CGFloat)cornerRadious{
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return [XYThemeImage roundedCornerImageWithImage:image cornerRadious:cornerRadious];
+}
+
+
+
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size{
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
@@ -106,6 +123,30 @@
         CGImageRelease(imageRef);
     }
     return frames;
+}
+
++ (UIImage *)roundedCornerImageWithImage:(UIImage *)image cornerRadious:(CGFloat)cornerRadious{
+    CGFloat w = image.size.width;
+    CGFloat h = image.size.height;
+    
+    CGFloat scale = [UIScreen mainScreen].scale;
+    
+    if (cornerRadious < 0) {
+        cornerRadious = 0;
+    }else if(cornerRadious > MIN(w, h)){
+        cornerRadious = MIN(w, h)/2.0;
+    }
+    
+    UIImage *returnImage = nil;
+    CGRect imageFrame = CGRectMake(0, 0, w, h);
+    
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, scale);
+    [[UIBezierPath bezierPathWithRoundedRect:imageFrame cornerRadius:cornerRadious] addClip];
+    
+    [image drawInRect:imageFrame];
+    returnImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return returnImage;
 }
 
 @end

@@ -32,6 +32,8 @@ typedef void (^XYButtonActionBlock)(XYButton*button);
 
 @property (nonatomic, strong) UIFont *buttonFont;
 
+@property (nonatomic, strong) UIColor *backgroundImagecolor;
+
 - (instancetype)initWithTitle:(NSString*)title;
 - (instancetype)initWithBlock;
 
@@ -40,5 +42,7 @@ typedef void (^XYButtonActionBlock)(XYButton*button);
 - (CGSize)xySizeToFit;
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
+
+- (void)setBackgroundColor:(UIColor *)backgroundColor cornerRadious:(CGFloat)cornerRadious forState:(UIControlState)state;
 
 @end
