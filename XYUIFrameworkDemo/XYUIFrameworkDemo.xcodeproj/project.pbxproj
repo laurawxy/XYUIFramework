@@ -52,7 +52,6 @@
 		CC0BB08A20FECBFF00664BDD /* XYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04320FECBFF00664BDD /* XYTabBarViewController.m */; };
 		CC0BB08B20FECBFF00664BDD /* XYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04420FECBFF00664BDD /* XYTableViewController.m */; };
 		CC0BB08C20FECBFF00664BDD /* MDHTMLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04720FECBFF00664BDD /* MDHTMLLabel.m */; };
-		CC0BB08D20FECBFF00664BDD /* XYCustomButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04A20FECBFF00664BDD /* XYCustomButtonView.m */; };
 		CC0BB08E20FECBFF00664BDD /* XYModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04B20FECBFF00664BDD /* XYModelViewController.m */; };
 		CC0BB08F20FECBFF00664BDD /* XYTableFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04C20FECBFF00664BDD /* XYTableFootView.m */; };
 		CC0BB09020FECBFF00664BDD /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0BB04D20FECBFF00664BDD /* PGIndexBannerSubiew.m */; };
@@ -184,7 +183,6 @@
 		CC0BB04720FECBFF00664BDD /* MDHTMLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDHTMLLabel.m; sourceTree = "<group>"; };
 		CC0BB04820FECBFF00664BDD /* XYServiceUploading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYServiceUploading.h; sourceTree = "<group>"; };
 		CC0BB04920FECBFF00664BDD /* XYCommonInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCommonInputView.h; sourceTree = "<group>"; };
-		CC0BB04A20FECBFF00664BDD /* XYCustomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCustomButtonView.m; sourceTree = "<group>"; };
 		CC0BB04B20FECBFF00664BDD /* XYModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYModelViewController.m; sourceTree = "<group>"; };
 		CC0BB04C20FECBFF00664BDD /* XYTableFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTableFootView.m; sourceTree = "<group>"; };
 		CC0BB04D20FECBFF00664BDD /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 		CC0BB05520FECBFF00664BDD /* XYBottomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBottomButtonView.m; sourceTree = "<group>"; };
 		CC0BB05620FECBFF00664BDD /* XYRefreshNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRefreshNormalFooter.h; sourceTree = "<group>"; };
 		CC0BB05820FECBFF00664BDD /* XYRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRefreshNormalHeader.h; sourceTree = "<group>"; };
-		CC0BB05920FECBFF00664BDD /* XYCustomButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCustomButtonView.h; sourceTree = "<group>"; };
 		CC0BB05A20FECBFF00664BDD /* XYServiceUploading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYServiceUploading.m; sourceTree = "<group>"; };
 		CC0BB05B20FECBFF00664BDD /* XYCommonInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCommonInputView.m; sourceTree = "<group>"; };
 		CC0BB05C20FECBFF00664BDD /* MDHTMLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDHTMLLabel.h; sourceTree = "<group>"; };
@@ -472,8 +469,6 @@
 				CC0BB06720FECBFF00664BDD /* XYButton.m */,
 				CC0BB04920FECBFF00664BDD /* XYCommonInputView.h */,
 				CC0BB05B20FECBFF00664BDD /* XYCommonInputView.m */,
-				CC0BB05920FECBFF00664BDD /* XYCustomButtonView.h */,
-				CC0BB04A20FECBFF00664BDD /* XYCustomButtonView.m */,
 				CC0BB06020FECBFF00664BDD /* XYModelViewController.h */,
 				CC0BB04B20FECBFF00664BDD /* XYModelViewController.m */,
 				CC0BB05620FECBFF00664BDD /* XYRefreshNormalFooter.h */,
@@ -731,7 +726,6 @@
 				CC0BB08120FECBFF00664BDD /* XYNetWorkApi.m in Sources */,
 				CC0BB09A20FECBFF00664BDD /* XYTabbar.m in Sources */,
 				CC0BB09120FECBFF00664BDD /* XYAlertViewController.m in Sources */,
-				CC0BB08D20FECBFF00664BDD /* XYCustomButtonView.m in Sources */,
 				CC0BB07520FECBFF00664BDD /* SVProgressHUD+XYCustomization.m in Sources */,
 				CC0BB07220FECBFF00664BDD /* XYThemeFont.m in Sources */,
 				CC0BB08F20FECBFF00664BDD /* XYTableFootView.m in Sources */,

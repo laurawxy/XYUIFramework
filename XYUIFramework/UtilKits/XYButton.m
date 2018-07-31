@@ -58,53 +58,27 @@
     switch (_buttonStyle) {
         case XYCustomButtonStyleNormal:{
             [self setTitleColor:[XYThemeColor ThemeColor] forState:UIControlStateNormal];
-            [self setTitleColor:[XYThemeColor ButtonNormalHighlightedColor] forState:UIControlStateHighlighted];
-            [self setTitleColor:[XYThemeColor ThemeColor] forState:UIControlStateDisabled];
-
             [self setBackgroundColor:[UIColor clearColor] forState:UIControlStateNormal];
-            [self setBackgroundColor:[UIColor clearColor] forState:UIControlStateHighlighted];
-            [self setBackgroundColor:[UIColor clearColor] forState:UIControlStateDisabled];
         }
             break;
         case XYCustomButtonStyleThemeWhiteColor:{
 
             [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            [self setTitleColor:[XYThemeColor ButtonThemeWhiteHighlightedColor] forState:UIControlStateHighlighted];
-            [self setTitleColor:[XYThemeColor ButtonThemeWhiteDisabledColor] forState:UIControlStateDisabled];
-            
             [self setBackgroundColor:[XYThemeColor ThemeColor] forState:UIControlStateNormal];
-            [self setBackgroundColor:[XYThemeColor ButtonThemeWhiteBackHighlightedColor] forState:UIControlStateHighlighted];
-            [self setBackgroundColor:[XYThemeColor ButtonThemeWhiteBackDisabledColor] forState:UIControlStateDisabled];
-
         }
             
             break;
         case XYCustomButtonStyleWhiteThemeColor:{
-            
             self.layer.borderColor = [XYThemeColor ThemeColor].CGColor;
-            
             [self setTitleColor:[XYThemeColor ThemeColor] forState:UIControlStateNormal];
-            [self setTitleColor:[[XYThemeColor ThemeColor] colorWithAlphaComponent:0.5] forState:UIControlStateHighlighted];
-            [self setTitleColor:[XYThemeColor ThemeColor] forState:UIControlStateDisabled];
-
             [self setBackgroundColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            [self setBackgroundColor:[[XYThemeColor ThemeColor] colorWithAlphaComponent:0.08] forState:UIControlStateHighlighted];
-            [self setBackgroundColor:[UIColor whiteColor] forState:UIControlStateDisabled];
-
         }
             break;
         case XYCustomButtonStyleWhiteBlackColor:{
             
             self.layer.borderColor = [XYThemeColor ButtonWhiteBlackBorderColor].CGColor;
-
-            [self setTitleColor:[XYThemeColor blackLevelOneColor] forState:UIControlStateNormal];
-            [self setTitleColor:[XYThemeColor ButtonTWhiteBlackHighlightedColor] forState:UIControlStateHighlighted];
-            [self setTitleColor:[XYThemeColor blackLevelOneColor] forState:UIControlStateDisabled];
-
+            [self setTitleColor:[XYThemeColor ButtonWhiteBlackTitleColor] forState:UIControlStateNormal];
             [self setBackgroundColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            [self setBackgroundColor:[XYThemeColor ButtonTWhiteBlackBackHighlightedColor] forState:UIControlStateHighlighted];
-            [self setBackgroundColor:[XYThemeColor ButtonTWhiteBlackBackDisabledColor] forState:UIControlStateDisabled];
-
         }
             break;
         default:
@@ -143,6 +117,11 @@
             return titleSize;
         }
     }
+}
+
+- (void)setButtonFont:(UIFont *)buttonFont{
+    _buttonFont = buttonFont;
+    self.titleLabel.font = _buttonFont;
 }
 
 - (void)enabledButton{

@@ -39,7 +39,6 @@
 #import "MDHTMLLabel.h"
 #import "NewPagedFlowView.h"
 #import "XYAlertViewController.h"
-#import "XYCustomButtonView.h"
 #import "XYCommonInputView.h"
 #import "XYBottomButtonView.h"
 #import "XYModelViewController.h"

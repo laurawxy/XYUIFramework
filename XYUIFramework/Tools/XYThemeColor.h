@@ -108,32 +108,12 @@
 + (void)xy_setWebViewProgressColor:(UIColor*)webViewProgressColor;
 
 
-+ (UIColor *)ButtonNormalHighlightedColor;
-+ (void)xy_setButtonNormalHighlightedColor:(UIColor *)color;
-
-+ (UIColor *)ButtonThemeWhiteHighlightedColor;
-+ (void)xy_setButtonThemeWhiteHighlightedColor:(UIColor *)color;
-
-+ (UIColor *)ButtonThemeWhiteBackHighlightedColor;
-+ (void)xy_setButtonThemeWhiteBackHighlightedColor:(UIColor *)color;
-
-+ (UIColor *)ButtonThemeWhiteDisabledColor;
-+ (void)xy_setButtonThemeWhiteDisabledColor:(UIColor *)color;
-
-+ (UIColor *)ButtonThemeWhiteBackDisabledColor;
-+ (void)xy_setButtonThemeWhiteBackDisabledColor:(UIColor *)color;
-
 
 + (UIColor *)ButtonWhiteBlackBorderColor;
 + (void)xy_setButtonWhiteBlackBorderColor:(UIColor *)color;
 
-+ (UIColor *)ButtonTWhiteBlackHighlightedColor;
-+ (void)xy_setButtonTWhiteBlackHighlightedColor:(UIColor *)color;
++ (UIColor *)ButtonWhiteBlackTitleColor;
++ (void)xy_setButtonWhiteBlackTitleColor:(UIColor *)color;
 
-+ (UIColor *)ButtonTWhiteBlackBackHighlightedColor;
-+ (void)xy_setButtonTWhiteBlackBackHighlightedColor:(UIColor *)color;
-
-+ (UIColor *)ButtonTWhiteBlackBackDisabledColor;
-+ (void)xy_setButtonTWhiteBlackBackDisabledColor:(UIColor *)color;
 
 @end

@@ -30,6 +30,8 @@ typedef void (^XYButtonActionBlock)(XYButton*button);
 @property (nonatomic, assign) XYCustomButtonStyle buttonStyle;
 @property (nonatomic, assign) XYButtonSizeType buttonSizeType;
 
+@property (nonatomic, strong) UIFont *buttonFont;
+
 - (instancetype)initWithTitle:(NSString*)title;
 - (instancetype)initWithBlock;
 
