@@ -201,4 +201,28 @@
     }
 }
 
+- (CGFloat)width{
+    if ([UIDevice currentDevice].systemVersion.floatValue<9) {
+       return self.titleButton.width+self.imageButton.width+self.imageTitleMargin;
+    }else{
+        return self.width;
+    }
+}
+
+- (CGFloat)height{
+    if ([UIDevice currentDevice].systemVersion.floatValue<9) {
+        return self.titleButton.height+self.imageButton.height+self.imageTitleMargin;
+    }else{
+        return self.height;
+    }
+}
+
+- (CGSize)size{
+    if ([UIDevice currentDevice].systemVersion.floatValue<9) {
+        return CGSizeMake(self.width, self.height);
+    }else{
+        return self.size;
+    }
+}
+
 @end

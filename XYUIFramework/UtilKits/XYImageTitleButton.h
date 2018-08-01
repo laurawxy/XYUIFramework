@@ -26,9 +26,9 @@ typedef NS_ENUM(NSInteger ,XYImageTitleButtonType){
 @property (nonatomic,strong) XYButton *titleButton;
 @property (nonatomic,assign) CGFloat imageTitleMargin;
 @property (nonatomic,assign) XYImageTitleButtonType type;
+@property (nonatomic) XYImageTitleButtonActionBlock imageTitleButtonActionBlock;
 
 - (instancetype)initWithType:(XYImageTitleButtonType)type andTitleFont:(UIFont*)font andTitle:(NSString*)title andImage:(UIImage*)image andFrame:(CGRect)frame;
-@property(nonatomic,copy)XYImageTitleButtonActionBlock imageTitleButtonActionBlock;
 
 - (void)sizeToFitXYImageTitleButton;
 - (void)transformMakeRotation:(CGFloat)angle;

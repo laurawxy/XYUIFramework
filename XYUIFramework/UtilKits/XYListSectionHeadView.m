@@ -77,7 +77,7 @@
     WeakSelf
     _rightButton.imageTitleButtonActionBlock = ^(XYImageTitleButton *button) {
         if(weakSelf.clickAction) {
-            weakSelf.clickAction(weakSelf.title);
+            weakSelf.clickAction();
         }
     };
     

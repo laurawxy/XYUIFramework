@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, XYButtonSizeType) {
 typedef void (^XYButtonActionBlock)(XYButton*button);
 
 @interface XYButton : UIButton
-@property(nonatomic,copy)XYButtonActionBlock xyButtonActionBlock;
+@property (nonatomic ) XYButtonActionBlock xyButtonActionBlock;
 @property (nonatomic, assign) XYCustomButtonStyle buttonStyle;
 @property (nonatomic, assign) XYButtonSizeType buttonSizeType;
 

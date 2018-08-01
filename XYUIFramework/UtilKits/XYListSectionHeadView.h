@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XYCommonDefine.h"
 
 @interface XYListSectionHeadView : UIView
 @property (nonatomic,strong) NSString *title;
@@ -22,6 +23,6 @@
 @property (nonatomic,assign) CGFloat topMargin;
 @property (nonatomic,assign) BOOL showLeftView;
 
-@property (nonatomic,copy) void(^clickAction)(id model);
+@property (nonatomic) VoidBlock clickAction;
 
 @end
