@@ -219,7 +219,7 @@
 
 - (CGSize)xySize{
     if ([UIDevice currentDevice].systemVersion.floatValue<9) {
-        return CGSizeMake(self.width, self.height);
+        return CGSizeMake(self.xyWidth, self.xyHeight);
     }else{
         return self.size;
     }
