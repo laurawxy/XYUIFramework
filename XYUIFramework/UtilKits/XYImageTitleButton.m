@@ -201,7 +201,7 @@
     }
 }
 
-- (CGFloat)width{
+- (CGFloat)xyWidth{
     if ([UIDevice currentDevice].systemVersion.floatValue<9) {
        return self.titleButton.width+self.imageButton.width+self.imageTitleMargin;
     }else{
@@ -209,7 +209,7 @@
     }
 }
 
-- (CGFloat)height{
+- (CGFloat)xyHeight{
     if ([UIDevice currentDevice].systemVersion.floatValue<9) {
         return self.titleButton.height+self.imageButton.height+self.imageTitleMargin;
     }else{
@@ -217,7 +217,7 @@
     }
 }
 
-- (CGSize)size{
+- (CGSize)xySize{
     if ([UIDevice currentDevice].systemVersion.floatValue<9) {
         return CGSizeMake(self.width, self.height);
     }else{

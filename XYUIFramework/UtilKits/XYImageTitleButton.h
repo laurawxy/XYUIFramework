@@ -28,6 +28,10 @@ typedef NS_ENUM(NSInteger ,XYImageTitleButtonType){
 @property (nonatomic,assign) XYImageTitleButtonType type;
 @property (nonatomic) XYImageTitleButtonActionBlock imageTitleButtonActionBlock;
 
+- (CGFloat)xyWidth;
+- (CGFloat)xyHeight;
+- (CGSize)xySize;
+
 - (instancetype)initWithType:(XYImageTitleButtonType)type andTitleFont:(UIFont*)font andTitle:(NSString*)title andImage:(UIImage*)image andFrame:(CGRect)frame;
 
 - (void)sizeToFitXYImageTitleButton;
