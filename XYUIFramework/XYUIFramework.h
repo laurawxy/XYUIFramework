@@ -55,6 +55,7 @@
 #import "XYHorizontalScrollView.h"
 #import "XYListSectionHeadView.h"
 #import "XYImageView.h"
+#import "XYTagListView.h"
 
 #import "UIView+XYFrame.h"
 #import "UIView+XYLine.h"

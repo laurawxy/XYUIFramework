@@ -232,43 +232,79 @@
     return aString;
 }
 
-+(CGSize)fuwenbenLabel:(UILabel *)labell AndLineSpacing:(float)lineSpacing wordSpaceing:(float)wordSpacing
++ (CGSize)setLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing wordSpaceing:(float)wordSpacing
 {
-    //富文本设置文字行间距
     NSMutableAttributedString *attributedString;
-    if (labell.attributedText) {
-        attributedString = [[NSMutableAttributedString alloc]initWithAttributedString:labell.attributedText];;
+    if (detailLabel.attributedText) {
+        attributedString = [[NSMutableAttributedString alloc]initWithAttributedString:detailLabel.attributedText];;
     }else{
-        attributedString = [[NSMutableAttributedString alloc]initWithString:labell.text];;
+        attributedString = [[NSMutableAttributedString alloc]initWithString:detailLabel.text];;
     }
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
     [paragraphStyle setLineSpacing:lineSpacing];
-    [attributedString addAttribute:NSKernAttributeName value:@(wordSpacing) range:NSMakeRange(0, labell.text.length)];
-    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, labell.text.length)];
+    [attributedString addAttribute:NSKernAttributeName value:@(wordSpacing) range:NSMakeRange(0, detailLabel.text.length)];
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, detailLabel.text.length)];
     
-    labell.attributedText = attributedString;
+    detailLabel.attributedText = attributedString;
     //调节高度
-    CGSize size = CGSizeMake(SAFEAREA_WIDTH, 500000);
+    CGSize size = CGSizeMake(SAFEAREA_WIDTH, MAXFLOAT);
     
-    CGSize labelSize = [labell sizeThatFits:size];
+    CGSize labelSize = [detailLabel sizeThatFits:size];
     
     return labelSize;
 }
 
-+ (CGSize)fuwenbenLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing labelWidth:(CGFloat)labelWidth{
-    //富文本设置文字行间距
++ (CGSize)setLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing wordSpaceing:(float)wordSpacing textAlignment:(NSTextAlignment)textAlignment
+{
+    NSMutableAttributedString *attributedString;
+    if (detailLabel.attributedText) {
+        attributedString = [[NSMutableAttributedString alloc]initWithAttributedString:detailLabel.attributedText];;
+    }else{
+        attributedString = [[NSMutableAttributedString alloc]initWithString:detailLabel.text];;
+    }
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    [paragraphStyle setLineSpacing:lineSpacing];
+    [paragraphStyle setAlignment:textAlignment];
+
+    [attributedString addAttribute:NSKernAttributeName value:@(wordSpacing) range:NSMakeRange(0, detailLabel.text.length)];
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, detailLabel.text.length)];
+    
+    detailLabel.attributedText = attributedString;
+    //调节高度
+    CGSize size = CGSizeMake(SAFEAREA_WIDTH, MAXFLOAT);
+    
+    CGSize labelSize = [detailLabel sizeThatFits:size];
+    
+    return labelSize;
+}
++ (CGSize)setLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing labelWidth:(CGFloat)labelWidth{
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:detailLabel.text];;
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
     [paragraphStyle setMinimumLineHeight:lineSpacing];
     [paragraphStyle setMaximumLineHeight:lineSpacing];
-
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, detailLabel.text.length)];
     
     detailLabel.attributedText = attributedString;
     
     return [detailLabel sizeThatFits:CGSizeMake(labelWidth, MAXFLOAT)];
 }
+
++ (CGSize)setLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing labelWidth:(CGFloat)labelWidth textAlignment:(NSTextAlignment)textAlignment{
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:detailLabel.text];;
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    [paragraphStyle setMinimumLineHeight:lineSpacing];
+    [paragraphStyle setMaximumLineHeight:lineSpacing];
+    [paragraphStyle setAlignment:textAlignment];
+    
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, detailLabel.text.length)];
+    
+    detailLabel.attributedText = attributedString;
+    
+    return [detailLabel sizeThatFits:CGSizeMake(labelWidth, MAXFLOAT)];
+}
+
 
 + (void)showModelVC:(XYModelViewController*)modelVC{
     if ([[[UINavigationController getDisplayingViewController] class] isEqual:[modelVC class]]) {

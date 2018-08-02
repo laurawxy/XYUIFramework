@@ -160,14 +160,18 @@
 /**
  改变行间距和字间距
 
- @param labell label
+ @param detailLabel label
  @param lineSpacing 行间距
  @param wordSpacing 字间距
  @return 文本大小
  */
-+(CGSize)fuwenbenLabel:(UILabel *)labell AndLineSpacing:(float)lineSpacing wordSpaceing:(float)wordSpacing;
++ (CGSize)setLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing wordSpaceing:(float)wordSpacing;
 
-+ (CGSize)fuwenbenLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing labelWidth:(CGFloat)labelWidth;
++ (CGSize)setLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing wordSpaceing:(float)wordSpacing textAlignment:(NSTextAlignment)textAlignment;
+
++ (CGSize)setLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing labelWidth:(CGFloat)labelWidth;
+
++ (CGSize)setLabel:(UILabel *)detailLabel lineSpacing:(float)lineSpacing labelWidth:(CGFloat)labelWidth textAlignment:(NSTextAlignment)textAlignment;
 
 /**
  判断字符串中是否包含

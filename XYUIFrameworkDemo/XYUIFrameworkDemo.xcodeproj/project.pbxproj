@@ -16,6 +16,7 @@
 		C546A0F82108530D00211655 /* XYHorizontalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F32108530B00211655 /* XYHorizontalScrollView.m */; };
 		C546A0F92108530D00211655 /* XYHorizontalScrollViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F42108530C00211655 /* XYHorizontalScrollViewItem.m */; };
 		C546A0FA2108530D00211655 /* XYListSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F62108530C00211655 /* XYListSectionHeadView.m */; };
+		C5A514362112A16900693FD4 /* XYTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A514342112A16900693FD4 /* XYTagListView.m */; };
 		C5BB2E3D21104B810051D62D /* XYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BB2E3C21104B810051D62D /* XYImageView.m */; };
 		C5D01ECA210EAC800088972C /* UIView+XYGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D01EC9210EAC800088972C /* UIView+XYGradientLayer.m */; };
 		C5FEABCF21106664001CED44 /* dogFood@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FEABCD21106664001CED44 /* dogFood@3x.png */; };
@@ -113,6 +114,8 @@
 		C546A0F52108530C00211655 /* XYListSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYListSectionHeadView.h; sourceTree = "<group>"; };
 		C546A0F62108530C00211655 /* XYListSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYListSectionHeadView.m; sourceTree = "<group>"; };
 		C546A0F72108530D00211655 /* XYHorizontalScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHorizontalScrollView.h; sourceTree = "<group>"; };
+		C5A514342112A16900693FD4 /* XYTagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTagListView.m; sourceTree = "<group>"; };
+		C5A514352112A16900693FD4 /* XYTagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTagListView.h; sourceTree = "<group>"; };
 		C5BB2E3B21104B810051D62D /* XYImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYImageView.h; sourceTree = "<group>"; };
 		C5BB2E3C21104B810051D62D /* XYImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYImageView.m; sourceTree = "<group>"; };
 		C5D01EC8210EAC800088972C /* UIView+XYGradientLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XYGradientLayer.h"; sourceTree = "<group>"; };
@@ -457,6 +460,8 @@
 		CC0BB04620FECBFF00664BDD /* UtilKits */ = {
 			isa = PBXGroup;
 			children = (
+				C5A514352112A16900693FD4 /* XYTagListView.h */,
+				C5A514342112A16900693FD4 /* XYTagListView.m */,
 				C546A0F72108530D00211655 /* XYHorizontalScrollView.h */,
 				C546A0F32108530B00211655 /* XYHorizontalScrollView.m */,
 				C546A0F22108530B00211655 /* XYHorizontalScrollViewItem.h */,
@@ -742,6 +747,7 @@
 				C546A0BB2106F0FD00211655 /* XYPageControl.m in Sources */,
 				CC0BB06F20FECBFF00664BDD /* UIViewController+XYNavigationBarItem.m in Sources */,
 				CC0BAFDA20FECAEA00664BDD /* main.m in Sources */,
+				C5A514362112A16900693FD4 /* XYTagListView.m in Sources */,
 				CC0BB08A20FECBFF00664BDD /* XYTabBarViewController.m in Sources */,
 				CC0BB08620FECBFF00664BDD /* XYCommonDefine.m in Sources */,
 				CC0BB07120FECBFF00664BDD /* XYBundleInfoHelper.m in Sources */,

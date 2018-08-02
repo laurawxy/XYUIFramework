@@ -20,6 +20,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
+        self.contentMode = UIViewContentModeScaleAspectFit;
         self.userInteractionEnabled = YES;
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)]];
     }
@@ -28,7 +29,7 @@
 - (instancetype)init{
     if (self = [super init]) {
         self.userInteractionEnabled = YES;
-        self.userInteractionEnabled = YES;
+        self.contentMode = UIViewContentModeScaleAspectFit;
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)]];
     }
     return self;
@@ -36,7 +37,7 @@
 - (instancetype)initWithImage:(UIImage *)image{
     if (self = [super initWithImage:image]) {
         self.userInteractionEnabled = YES;
-        self.userInteractionEnabled = YES;
+        self.contentMode = UIViewContentModeScaleAspectFit;
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)]];
     }
     return self;
@@ -44,7 +45,7 @@
 - (instancetype)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage{
     if (self = [super initWithImage:image highlightedImage:highlightedImage]) {
         self.userInteractionEnabled = YES;
-        self.userInteractionEnabled = YES;
+        self.contentMode = UIViewContentModeScaleAspectFit;
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)]];
     }
     return self;
