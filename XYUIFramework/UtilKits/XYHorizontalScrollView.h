@@ -56,6 +56,8 @@
 
 @interface XYHorizontalScrollView : UIView
 
+@property (nonatomic, strong) UIScrollView *scrollView;/*!< 横向滚动的scrollView */
+
 @property (nonatomic, assign) id<HorizontalScrollDelegate> delegate;
 
 

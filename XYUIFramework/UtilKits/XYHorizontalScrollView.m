@@ -14,7 +14,6 @@
 #define ITEMTAG 10086
 @interface XYHorizontalScrollView ()<UIScrollViewDelegate>
 
-@property (nonatomic, strong) UIScrollView *scrollView;/*!< 横向滚动的scrollView */
 @property (nonatomic, strong) UIView *contentView;/*!< 装载item的view */
 @property (nonatomic, assign) NSInteger count;/*!< item个数 */
 @property (nonatomic, assign) BOOL isSelected;/*!< item是否被选中 */
