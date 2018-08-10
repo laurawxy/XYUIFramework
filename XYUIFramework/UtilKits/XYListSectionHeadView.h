@@ -25,4 +25,6 @@
 
 @property (nonatomic) VoidBlock clickAction;
 
+@property (nonatomic,assign) BOOL transformPi;
+
 @end

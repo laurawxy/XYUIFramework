@@ -170,4 +170,15 @@
         make.width.mas_equalTo(self.rightButton.width);
     }];
 }
+
+- (void)setTransformPi:(BOOL)transformPi{
+    _transformPi = transformPi;
+    
+    WeakSelf
+    if (_transformPi) {
+        [weakSelf.rightButton transformMakeRotation:180];
+    }else{
+        [weakSelf.rightButton transformMakeRotation:0];
+    }
+}
 @end
