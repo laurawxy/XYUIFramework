@@ -44,7 +44,7 @@
     return self;
 }
 
-- (void)setTags:(NSArray *)tags
+- (void)setTags:(NSArray<XYTagModel *> *)tags
 {
     _tags = tags;
     _fittedSize = CGSizeZero;
@@ -108,7 +108,7 @@
     CGRect previousFrame = CGRectZero;
     BOOL gotPreviousFrame = NO;
     for (int i=0; i<_tags.count; i++) {
-        NSString *text = _tags[i];
+        XYTagModel *model = _tags[i];
         
         if (self.horizontalPadding == 0) {
             self.horizontalPadding = HORIZONTAL_PADDING;
@@ -123,7 +123,7 @@
             self.labelMargin = LABEL_MARGIN;
         }
         
-        CGSize textSize = [XYUtils sizeForText:text withWidth:self.frame.size.width withFont:self.textFont];
+        CGSize textSize = [XYUtils sizeForText:model.name withWidth:self.frame.size.width withFont:self.textFont];
         textSize.width += self.horizontalPadding*2;
         if (self.minWidth && textSize.width<self.minWidth) {
             textSize.width = self.minWidth;
@@ -155,16 +155,22 @@
         [button setTitleColor:self.normalTextColor?:TEXT_COLOR forState:UIControlStateNormal];
         [button setTitleColor:self.selectedTextColor forState:UIControlStateSelected];
         
-        [button setTitle:text forState:UIControlStateNormal];
+        [button setTitle:model.name forState:UIControlStateNormal];
         [button.layer setMasksToBounds:YES];
         [button.layer setCornerRadius:button.height/2];
         [button.layer setBorderColor:self.normalBorderColor?self.normalBorderColor.CGColor:BORDER_COLOR];
         [button.layer setBorderWidth: XYLineHeight];
         button.enabled = self.canClick;
+        button.selected = model.selected;
+        
+        WeakSelf
         button.xyButtonActionBlock = ^(XYButton *button) {
-            if (self.tagClickBlock) {
-                self.tagClickBlock(button.tag-100,button);
+            if (weakSelf.tagClickBlock) {
+                weakSelf.tagClickBlock(button.tag-100,button);
             }
+            XYTagModel *model = weakSelf.tags[button.tag-100];
+            model.selected = !model.selected;
+            [weakSelf.tags replaceObjectAtIndex:button.tag-100 withObject:model];
         };
         [self addSubview:button];
     }
@@ -217,3 +223,8 @@
 
 
 @end
+
+@implementation XYTagModel
+
+@end
+

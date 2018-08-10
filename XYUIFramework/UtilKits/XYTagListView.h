@@ -11,6 +11,8 @@
 #import "XYCommonDefine.h"
 #import "XYButton.h"
 
+@class XYTagModel;
+
 @interface XYTagListView : UIView
 
 @property (nonatomic, assign) BOOL showAddButton;
@@ -37,7 +39,7 @@
 @property (nonatomic, strong) UIColor *selectedBackgroundColor;
 @property (nonatomic, strong) UIColor *selectedTextColor;
 
-@property (nonatomic, copy) NSArray *tags;
+@property (nonatomic, strong) NSMutableArray<XYTagModel *> *tags;
 
 @property (nonatomic, copy) VoidBlock addTagBlock;
 
@@ -45,4 +47,10 @@
 
 - (void)display;
 
+@end
+
+@interface XYTagModel : NSObject
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *tagId;
+@property (nonatomic, assign) BOOL selected;
 @end
