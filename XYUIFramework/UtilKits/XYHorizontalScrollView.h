@@ -74,4 +74,8 @@
  */
 - (XYHorizontalScrollViewItem *)dequeueItemWithIdentifer:(NSString *)identifer;
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
+
+- (void)srollHandle:(UIScrollView *)scrollView;
+
 @end
