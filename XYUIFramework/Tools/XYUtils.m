@@ -447,23 +447,11 @@
     }
     return NO;
 }
-+ (void)setJpuchAlias{
-//    if ([XYUtils isNotLogin]){
-//        [JPUSHService setTags:[[NSSet alloc]initWithObjects:@"offline", nil] alias:@"" callbackSelector:nil object:self];
-//    }else{
-//        //登录的情况下
-//        NSMutableSet *tags = [[NSMutableSet alloc] initWithObjects:@"online", nil];
-//        if (!CurrentUser.investFlag.boolValue) {
-//            [tags addObject:@"newbie"];
-//        }
-//        [JPUSHService setTags:tags alias:CurrentUser.userCode callbackSelector:nil object:self];
-//    }
-}
 
-+ (BOOL) isNotLogin
++ (BOOL)hasCookie
 {
     if ([NSHTTPCookieStorage sharedHTTPCookieStorage].cookies.count>0) {
-        return NO;
+        return YES;
     }
     return NO;
 }

@@ -44,7 +44,7 @@
     return self;
 }
 
-- (void)setTags:(NSArray<XYTagModel *> *)tags
+- (void)setTags:(NSMutableArray<XYTagModel *> *)tags
 {
     _tags = tags;
     _fittedSize = CGSizeZero;

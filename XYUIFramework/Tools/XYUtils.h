@@ -248,16 +248,11 @@
 +(void)removeBadgeOnItemIndex:(int)index fromControl:(UIViewController *)control;
 
 /**
- 设置极光别名
- */
-+ (void)setJpuchAlias;
-
-/**
- 是否未登录
+ 是否有cookie
 
  @return bool
  */
-+ (BOOL) isNotLogin;
++ (BOOL)hasCookie;
 
 /**
  判断密码数字和字母组合
