@@ -253,7 +253,9 @@
                                      mimeType:@"image/png"];
          }];
     } progress:^(NSProgress * _Nonnull uploadProgress) {
-        [SVProgressHUD showProgress:uploadProgress.fractionCompleted status:@"上传中..."];
+        if (self.showUploadProgress) {
+            [SVProgressHUD showProgress:uploadProgress.fractionCompleted status:@"上传中..."];
+        }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self responseSuccessCookie:task];
         [self logSuccessMessage:responseObject url:task.currentRequest.URL];

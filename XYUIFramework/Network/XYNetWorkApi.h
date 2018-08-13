@@ -19,6 +19,8 @@
 
 @property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
 
+@property (nonatomic, assign) BOOL showUploadProgress;
+
 @property (nonatomic) XYRequestSuccessBlock successBlock;
 @property (nonatomic) XYNetworkFailureBlock failureBlock;
 
