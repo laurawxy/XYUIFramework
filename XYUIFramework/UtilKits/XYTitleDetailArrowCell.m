@@ -62,6 +62,17 @@
     return self;
 }
 
+- (void)setDetailClickBlock:(VoidBlock)detailClickBlock{
+    _detailClickBlock = detailClickBlock;
+    self.detailLabel.userInteractionEnabled = YES;
+    [self.detailLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(detailClick)]];
+}
+- (void)detailClick{
+    if (self.detailClickBlock) {
+        self.detailClickBlock();
+    }
+}
+
 - (void)setTitleString:(NSString *)titleString {
     _titleString = titleString;
     _titleLabel.text = _titleString;

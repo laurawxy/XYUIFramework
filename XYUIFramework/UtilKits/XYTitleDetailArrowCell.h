@@ -8,6 +8,7 @@
 
 
 #import <UIKit/UIKit.h>
+#import "XYCommonDefine.h"
 
 @interface XYTitleDetailArrowCell : UITableViewCell
 
@@ -18,6 +19,8 @@
 
 @property (nonatomic, strong) UIImageView *indicateImageView;
 @property (nonatomic, assign) BOOL showIndicate;
+
+@property (nonatomic) VoidBlock detailClickBlock;
 
 - (void)setTitleTextColor:(UIColor *)titleTextColor andtextAlignment:(NSTextAlignment)textAlignment;
 - (void)setDetailTextColor:(UIColor *)detailTextColor andtextAlignment:(NSTextAlignment)textAlignment;
