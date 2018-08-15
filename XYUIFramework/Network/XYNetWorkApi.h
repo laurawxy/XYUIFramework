@@ -10,12 +10,17 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 #import "XYCommonDefine.h"
+#import "XYHTTPSessionManager.h"
 
 @interface XYNetWorkApi : NSObject{
     AFSecurityPolicy *_securityPolicy;
 }
 
 @property (nonatomic, copy) NSDictionary *singleHTTPRequestHeaders;
+
+@property (nonatomic,strong) XYHTTPSessionManager *manager;
+
+@property (nonatomic,strong) AFHTTPRequestSerializer *requestSerializer;
 
 @property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
 

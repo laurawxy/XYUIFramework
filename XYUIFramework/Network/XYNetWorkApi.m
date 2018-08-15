@@ -10,7 +10,6 @@
 
 #import "XYNetWorkApi.h"
 #import "XYServiceUploading.h"
-#import "XYHTTPSessionManager.h"
 #import "XYBundleInfoHelper.h"
 #import "XYMacroConfig.h"
 #import "SVProgressHUD+XYCustomization.h"
@@ -21,9 +20,6 @@
 #import "XYNetworkConfig.h"
 
 @interface XYNetWorkApi()
-
-@property (nonatomic,strong) XYHTTPSessionManager *manager;
-@property (nonatomic,strong) AFHTTPRequestSerializer *requestSerializer;
 
 @property (nonatomic,copy) NSDictionary *params;
 @property (nonatomic,copy) NSString *actionName;
