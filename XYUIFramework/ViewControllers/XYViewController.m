@@ -33,7 +33,6 @@
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
-    [SVProgressHUD dismiss];
 }
 - (void) viewDidLoad
 {
