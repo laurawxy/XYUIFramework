@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "XYUIFramework"
-s.version      = "0.0.89"
+s.version      = "0.0.90"
 s.summary      = "XYUIFramework"
 s.homepage     = "https://github.com/laurawxy/XYUIFramework"
 s.license      = { :type => "MIT", :file => "LICENSE" }
