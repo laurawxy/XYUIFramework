@@ -62,7 +62,7 @@ static CGFloat _CommonLeftMargin;
 static CGFloat _CommonShadowCorner;
 + (CGFloat)CommonShadowCorner{
     if (_CommonShadowCorner == 0) {
-        _CommonShadowCorner = ScaleX750(5);
+        _CommonShadowCorner = 4.f;
     }
     return _CommonShadowCorner;
 }
@@ -90,17 +90,6 @@ static CGFloat _SegmentHeight;
 }
 + (void)xy_setSegmentHeight:(CGFloat)SegmentHeight{
     _SegmentHeight = SegmentHeight;
-}
-
-static CGFloat _CommonSpacing;
-+ (CGFloat)CommonSpacing{
-    if (_CommonSpacing == 0) {
-        _CommonSpacing = 40.f;
-    }
-    return _CommonSpacing;
-}
-+ (void)xy_setCommonSpacing:(CGFloat)CommonSpacing{
-    _CommonSpacing = CommonSpacing;
 }
 
 static CGFloat _CommonShadowHeight;

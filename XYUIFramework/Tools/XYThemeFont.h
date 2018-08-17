@@ -76,5 +76,57 @@
 + (void)xy_setNavigationTitleFont:(UIFont*)navigationTitleFont;
 
 
+/**
+ 一级标题字体
+ 
+ @return font
+ */
++ (UIFont*)titleOneFont;
++ (void)xy_settTitleOneFont:(UIFont*)titleOneFont;
+
+
+/**
+ 二级标题字体
+ 
+ @return font
+ */
++ (UIFont*)titleTwoFont;
++ (void)xy_settTitleTwoFont:(UIFont*)titleTwoFont;
+
+
+/**
+ 三级标题字体
+ 
+ @return font
+ */
++ (UIFont*)titleThreeFont;
++ (void)xy_settTitleThreeFont:(UIFont*)titleThreeFont;
+
+
+/**
+ 四级标题字体
+ 
+ @return font
+ */
++ (UIFont*)titleFourFont;
++ (void)xy_settTitleFourFont:(UIFont*)titleFourFont;
+
+/**
+ 正文字体
+ 
+ @return font
+ */
++ (UIFont*)normalContentFont;
++ (void)xy_settNormalContentFont:(UIFont*)normalContentFont;
+
+/**
+ 小区域字体
+ 
+ @return font
+ */
++ (UIFont*)smallContentFont;
++ (void)xy_settSmallContentFont:(UIFont*)smallContentFont;
+
+
 
 @end

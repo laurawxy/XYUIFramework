@@ -89,8 +89,6 @@
 
 #define XYCommonShadowHeight [XYAutoLayout CommonShadowHeight]
 
-#define XYCommonSpacing [XYAutoLayout CommonSpacing]
-
 #define XYSegmentHeight [XYAutoLayout SegmentHeight]
 
 #define XYTextFieldHeight [XYAutoLayout TextFieldHeight]
@@ -110,10 +108,6 @@
 
 + (CGFloat)SegmentHeight;
 + (void)xy_setSegmentHeight:(CGFloat)SegmentHeight;
-
-
-+ (CGFloat)CommonSpacing;
-+ (void)xy_setCommonSpacing:(CGFloat)CommonSpacing;
 
 + (CGFloat)CommonShadowHeight;
 + (void)xy_setCommonShadowHeight:(CGFloat)CommonShadowHeight;

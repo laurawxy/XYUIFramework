@@ -107,5 +107,73 @@ static UIFont *_tabBarSelectTitleFont;
     _tabBarSelectTitleFont = tabBarSelectTitleFont;
 }
 
+static UIFont *_titleOneFont;
++ (UIFont*)titleOneFont{
+    if (!_titleOneFont) {
+        _titleOneFont = KThemeBoldFont(24);
+    }
+    return _titleOneFont;
+}
++ (void)xy_settTitleOneFont:(UIFont*)titleOneFont{
+    _titleOneFont = titleOneFont;
+}
+
+
+static UIFont *_titleTwoFont;
++ (UIFont*)titleTwoFont{
+    if (!_titleTwoFont) {
+        _titleTwoFont = KThemeBoldFont(20);
+    }
+    return _titleTwoFont;
+}
++ (void)xy_settTitleTwoFont:(UIFont*)titleTwoFont{
+    _titleTwoFont = titleTwoFont;
+}
+
+
+static UIFont *_titleThreeFont;
++ (UIFont*)titleThreeFont{
+    if (!_titleThreeFont) {
+        _titleThreeFont = KThemeBoldFont(16);
+    }
+    return _titleThreeFont;
+}
++ (void)xy_settTitleThreeFont:(UIFont*)titleThreeFont{
+    _titleThreeFont = titleThreeFont;
+}
+
+static UIFont *_titleFourFont;
++ (UIFont*)titleFourFont{
+    if (!_titleFourFont) {
+        _titleFourFont = KThemeBoldFont(12);
+    }
+    return _titleFourFont;
+}
++ (void)xy_settTitleFourFont:(UIFont*)titleFourFont{
+    _titleFourFont = titleFourFont;
+}
+
+static UIFont *_normalContentFont;
++ (UIFont*)normalContentFont{
+    if (!_normalContentFont) {
+        _normalContentFont = KThemeNormalFont(16);
+    }
+    return _normalContentFont;
+}
++ (void)xy_settNormalContentFont:(UIFont*)normalContentFont{
+    _normalContentFont = normalContentFont;
+}
+
+static UIFont *_smallContentFont;
++ (UIFont*)smallContentFont{
+    if (!_smallContentFont) {
+        _smallContentFont = KThemeNormalFont(12);
+    }
+    return _smallContentFont;
+}
++ (void)xy_settSmallContentFont:(UIFont*)smallContentFont{
+    _smallContentFont = smallContentFont;
+}
+
 
 @end

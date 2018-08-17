@@ -14,7 +14,7 @@
 @implementation UIView (XYCornerBorder)
 
 - (void)addCorner{
-    self.layer.cornerRadius = 4.f;
+    self.layer.cornerRadius = XYCommonShadowCorner;
     self.layer.masksToBounds = YES;
 }
 - (void)addCornerWithCornerRadius:(CGFloat)cornerRadius{
