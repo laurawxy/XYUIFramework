@@ -42,6 +42,7 @@
     }else{
         _xyTableView = [[XYTableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     }
+    _xyTableView.currentPage = 1;
     _xyTableView.showsVerticalScrollIndicator = NO;
     _xyTableView.backgroundColor = self.view.backgroundColor;
     _xyTableView.separatorColor = [XYThemeColor lineColor];
