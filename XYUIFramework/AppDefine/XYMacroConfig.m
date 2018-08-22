@@ -9,6 +9,19 @@
 #import "XYMacroConfig.h"
 
 @implementation XYMacroConfig
+
+static NSString *_appStoreAppleId;
+
++ (NSString*)appStoreAppleId{
+    return _appStoreAppleId;
+}
+
++ (void)xy_setAppStoreAppleId:(NSString *)appStoreAppleId{
+    _appStoreAppleId = appStoreAppleId;
+}
+
+
+
 static NSInteger _countDownTime;
 
 + (NSInteger)countDownTime{
