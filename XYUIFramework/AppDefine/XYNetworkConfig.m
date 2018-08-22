@@ -11,6 +11,35 @@
 
 @implementation XYNetworkConfig
 
+static BOOL _printRequestSuccessInfo = YES;
+
++ (BOOL)PrintRequestSuccessInfo{
+    return _printRequestSuccessInfo;
+}
+
++ (void)xy_setPrintRequestSuccessInfo:(BOOL)printRequestSuccessInfo{
+    _printRequestSuccessInfo = printRequestSuccessInfo;
+}
+
+static BOOL _printRequestErrorInfo = YES;
+
++ (BOOL)PrintRequestErrorInfo{
+    return _printRequestErrorInfo;
+}
+
++ (void)xy_setPrintRequestErrorInfo:(BOOL)printRequestErrorInfo{
+    _printRequestErrorInfo = printRequestErrorInfo;
+}
+
+static BOOL _printRequestCookieInfo = YES;
+
++ (BOOL)PrintRequestCookieInfo{
+    return _printRequestCookieInfo;
+}
++ (void)xy_setPrintRequestCookieInfo:(BOOL)printRequestCookieInfo{
+    _printRequestCookieInfo = printRequestCookieInfo;
+}
+
 static NSString *_formalHostUrl;
 
 + (NSString*)formalHostUrl{

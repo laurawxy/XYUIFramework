@@ -10,6 +10,15 @@
 
 @interface XYNetworkConfig : NSObject
 
++ (BOOL)PrintRequestSuccessInfo;
++ (void)xy_setPrintRequestSuccessInfo:(BOOL)printRequestSuccessInfo;
+
++ (BOOL)PrintRequestErrorInfo;
++ (void)xy_setPrintRequestErrorInfo:(BOOL)printRequestErrorInfo;
+
++ (BOOL)PrintRequestCookieInfo;
++ (void)xy_setPrintRequestCookieInfo:(BOOL)printRequestCookieInfo;
+
 
 + (NSString*)formalHostUrl;
 + (void)xy_setFormalHostUrl:(NSString*)formalHostUrl;

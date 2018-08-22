@@ -412,15 +412,22 @@
         [defaults setObject: cookiesData forKey:@"Cookie"];
         [defaults synchronize];
     }
+    if ([XYNetworkConfig PrintRequestCookieInfo]) {
+        NSLog(@"%@-allHeaderFields:%@",self.actionName,response.allHeaderFields);
+    }
 }
 
 - (void)logSuccessMessage:(id)responseObject url:(NSURL*)URL{
-    NSLog(@"%@-%@--%@数据成功\n\n--------------------\n\n%@\n\n--------------------\n\n",self.actionName,URL,NSStringFromRequestMethod(self.requestMethod),[[NSString alloc]initWithData:[NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+    if ([XYNetworkConfig PrintRequestSuccessInfo]) {
+        NSLog(@"%@-%@--%@数据成功\n\n--------------------\n\n%@\n\n--------------------\n\n",self.actionName,URL,NSStringFromRequestMethod(self.requestMethod),[[NSString alloc]initWithData:[NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+    }
 }
 
 - (void)logFailureMessage:(NSError *)error url:(NSURL*)URL{
     
-    NSLog(@"%@-%@--%@数据失败\n\n--------------------\n\n%@\n\n--------------------\n\n",self.actionName,URL,NSStringFromRequestMethod(self.requestMethod),error);
+    if ([XYNetworkConfig PrintRequestErrorInfo]) {
+        NSLog(@"%@-%@--%@数据失败\n\n--------------------\n\n%@\n\n--------------------\n\n",self.actionName,URL,NSStringFromRequestMethod(self.requestMethod),error);
+    }
 }
 
 
