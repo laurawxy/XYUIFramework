@@ -60,6 +60,7 @@
 
 @property (nonatomic, assign) id<HorizontalScrollDelegate> delegate;
 
+@property (nonatomic, assign) CGFloat leftRightMargin;
 
 /**
  *  刷新数据
