@@ -260,9 +260,9 @@
         x += width;
     }
     
-    scrollContentWidth += _leftRightMargin*2;
+    scrollContentWidth += (self.leftMargin+self.rightMargin);
     _scrollView.contentSize = CGSizeMake(scrollContentWidth, height);
-    _contentView.frame = CGRectMake(_leftRightMargin, 0, scrollContentWidth, height);
+    _contentView.frame = CGRectMake(self.leftMargin, 0, scrollContentWidth, height);
 }
 
 - (void)setDelegate:(id<HorizontalScrollDelegate>)delegate {

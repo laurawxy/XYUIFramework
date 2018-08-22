@@ -16,7 +16,7 @@
 #import "UIView+XYCornerBorder.h"
 #import "XYMacroConfig.h"
 
-#define XYAlertViewWidth (SCREEN_WIDTH-4*XYCommonLeftMargin)
+#define XYAlertViewWidth (SCREEN_WIDTH-4*KCommonLeftMargin)
 
 @interface XYAlertViewController ()
 @property (nonatomic, copy) IntergerBlock completeBlock;
@@ -65,23 +65,23 @@
     if (title && title.length>0) {
         self.titleLabel.text = title;
         [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(XYCommonLeftMargin);
-            make.right.mas_equalTo(-XYCommonLeftMargin);
-            make.top.mas_equalTo(XYCommonLeftMargin);
+            make.left.mas_equalTo(KCommonLeftMargin);
+            make.right.mas_equalTo(-KCommonLeftMargin);
+            make.top.mas_equalTo(KCommonLeftMargin);
             make.height.mas_equalTo(18);
         }];
     }else{
         self.titleLabel.text = @"";
         [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(XYCommonLeftMargin);
-            make.right.mas_equalTo(-XYCommonLeftMargin);
+            make.left.mas_equalTo(KCommonLeftMargin);
+            make.right.mas_equalTo(-KCommonLeftMargin);
             make.top.mas_equalTo(ScaleX750(4));
             make.height.mas_equalTo(0);
         }];
     }
     if (message && message.length>0) {
         self.messageTextView.text = message;
-        CGSize size = [XYUtils sizeForText:message withWidth:SCREEN_WIDTH-6*XYCommonLeftMargin withFont:self.messageTextView.font];
+        CGSize size = [XYUtils sizeForText:message withWidth:SCREEN_WIDTH-6*KCommonLeftMargin withFont:self.messageTextView.font];
         if (size.height>20) {
             self.messageTextView.textAlignment = NSTextAlignmentLeft;
             if (size.height>(SAFE_SCREEN_HEIGHT-NavigationHeight-TabBarHeight-70)) {
@@ -102,7 +102,7 @@
     }else{
         self.messageTextView.text = @"";
         [self.messageTextView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(SCREEN_WIDTH-6*XYCommonLeftMargin);
+            make.width.mas_equalTo(SCREEN_WIDTH-6*KCommonLeftMargin);
             make.centerX.mas_equalTo(self.titleLabel);
             make.top.mas_equalTo(self.titleLabel.mas_bottom);
             make.height.mas_equalTo(1);

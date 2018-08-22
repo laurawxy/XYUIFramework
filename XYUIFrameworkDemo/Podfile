@@ -6,6 +6,8 @@ pod 'AFNetworking'          #网络请求
 pod 'MJRefresh'
 pod 'MJExtension'
 pod 'Masonry'
+pod 'YYCache'
+pod 'LKDBHelper'
 
 #键盘遮挡输入框的处理兼容IOS7
 pod 'IQKeyboardManager'

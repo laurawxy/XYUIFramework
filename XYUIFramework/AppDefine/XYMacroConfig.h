@@ -51,7 +51,30 @@
 
 #define WeakSelf __weak typeof(self) weakSelf = self;
 
+
+#define KAlertNowLoading [XYMacroConfig loadingPromptMessage]
+#define KAlertUploading [XYMacroConfig uploadingPromptMessage]
+#define KAlertConfirming [XYMacroConfig submitPromptMessage]
+#define LCNETWORKERROR [XYMacroConfig networkAnomalyPromptMessage]
+
+
+#define KApp_DownloadUrl [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@",AppStore_AppleId]
+
+#define KApp_ReviewUrl [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%@?action=write-review", AppStore_AppleId]
+
+#define AppStore_AppleId [XYMacroConfig appStoreAppleId]
+
+
+
 @interface XYMacroConfig : NSObject
+
+/**
+ * APP的AppleId
+ */
++ (NSString*)appStoreAppleId;
+
++ (void)xy_setAppStoreAppleId:(NSString *)appStoreAppleId;
+
 
 /**
  * 倒计时
@@ -100,12 +123,6 @@
 + (NSString*)networkAnomalyPromptMessage;
 
 + (void)xy_setNetworkAnomalyPromptMessage:(NSString*)networkAnomalyPromptMessage;
-
-
-#define KAlertNowLoading                        @"正在加载..."
-#define KAlertUploading                         @"正在上传..."
-#define KAlertConfirming                        @"正在提交..."
-#define LCNETWORKERROR                          @"网络异常"
 
 
 @end

@@ -40,7 +40,7 @@
 #define SAFE_SCREEN_WIDTH SCREEN_WIDTH
 
 //安全区
-#define SAFEAREA_WIDTH (SCREEN_WIDTH-2*XYCommonLeftMargin)
+#define SAFEAREA_WIDTH (SCREEN_WIDTH-2*KCommonLeftMargin)
 #define SAFEAREA_HEIGHT [XYAutoLayout safeArea_height]
 
 #define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -73,27 +73,27 @@
 #define DefaultTableViewHeaderFooterHeight 0.01f
 
 
-#define XYCommonLeftMargin [XYAutoLayout CommonLeftMargin]
+#define KCommonLeftMargin [XYAutoLayout CommonLeftMargin]
 
-#define XYLineHeight [XYAutoLayout LineHeight]
+#define KLineHeight [XYAutoLayout LineHeight]
 
-#define XYCustomButtonViewHeight [XYAutoLayout CustomButtonViewHeight]
+#define KCustomButtonViewHeight [XYAutoLayout CustomButtonViewHeight]
 
-#define XYBottomButtonViewHeight [XYAutoLayout BottomButtonViewHeight]
+#define KBottomButtonViewHeight [XYAutoLayout BottomButtonViewHeight]
 
-#define XYCustomButtonViewLeftMargin [XYAutoLayout CustomButtonViewLeftMargin]
+#define KCustomButtonViewLeftMargin [XYAutoLayout CustomButtonViewLeftMargin]
 
-#define XYTapHeight [XYAutoLayout TapHeight]
+#define KTapHeight [XYAutoLayout TapHeight]
 
-#define XYNormalCellHeight [XYAutoLayout NormalCellHeight]
+#define KNormalCellHeight [XYAutoLayout NormalCellHeight]
 
-#define XYCommonShadowHeight [XYAutoLayout CommonShadowHeight]
+#define KCommonShadowHeight [XYAutoLayout CommonShadowHeight]
 
-#define XYSegmentHeight [XYAutoLayout SegmentHeight]
+#define KSegmentHeight [XYAutoLayout SegmentHeight]
 
-#define XYTextFieldHeight [XYAutoLayout TextFieldHeight]
+#define KTextFieldHeight [XYAutoLayout TextFieldHeight]
 
-#define XYCommonShadowCorner [XYAutoLayout CommonShadowCorner]
+#define KCommonShadowCorner [XYAutoLayout CommonShadowCorner]
 
 @interface XYAutoLayout : NSObject
 

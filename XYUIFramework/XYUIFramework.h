@@ -75,6 +75,7 @@
 #import "XYUIApperanceConfig.h"
 #import "XYNetworkConfig.h"
 #import "XYHTTPSessionManager.h"
+#import "XYCacheHelper.h"
 
 
 #endif /* XYUIFramework_h */

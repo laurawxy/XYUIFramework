@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "XYUIFramework"
-s.version      = "0.0.95"
+s.version      = "0.0.96"
 s.summary      = "XYUIFramework"
 s.homepage     = "https://github.com/laurawxy/XYUIFramework"
 s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -18,6 +18,7 @@ s.dependency "MJExtension"
 s.dependency "IQKeyboardManager"
 s.dependency "SDWebImage"
 s.dependency "SVProgressHUD"
-
+s.dependency "YYCache"
+s.dependency "LKDBHelper"
 
 end

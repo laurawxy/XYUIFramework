@@ -24,7 +24,7 @@
         self.titleLabel.font = KThemeNormalFont(16);
         [self.contentView addSubview:self.titleLabel];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(XYCommonLeftMargin);
+            make.left.mas_equalTo(KCommonLeftMargin);
             make.centerY.mas_equalTo(self);
             make.height.mas_equalTo(20);
             make.width.mas_equalTo(SCREEN_WIDTH/2-30);
@@ -34,7 +34,7 @@
         [self.indicateImageView sizeToFit];
         [self.contentView addSubview:self.indicateImageView];
         [self.indicateImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(-XYCommonLeftMargin);
+            make.right.mas_equalTo(-KCommonLeftMargin);
             make.centerY.mas_equalTo(self);
             make.size.mas_equalTo(self.indicateImageView.size);
         }];
@@ -47,7 +47,7 @@
     _titleString = titleString;
     _titleLabel.text = _titleString;
     [_titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo([self.titleLabel sizeThatFits:CGSizeMake(SCREEN_WIDTH-4*XYCommonLeftMargin, MAXFLOAT)].width);
+        make.width.mas_equalTo([self.titleLabel sizeThatFits:CGSizeMake(SCREEN_WIDTH-4*KCommonLeftMargin, MAXFLOAT)].width);
     }];
 }
 

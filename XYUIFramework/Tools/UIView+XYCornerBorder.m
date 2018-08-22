@@ -14,7 +14,7 @@
 @implementation UIView (XYCornerBorder)
 
 - (void)addCorner{
-    self.layer.cornerRadius = XYCommonShadowCorner;
+    self.layer.cornerRadius = KCommonShadowCorner;
     self.layer.masksToBounds = YES;
 }
 - (void)addCornerWithCornerRadius:(CGFloat)cornerRadius{
@@ -25,13 +25,13 @@
     self.layer.cornerRadius = cornerRadius;
     self.layer.masksToBounds = YES;
     self.layer.borderColor = [XYThemeColor ThemeColor].CGColor;
-    self.layer.borderWidth = XYLineHeight;
+    self.layer.borderWidth = KLineHeight;
 }
 - (void)addCornerAndBorderWithCornerRadius:(CGFloat)cornerRadius borderColor:(UIColor *)borderColor{
     self.layer.cornerRadius = cornerRadius;
     self.layer.masksToBounds = YES;
     self.layer.borderColor = borderColor.CGColor;
-    self.layer.borderWidth = XYLineHeight;
+    self.layer.borderWidth = KLineHeight;
 }
 - (void)createCornerRadiusShadowWithCornerRadius:(CGFloat)cornerRadius shadowColor:(UIColor *)shadowColor shadowCornerRadius:(CGFloat)shadowCornerRadius offset:(CGSize)offset opacity:(CGFloat)opacity shadowRadius:(CGFloat)shadowRadius{
     self.layer.shadowColor = shadowColor.CGColor;

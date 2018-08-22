@@ -159,7 +159,7 @@
         [button.layer setMasksToBounds:YES];
         [button.layer setCornerRadius:button.height/2];
         [button.layer setBorderColor:self.normalBorderColor?self.normalBorderColor.CGColor:BORDER_COLOR];
-        [button.layer setBorderWidth: XYLineHeight];
+        [button.layer setBorderWidth: KLineHeight];
         button.enabled = self.canClick;
         button.selected = model.selected;
         
@@ -210,7 +210,7 @@
         [button.layer setMasksToBounds:YES];
         [button.layer setCornerRadius:button.height/2];
         [button.layer setBorderColor:[XYThemeColor blackLevelOneColor].CGColor];
-        [button.layer setBorderWidth: XYLineHeight];
+        [button.layer setBorderWidth: KLineHeight];
         button.xyButtonActionBlock = ^(XYButton *button) {
             if (self.addTagBlock) {
                 self.addTagBlock();

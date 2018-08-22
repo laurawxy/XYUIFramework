@@ -33,7 +33,7 @@
     [_unLockPhotoButton setTitle:@"解锁照片" forState:UIControlStateNormal];
     [_unLockPhotoButton setButtonStyle:XYCustomButtonStyleWhiteBlackColor];
     [_unLockPhotoButton setTitleColor:[XYThemeColor blackLevelTwoColor] forState:UIControlStateNormal];
-    _unLockPhotoButton.frame = CGRectMake(XYCommonLeftMargin, 100, SAFEAREA_WIDTH, XYCustomButtonViewHeight);
+    _unLockPhotoButton.frame = CGRectMake(KCommonLeftMargin, 100, SAFEAREA_WIDTH, KCustomButtonViewHeight);
     [_unLockPhotoButton createCornerRadiusShadowWithCornerRadius:_unLockPhotoButton.height/2 shadowColor:RGB(0,0,0) shadowCornerRadius:0.f offset:CGSizeMake(0, 4.f) opacity:0.1 shadowRadius:10.f];
     
     [self.view addSubview:_unLockPhotoButton];
@@ -44,7 +44,7 @@
     [_companyNameLabel setTitle:@"222333" forState:UIControlStateNormal];
     [_companyNameLabel sizeToFitXYImageTitleButton];
     [_companyNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(XYCommonLeftMargin);
+        make.left.mas_equalTo(KCommonLeftMargin);
         make.top.mas_equalTo(_unLockPhotoButton.mas_bottom).offset(25.f);
         make.height.mas_equalTo(20);
         make.width.mas_equalTo(_companyNameLabel.width);

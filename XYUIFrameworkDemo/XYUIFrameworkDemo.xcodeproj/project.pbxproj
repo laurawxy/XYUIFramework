@@ -18,6 +18,7 @@
 		C546A0FA2108530D00211655 /* XYListSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C546A0F62108530C00211655 /* XYListSectionHeadView.m */; };
 		C5A514362112A16900693FD4 /* XYTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A514342112A16900693FD4 /* XYTagListView.m */; };
 		C5BB2E3D21104B810051D62D /* XYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BB2E3C21104B810051D62D /* XYImageView.m */; };
+		C5BF7391212D524D00FC3250 /* XYCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BF738F212D524C00FC3250 /* XYCacheHelper.m */; };
 		C5D01ECA210EAC800088972C /* UIView+XYGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D01EC9210EAC800088972C /* UIView+XYGradientLayer.m */; };
 		C5FEABCF21106664001CED44 /* dogFood@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FEABCD21106664001CED44 /* dogFood@3x.png */; };
 		C5FEABD021106664001CED44 /* dogFood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FEABCE21106664001CED44 /* dogFood@2x.png */; };
@@ -118,6 +119,8 @@
 		C5A514352112A16900693FD4 /* XYTagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTagListView.h; sourceTree = "<group>"; };
 		C5BB2E3B21104B810051D62D /* XYImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYImageView.h; sourceTree = "<group>"; };
 		C5BB2E3C21104B810051D62D /* XYImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYImageView.m; sourceTree = "<group>"; };
+		C5BF738F212D524C00FC3250 /* XYCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCacheHelper.m; sourceTree = "<group>"; };
+		C5BF7390212D524C00FC3250 /* XYCacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCacheHelper.h; sourceTree = "<group>"; };
 		C5D01EC8210EAC800088972C /* UIView+XYGradientLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XYGradientLayer.h"; sourceTree = "<group>"; };
 		C5D01EC9210EAC800088972C /* UIView+XYGradientLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XYGradientLayer.m"; sourceTree = "<group>"; };
 		C5FEABCD21106664001CED44 /* dogFood@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dogFood@3x.png"; sourceTree = "<group>"; };
@@ -370,6 +373,8 @@
 		CC0BAFFD20FECBFF00664BDD /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C5BF7390212D524C00FC3250 /* XYCacheHelper.h */,
+				C5BF738F212D524C00FC3250 /* XYCacheHelper.m */,
 				CC0BB00820FECBFF00664BDD /* XYLocalStorageUtil.h */,
 				CC0BB02220FECBFF00664BDD /* XYLocalStorageUtil.m */,
 				CC0BB00F20FECBFF00664BDD /* NSObject+XYUtils.h */,
@@ -711,6 +716,7 @@
 				C50BEAA62105D5570005AB82 /* XYTitleArrowCell.m in Sources */,
 				CC0BB09520FECBFF00664BDD /* XYBottomButtonView.m in Sources */,
 				CC0BB09820FECBFF00664BDD /* XYCommonInputView.m in Sources */,
+				C5BF7391212D524D00FC3250 /* XYCacheHelper.m in Sources */,
 				CC0BB07A20FECBFF00664BDD /* UINavigationController+XYNavigation.m in Sources */,
 				CC0BB06D20FECBFF00664BDD /* UITextView+XYPlaceholder.m in Sources */,
 				CC0BB07F20FECBFF00664BDD /* NSObject+XYUtils.m in Sources */,

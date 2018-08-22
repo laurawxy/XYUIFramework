@@ -17,8 +17,8 @@
 #import "UIView+XYCornerBorder.h"
 #import "NSObject+XYUtils.h"
 
-#define TitleMaxWidth (SCREEN_WIDTH/2-2*XYCommonLeftMargin)
-#define TitleTopBottomHeight XYCommonLeftMargin
+#define TitleMaxWidth (SCREEN_WIDTH/2-2*KCommonLeftMargin)
+#define TitleTopBottomHeight KCommonLeftMargin
 
 @interface XYImageTitleDetailArrowCell()
 @property(nonatomic, strong) UIImageView  *leftImageView;
@@ -34,13 +34,13 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.frame = CGRectMake(0, 0, SCREEN_WIDTH, XYNormalCellHeight);
+        self.frame = CGRectMake(0, 0, SCREEN_WIDTH, KNormalCellHeight);
         
         [self addBottomLine];
         [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(self.titleLabel.mas_left);
             make.right.bottom.mas_equalTo(0);
-            make.height.mas_equalTo(XYLineHeight);
+            make.height.mas_equalTo(KLineHeight);
         }];
         
         self.leftImageName = @"";
@@ -58,7 +58,7 @@
         _leftImageView = [[UIImageView alloc]init];
         [self.contentView addSubview:_leftImageView];
         [_leftImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(XYCommonLeftMargin);
+            make.left.mas_equalTo(KCommonLeftMargin);
             make.centerY.mas_equalTo(self.contentView);
             make.size.mas_equalTo(CGSizeZero);
         }];
@@ -91,7 +91,7 @@
         [_indicateImageView sizeToFit];
         [self.contentView addSubview:_indicateImageView];
         [_indicateImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(-XYCommonLeftMargin);
+            make.right.mas_equalTo(-KCommonLeftMargin);
             make.centerY.mas_equalTo(self.contentView);
             make.size.mas_equalTo(self.indicateImageView.size);
         }];
@@ -109,7 +109,7 @@
         _detailLabel.numberOfLines = 0;
         [self.contentView addSubview:_detailLabel];
         [_detailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(XYCommonLeftMargin);
+            make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(KCommonLeftMargin);
             make.right.mas_equalTo(self.indicateImageView.mas_left).with.offset(-10);
             make.centerY.mas_equalTo(self.contentView);
             make.height.mas_equalTo(20);
@@ -125,7 +125,7 @@
         [_flagLabel addCornerWithCornerRadius:5.f];
         [self.contentView addSubview:_flagLabel];
         [_flagLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(-XYCommonLeftMargin);
+            make.right.mas_equalTo(-KCommonLeftMargin);
             make.centerY.mas_equalTo(self.contentView);
             make.size.mas_equalTo(CGSizeMake(10, 10));
         }];
@@ -189,7 +189,7 @@
     }];
     
     [_detailLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(XYCommonLeftMargin);
+        make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(KCommonLeftMargin);
         make.right.mas_equalTo(self.indicateImageView.mas_left).with.offset(self.showIndicate ? -10:0);
         make.centerY.mas_equalTo(self.contentView);
         make.height.mas_equalTo([self.detailLabel labelHeight]);
@@ -211,14 +211,14 @@
     }];
     if (_showFlag) {
         [_detailLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(XYCommonLeftMargin);
+            make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(KCommonLeftMargin);
             make.right.mas_equalTo(self.flagLabel.mas_left).with.offset(-8);
             make.centerY.mas_equalTo(self.contentView);
             make.height.mas_equalTo([self.detailLabel labelHeight]);
         }];
     }else{
         [_detailLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(XYCommonLeftMargin);
+            make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(KCommonLeftMargin);
             make.right.mas_equalTo(self.indicateImageView.mas_left).with.offset(self.showIndicate ? -10:0);
             make.centerY.mas_equalTo(self.contentView);
             make.height.mas_equalTo([self.detailLabel labelHeight]);

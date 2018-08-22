@@ -46,7 +46,7 @@
     _leftView.backgroundColor = [XYThemeColor ThemeColor];
     [self addSubview:_leftView];
     [_leftView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(XYCommonLeftMargin);
+        make.left.mas_equalTo(KCommonLeftMargin);
         make.bottom.mas_equalTo(-16);
         make.width.mas_equalTo(4);
         make.height.mas_equalTo(16);
@@ -69,7 +69,7 @@
     [_rightButton sizeToFitXYImageTitleButton];
     [self addSubview:_rightButton];
     [_rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(-XYCommonLeftMargin);
+        make.right.mas_equalTo(-KCommonLeftMargin);
         make.centerY.mas_equalTo(self.titleLabel);
         make.height.mas_equalTo(self.rightButton.height);
         make.width.mas_equalTo(self.rightButton.width);
@@ -89,7 +89,7 @@
     
     [_leftView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.topMargin);
-        make.left.mas_equalTo(XYCommonLeftMargin);
+        make.left.mas_equalTo(KCommonLeftMargin);
         make.width.mas_equalTo(4);
         make.height.mas_equalTo(16);
     }];
@@ -118,7 +118,7 @@
         }];
     }else{
         [_titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(XYCommonLeftMargin);
+            make.left.mas_equalTo(KCommonLeftMargin);
             make.height.mas_equalTo(16);
             make.centerY.mas_equalTo(self.leftView);
         }];

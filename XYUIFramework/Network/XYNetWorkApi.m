@@ -250,7 +250,7 @@
          }];
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         if (self.showUploadProgress) {
-            [SVProgressHUD showProgress:uploadProgress.fractionCompleted status:@"上传中..."];
+            [SVProgressHUD showProgress:uploadProgress.fractionCompleted status:KAlertUploading];
         }
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self responseSuccessCookie:task];

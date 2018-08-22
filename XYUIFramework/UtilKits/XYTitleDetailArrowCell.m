@@ -30,7 +30,7 @@
         self.titleLabel.font = KThemeNormalFont(16);
         [self.contentView addSubview:self.titleLabel];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(XYCommonLeftMargin);
+            make.left.mas_equalTo(KCommonLeftMargin);
             make.centerY.mas_equalTo(self);
             make.height.mas_equalTo(20);
             make.width.mas_equalTo(SCREEN_WIDTH/2-30);
@@ -40,7 +40,7 @@
         [self.indicateImageView sizeToFit];
         [self.contentView addSubview:self.indicateImageView];
         [self.indicateImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(-XYCommonLeftMargin);
+            make.right.mas_equalTo(-KCommonLeftMargin);
             make.centerY.mas_equalTo(self);
             make.size.mas_equalTo(self.indicateImageView.size);
         }];
@@ -52,7 +52,7 @@
         self.detailLabel.numberOfLines = 0;
         [self.contentView addSubview:self.detailLabel];
         [self.detailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(XYCommonLeftMargin);
+            make.left.mas_equalTo(self.titleLabel.mas_right).with.offset(KCommonLeftMargin);
             make.right.mas_equalTo(self.indicateImageView.mas_left).with.offset(-10);
             make.centerY.mas_equalTo(self.titleLabel);
             make.height.mas_equalTo(20);
