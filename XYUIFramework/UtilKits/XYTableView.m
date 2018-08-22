@@ -9,6 +9,8 @@
 #import "XYTableView.h"
 #import "XYMacroConfig.h"
 #import "UIView+XYFrame.h"
+#import "XYRefreshNormalHeader.h"
+#import "XYRefreshNormalFooter.h"
 
 @interface XYTableView()
 
@@ -43,7 +45,7 @@
     self.mj_header = _header;
 }
 
-- (void)setHeader:(XYRefreshNormalHeader *)header{
+- (void)setHeader:(MJRefreshHeader *)header{
     _header = header;
     self.mj_header = _header;
 }
@@ -61,7 +63,7 @@
     self.mj_footer = _footer;
 }
 
-- (void)setFooter:(XYRefreshNormalFooter *)footer{
+- (void)setFooter:(MJRefreshFooter *)footer{
     _footer = footer;
     self.mj_footer = _footer;
 }

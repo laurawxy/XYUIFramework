@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "XYCommonDefine.h"
-#import "XYRefreshNormalHeader.h"
-#import "XYRefreshNormalFooter.h"
 #import "XYTableFootView.h"
+#import <MJRefresh/MJRefresh.h>
 
 @interface XYTableView : UITableView
 
-@property (nonatomic, strong) XYRefreshNormalHeader *header;
-@property (nonatomic, strong) XYRefreshNormalFooter *footer;
+@property (nonatomic, strong) MJRefreshHeader *header;
+@property (nonatomic, strong) MJRefreshFooter *footer;
 
 @property(nonatomic,strong)XYTableFootView *noDataFootView;
 
