@@ -7,18 +7,10 @@
 //
 
 #import "XYTableView.h"
-#import "XYRefreshNormalHeader.h"
-#import "XYRefreshNormalFooter.h"
-#import "XYTableFootView.h"
 #import "XYMacroConfig.h"
 #import "UIView+XYFrame.h"
 
 @interface XYTableView()
-
-//MJRefreshGifHeader
-@property (nonatomic, strong) XYRefreshNormalHeader *header;
-
-@property(nonatomic,strong)XYTableFootView *noDataFootView;
 
 @end
 
@@ -40,24 +32,38 @@
 
 - (void)setRefreshHeaderWithRefreshingBlock:(VoidBlock)refreshBlock{
     WeakSelf
-    _header = [XYRefreshNormalHeader headerWithRefreshingBlock:^{
-        weakSelf.endRefresh = NO;
-        if (refreshBlock) {
-            refreshBlock();
-        }
-    }];
+    if (!_header) {
+        _header = [XYRefreshNormalHeader headerWithRefreshingBlock:^{
+            weakSelf.endRefresh = NO;
+            if (refreshBlock) {
+                refreshBlock();
+            }
+        }];
+    }
     self.mj_header = _header;
 }
 
+- (void)setHeader:(XYRefreshNormalHeader *)header{
+    _header = header;
+    self.mj_header = _header;
+}
 
 - (void)setRefreshFooterWithRefreshingBlock:(VoidBlock)refreshBlock{
     WeakSelf
-    self.mj_footer = [XYRefreshNormalFooter footerWithRefreshingBlock:^{
-        weakSelf.endRefresh = NO;
-        if (refreshBlock) {
-            refreshBlock();
-        }
-    }];
+    if (!_footer) {
+        _footer = [XYRefreshNormalFooter footerWithRefreshingBlock:^{
+            weakSelf.endRefresh = NO;
+            if (refreshBlock) {
+                refreshBlock();
+            }
+        }];
+    }
+    self.mj_footer = _footer;
+}
+
+- (void)setFooter:(XYRefreshNormalFooter *)footer{
+    _footer = footer;
+    self.mj_footer = _footer;
 }
 
 - (void)refreshHeaderBeginRefreshing{

@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "XYCommonDefine.h"
+#import "XYRefreshNormalHeader.h"
+#import "XYRefreshNormalFooter.h"
+#import "XYTableFootView.h"
 
 @interface XYTableView : UITableView
+
+@property (nonatomic, strong) XYRefreshNormalHeader *header;
+@property (nonatomic, strong) XYRefreshNormalFooter *footer;
+
+@property(nonatomic,strong)XYTableFootView *noDataFootView;
 
 @property (nonatomic) BOOL showNoInternetButton;
 @property (nonatomic) VoidBlock noInternetBlock;
