@@ -62,7 +62,6 @@
 #import "UIView+XYGradientLayer.h"
 #import "UIView+XYCornerBorder.h"
 #import "UIView+XYLayout.h"
-#import "SVProgressHUD+XYCustomization.h"
 #import "UINavigationController+XYNavigation.h"
 #import "NSObject+XYUtils.h"
 #import "UIDevice+XYPlatForm.h"

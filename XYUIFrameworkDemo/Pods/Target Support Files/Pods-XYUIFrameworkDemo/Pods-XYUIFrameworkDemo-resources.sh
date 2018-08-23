@@ -92,14 +92,40 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/AXIndicatorView/AXIndicatorView/Classes/AXIndicatorView.bundle"
+  install_resource "${PODS_ROOT}/AXPracticalHUD/AXPracticalHUD/AXPracticalHUD/AXPracticalHUD.bundle"
+  install_resource "${PODS_ROOT}/AXWebViewController/AXWebViewController/AXWebViewController/AXWebViewController.bundle"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/flat-ui-icons-regular.ttf"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/Lato-Bold.ttf"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/Lato-Italic.ttf"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/Lato-Light.ttf"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/Lato-Regular.ttf"
+  install_resource "${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle"
+  install_resource "${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle"
   install_resource "${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "${PODS_ROOT}/PYSearch/PYSearch/PYSearch.bundle"
   install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
+  install_resource "${PODS_ROOT}/XLForm/XLForm/XLForm.bundle"
+  install_resource "${PODS_ROOT}/mob_sharesdk/SDK/ShareSDK/Support/Required/ShareSDK.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/AXIndicatorView/AXIndicatorView/Classes/AXIndicatorView.bundle"
+  install_resource "${PODS_ROOT}/AXPracticalHUD/AXPracticalHUD/AXPracticalHUD/AXPracticalHUD.bundle"
+  install_resource "${PODS_ROOT}/AXWebViewController/AXWebViewController/AXWebViewController/AXWebViewController.bundle"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/flat-ui-icons-regular.ttf"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/Lato-Bold.ttf"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/Lato-Italic.ttf"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/Lato-Light.ttf"
+  install_resource "${PODS_ROOT}/FlatUIKit/Resources/Lato-Regular.ttf"
+  install_resource "${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle"
+  install_resource "${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle"
   install_resource "${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "${PODS_ROOT}/PYSearch/PYSearch/PYSearch.bundle"
   install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
+  install_resource "${PODS_ROOT}/XLForm/XLForm/XLForm.bundle"
+  install_resource "${PODS_ROOT}/mob_sharesdk/SDK/ShareSDK/Support/Required/ShareSDK.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

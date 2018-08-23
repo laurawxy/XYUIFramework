@@ -2,6 +2,9 @@ platform :ios, '8.0'
 inhibit_all_warnings!
 
 target “XYUIFrameworkDemo” do
+    
+pod 'XYUIFramework', :path => '../'
+
 pod 'AFNetworking'          #网络请求
 pod 'MJRefresh'
 pod 'MJExtension'

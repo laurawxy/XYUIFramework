@@ -1,0 +1,6 @@
+module Pods_XYUIFrameworkDemo {
+  umbrella header "Pods-XYUIFrameworkDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
