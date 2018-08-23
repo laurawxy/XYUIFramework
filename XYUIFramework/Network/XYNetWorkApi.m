@@ -12,10 +12,10 @@
 #import "XYServiceUploading.h"
 #import "XYBundleInfoHelper.h"
 #import "XYMacroConfig.h"
-#import "SVProgressHUD+XYCustomization.h"
 #import "NSObject+XYUtils.h"
 #import "XYUtils.h"
 #import <MJExtension/MJExtension.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 #import "XYMacroConfig.h"
 #import "XYNetworkConfig.h"
 
@@ -139,7 +139,7 @@
     };
     _failureBlock = ^(NSError *error){
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-        [SVProgressHUD showError:LCNETWORKERROR];
+        [SVProgressHUD showErrorWithStatus:LCNETWORKERROR];
         if(weakSelf.networkFailureBlock){
             weakSelf.networkFailureBlock(error);
         }

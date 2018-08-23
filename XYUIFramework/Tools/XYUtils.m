@@ -16,7 +16,6 @@
 #import "XYThemeColor.h"
 #import "UIView+XYCornerBorder.h"
 #import "XYTabBarViewController.h"
-#import "SVProgressHUD+XYCustomization.h"
 #import "XYThemeFont.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
 
@@ -468,8 +467,6 @@
     [IQKeyboardManager sharedManager].enable = YES;
     [IQKeyboardManager sharedManager].enableAutoToolbar = YES;
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
-    
-    [SVProgressHUD setupDefault];
     
     NSDictionary *normalAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[XYThemeColor navigationTitleColor],NSForegroundColorAttributeName,[XYThemeFont navigationTitleFont],NSFontAttributeName, nil];
     

@@ -8,8 +8,7 @@
 
 #import "DemoNetworkApi.h"
 #import "XYMacroConfig.h"
-
-#import "SVProgressHUD+XYCustomization.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @implementation DemoNetworkApi
 - (void)configCallback{
@@ -35,7 +34,7 @@
     };
     self.failureBlock = ^(NSError *error){
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-        [SVProgressHUD showError:LCNETWORKERROR];
+        [SVProgressHUD showErrorWithStatus:LCNETWORKERROR];
         if(weakSelf.networkFailureBlock){
             weakSelf.networkFailureBlock(error);
         }
