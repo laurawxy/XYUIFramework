@@ -64,7 +64,7 @@ pod 'FlatUIKit'
 pod 'CSStickyHeaderFlowLayout'
 
 #Button 转场动画 https://github.com/entotsu/TKSubmitTransition
-pod 'TKSubmitTransition'
+#pod 'TKSubmitTransition'
 
 #列表到详情界面的转场动画 https://github.com/recruit-mp/RMPZoomTransitionAnimator
 pod 'RMPZoomTransitionAnimator'

@@ -92,12 +92,11 @@ PODS:
     - FLAnimatedImage (~> 1.0)
     - SDWebImage/Core
   - SVProgressHUD (2.2.5)
-  - TKSubmitTransition (0.3)
   - "UIViewController+Swizzled (1.4)"
   - XHLaunchAd (3.9.7):
     - FLAnimatedImage (~> 1.0.12)
   - XLForm (3.3.0)
-  - XYUIFramework (0.0.98):
+  - XYUIFramework (0.0.99):
     - AFNetworking
     - IQKeyboardManager
     - LKDBHelper
@@ -140,7 +139,6 @@ DEPENDENCIES:
   - SDWebImage
   - SDWebImage/GIF
   - SVProgressHUD
-  - TKSubmitTransition
   - "UIViewController+Swizzled"
   - XHLaunchAd
   - XLForm
@@ -187,7 +185,6 @@ SPEC REPOS:
     - RMPZoomTransitionAnimator
     - SDWebImage
     - SVProgressHUD
-    - TKSubmitTransition
     - "UIViewController+Swizzled"
     - XHLaunchAd
     - XLForm
@@ -236,13 +233,12 @@ SPEC CHECKSUMS:
   RMPZoomTransitionAnimator: 33ded739d91052810c05c8e553663cc9ec79275b
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TKSubmitTransition: 6634e4fb07288db861b66d70fa4c4a7b96d0e6b2
   "UIViewController+Swizzled": 1cd9397598ede6930f94fbcac4b43d63c7aa0dbb
   XHLaunchAd: 0dc50c5af00ee5d9e734b9dce6eece7acaa71122
   XLForm: d5c391dfc62865927b5bcab0a5a0dbfb3e02b0ec
-  XYUIFramework: 1200192f678e8a3f5a15e0f055d1e3f39656e4d7
+  XYUIFramework: f3d0ee3f34a26b08895f7d1a0dd85b459e5a7e1c
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 85b63de2387f15d4960f0818dc7d19ba1f1344d5
+PODFILE CHECKSUM: 06a83a334bcb80378089afdd57c8ab83aaac1a9b
 
 COCOAPODS: 1.5.3
