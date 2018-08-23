@@ -22,9 +22,6 @@
 @interface XYNetWorkApi()
 
 @property (nonatomic,copy) NSDictionary *params;
-@property (nonatomic,copy) NSString *actionName;
-@property (nonatomic,copy) NSString *requestUrl;
-@property (nonatomic,assign) YTKRequestMethod requestMethod;
 
 @end
 

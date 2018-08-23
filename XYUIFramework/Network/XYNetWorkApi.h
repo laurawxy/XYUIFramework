@@ -26,6 +26,12 @@
 
 @property (nonatomic, assign) BOOL showUploadProgress;
 
+@property (nonatomic,copy) NSString *actionName;
+
+@property (nonatomic,copy) NSString *requestUrl;
+
+@property (nonatomic,assign) YTKRequestMethod requestMethod;
+
 @property (nonatomic) XYRequestSuccessBlock successBlock;
 @property (nonatomic) XYNetworkFailureBlock failureBlock;
 
