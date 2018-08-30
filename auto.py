@@ -97,8 +97,8 @@ def gitOperation():
 
 def podPush():
     print("--------  waiting for pod push  ...... ---------")
-    os.system('pod trunk push --allow-warnings')
-
+#    os.system('pod trunk push --allow-warnings')
+    os.system('pod repo push XYUIFramework XYUIFramework.podspec')
 
 
 # run commands
